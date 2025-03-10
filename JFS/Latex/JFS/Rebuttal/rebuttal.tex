@@ -1,0 +1,361 @@
+\documentclass[onecolumn,a4paper,amsmath,amssym,pre]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{subfigure}
+\usepackage{bm}% bold math
+\bibliographystyle{pf}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{ulem}
+
+\addtolength{\parskip}{0pt}
+\addtolength{\floatsep}{0pt}
+\addtolength{\textfloatsep}{0pt}
+\addtolength{\abovecaptionskip}{0pt}
+\addtolength{\belowcaptionskip}{0pt}
+%\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}
+\newcommand{\volume}{{\ooalign{\hfil$V$\hfil\cr\kern0.08em--\hfil\cr}}}
+
+
+
+
+\begin{document}
+    
+
+\begin{tabular}{ r | l }
+  \hline            
+   \textbf{Manuscript Number}:& YJFLS-D-23-00524 \\	
+   \textbf{Title}: & Generating periodic vortex pairs using flexible structures\\
+%	\textbf{Revision title}: & Generating periodic vortex pairs using flexible structures \\  
+  \textbf{Authors}:  & Gaurav Singh, Arahata Senapati, Arnab Atta and Rajaram Lakkaraju \\
+  \hline  
+\end{tabular}\\ \\
+
+
+	\textcolor{red}{\textbf{Editor: Raghuraman N. Govardhan}}\\
+	
+	{\color{red}
+	Dear Mr. Singh,
+	
+	Thank you for submitting your manuscript to Journal of Fluids and Structures. We have now completed the review of your manuscript. Please study the reviewers' reports carefully and submit a suitably revised version addressing the comments. Please resubmit your revised manuscript before Jan 06, 2024. Along with the revised version, please provide a rebuttal in which you quote each of the reviewers' comments in full and, immediately following the quote, explain how you have modified the manuscript to deal with the issues raised. Alternatively, and only in rare cases, explain why you decided not to do so.
+	
+	When resubmitting the revised version of the manuscript, please also include a second version which highlights the changes made using for example different font colour or using features such as latexdiff or tracking in Word. This will greatly facilitate (and speed up) the assessment of the revised submission which may need to be re-reviewed.
+	
+	To submit your revised manuscript, please log in as an author at
+	 https://www.editorialmanager.com/yjfls/, and navigate to the `Submissions Needing Revision' folder under the Author Main Menu.
+	Journal of Fluids and Structures values your contribution and I look forward to receiving your revised manuscript.
+	
+	Kind regards
+	
+	Raghuraman N. Govardhan
+
+	Editor\\
+	
+	  \color{black}{\textbf{Reply}: Thank you for your prompt response and for providing valuable feedback on my manuscript submitted to the Journal of Fluids and Structures. I have carefully reviewed the reviewers' reports and appreciate the constructive comments provided. I would like to express my gratitude to the reviewers for their thorough evaluation of the manuscript. I understand the importance of their insights in enhancing the quality of the work. I have tried to address each of the reviewers' comments diligently in a rebuttal document quoting each of the reviewers' comments in full.
+	  	
+	  In the revised version of the manuscript, I have incorporated the suggested modifications and improvements. Furthermore, as per your recommendation, I have submitted two versions of the revised manuscript. One version includes the changes made, highlighted using a different font color, and the other is a clean revised version for easier assessment.
+	  	
+	  I would like to express my appreciation for the guidance provided on the submission process. I sincerely value the opportunity to contribute to the Journal of Fluids and Structures and am dedicated to producing a revised manuscript that meets the high standards of the journal.}\\
+	
+	\color{red}{	
+	\textbf{Associate Editor: Frederick Gosselin}\\
+	
+	Dear Gaurav Singh et al.,
+	
+	Three peer researchers have completed very thorough reviews of your work. Although they value its merit and find it interesting, they raised several concerns which should be addressed before publication. We invite you to submit a revised version of your manuscript within 30 days to address these concerns. Along with your manuscript, please provide a point-by-point response to the comments of the reviewers. To fully value the feedback from the reviewers, your answers to the point they raised should be reflected in the manuscript. Please also submit a revised manuscript highlighting the modifications with respect to the original manuscript.
+	
+	Sincerely,
+	
+	Frederick Gosselin
+}\\ \\
+
+\color{black}{
+  \textbf{Reply}: I would like to express my sincere gratitude to you and the esteemed reviewers for taking the time to thoroughly review my manuscript. I am truly appreciative of the constructive feedback provided, which has undoubtedly strengthened the overall quality of the paper. I have carefully considered the concerns raised by the three peer researchers and am pleased to inform you that I have made comprehensive revisions to address each of their points. The changes made are aimed at enhancing the clarity, coherence, and overall rigor of the manuscript, in line with the valuable suggestions provided.
+  
+  To facilitate the review process, I have prepared a detailed point-by-point response to the reviewers' comments. This document outlines the specific modifications made in response to each comment, offering transparency and clarity regarding the changes implemented. Additionally, the revised manuscript is submitted alongside the response document, with all modifications appropriately highlighted for your convenience. I believe that the revisions not only address the concerns raised by the reviewers but also contribute to the overall strength and rigor of the manuscript. I am hopeful that these amendments align with the expectations of the reviewers and the standards set by the journal.
+  
+  I would like to express my sincere appreciation for the guidance provided throughout this review process. Your valuable feedback has been instrumental in refining the manuscript, and I am confident that the revised version now meets the high standards of the journal. Thank you once again for the opportunity to submit this revised manuscript. I look forward to the possibility of its acceptance for publication.  }
+%Dear Sir/Madam, \\
+%
+%
+%
+%Greetings. First of all our sincere thanks to you and the referees for strengthening our manuscript in many aspects and sharing the suggestions. The first referee has recommended our manuscript with good words (like `the results and analysis seem compelling') and suggested us to correct the errors involved with the language. \\
+%
+%
+%The second referee has praised our work by mentioning `the physical discussion on the interplay between the oscillations and the tip generated vortices is quite interesting', and recommended detailed revision of the manuscript by fixing the typos and careful choice of the language. \\
+%
+%
+%
+%Our sincere apologies for the mentioned typo errors. Based on the referee reports, we have revised the manuscript in detail and resubmitting it. Please find our rebuttals in this regard. Kindly accept our manuscript submission here with. Thank you.
+
+\newpage
+
+%--------------------------------------------------
+\section*{\textbf{The first referee's comments and actions taken in that regard}}   
+Amin Amiri Delouei, University of Bojnord, Iran, Bojnord, Iran.
+
+\textcolor{red}{This study investigates the phenomenon of "pinch-off" in counter-rotating vortex pairs formed by a planar starting flow through a narrow slit. The researchers propose using flexible slit plates to enhance momentum transport and self-propagation. They find that the growth rate of the ejected vortex pair is proportional to the square root of time.}\\
+
+\textbf{Reply}:\\
+
+
+\textcolor{red}{\textbf{Overall Feedback:}}
+
+\textcolor{red}{The literature review section provides a good overview of the existing research on vortex pairs and their continuous evolution. The references cited are relevant and cover a wide range of applications. However, there are some areas that can be improved to enhance the clarity, coherence, and overall effectiveness of the section. The following numbered feedback points highlight specific areas that require improvement or refinement:}
+
+\begin{enumerate}	
+	
+	\item \textcolor{red}{The introduction of vortex pairs and their prevalence in natural processes is well-stated. However, it would be helpful to provide a brief definition or explanation of what a vortex pair is before delving into its formation and evolution.}
+	
+\textbf{Reply}:
+
+	\item \textcolor{red}{The sentence structure and organization of information can be improved for better coherence and flow. Consider reorganizing the information into more distinct paragraphs or sections based on the different aspects of vortex pair formation and evolution (e.g., formation mechanisms, self-induced velocity, transport mechanisms).}
+	
+\textbf{Reply}:
+
+\item \textcolor{red}{The use of specific references throughout the section is commendable. However, it would be beneficial to provide a brief summary or explanation of each reference's contribution to the understanding of vortex pairs. This would help the reader understand the significance of each study and its relevance to the current research.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Some sentences or phrases are unclear or grammatically incorrect. For example, in the sentence "The continuous evolution behaviour of a two-dimensional (2D) vortex pair was put to the test by Afanasyev (2006) in a planar flow experiment," it is unclear what is meant by "put to the test." Clarify the purpose or objective of Afanasyev's experiment.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{The use of abbreviations and acronyms should be minimized or explained upon first use. For example, Re is mentioned multiple times without an explanation of its meaning (Reynolds number). Provide a brief explanation of the term upon first use to ensure clarity for readers.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{The transition between different studies and their findings could be smoother. Consider using transitional phrases or sentences to guide the reader through the different research contributions and their implications.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{The last paragraph of the literature review section introduces the current research investigation but does not provide a clear research question or objective. Revise the paragraph to clearly state the purpose or objective of the current study.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{The section would benefit from a concise summary or concluding statement that highlights the gaps or limitations in the existing literature and sets the stage for the current research.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Immersed boundary-lattice Boltzmann method is an Eulerian-Lagrangian approach that can be used for simulation of flexible FSI. It is suggested to introduce this method in the literature review for more information for the readers. It should be noted that this method can be used for other application too. Referring to the following papers will be useful: simulation flexible structures [1,2], moving boundaries [3,4], or even radiation [5,6]. [1] 10.1016/j.oceaneng.2022.111025; [2] 10.1016/j.ijmecsci.2022.107693; [3] 10.1002/mma.8939; [4] 10.1016/j.camwa.2022.07.005, [5] 10.1016/j.jqsrt.2022.108086; [6] 10.1007/s10973-022-11328-1;.}
+
+\textbf{Reply}:
+
+\end{enumerate}	
+
+\textbf{Technical comments raised by the referee}
+
+\begin{enumerate}
+\item \textcolor{red}{Indicate if any commercial software is used.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{It would be helpful to provide a more detailed explanation of the flow patterns observed downstream of the slit gap when the plates are bent under hydrodynamic load. What are the specific characteristics and behaviors of these flow patterns?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Can you elaborate on the role of the trailing shear layer connected with the slit edges in the growth and movement of the leading vortex pair (LVP)? How does the detachment of the LVP occur due to shear layer instabilities?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Please provide more information on the volumetric flow conservation-based model used to determine the growth rate of the LVP. How was this model derived and validated? What are the key assumptions and limitations of this model?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Could you provide more details on the comparison between the "confined" case and the "unconfined" case for rigid plates? How do the channel walls constrain the flow dynamics and affect the growth of fluid structures, LVP detachment, and LVP propagation?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Can you explain the significance of the "pinch-off" phenomenon observed when using flexible plates to form the slit gap? How does this early detachment of the LVP from the attached shear layer with increased velocity impact the flow behavior?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Please provide more information on the oscillatory motion of the flexible plates and its relation to the pinch-off of the LVP. How does the plates' oscillation time scale cut off the vorticity feeding mechanism and cause early detachment?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Can you explain the relationship between the plate flexibility (Ca) and the generation of vortex pairs periodically? How does the flexibility of the plates influence the frequency and characteristics of these vortex pairs?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Could you provide more details on the propagation rate of the early pinched-off LVPs for different plate flexibility cases? What are the factors that contribute to the observed maxima at Ca = 0.04 and the subsequent decrease in the propagation rate?}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{What are the potential implications and applications of the findings presented in this study for designing efficient fluid-transport systems? How can the understanding of starting flow evolution in confined spaces with flexible structural elements contribute to these designs?}
+
+\textbf{Reply}:
+
+\end{enumerate}	
+
+
+\newpage
+
+\section*{The second referee's comments and actions taken in that regard} 
+
+
+\textcolor{red}{The manuscript investigates, by numerical simulations, the formation of vortices through a two-dimensional orifice between rigid and flexible plates in a channel flow. This study focuses on the kinematics of the leading vortex pair, on the confinement effects and on the influence of the beam flexibility on the vortex pinch-off. Interesting conclusions are drawn. However, some of these deserve further analyses. This study could be of interest for both biologic and industrial applications despite a simplified configuration is considered. According to my judgment, the quality of the manuscript is acceptable, but there is still room for improvement. I therefore recommend it for publication in Journal of Fluids and Structures, provided that the suggested changes are made, and a step-by-step rebuttal is addressed: a major revision is requested. The general comments are listed below.}\\
+
+\textcolor{red}{\textbf{General comments:}}\\
+\begin{itemize}
+\item \textcolor{red}{In my opinion, the discussion about the origin of the pinch-off mechanism is incomplete. I think that more emphasis should be put on the beam oscillation. It looks that the beams are perturbed from the rest configuration generating a transient dynamics with large amplitude oscillations. I think that the oscillations themselves are responsible for the pinch-off mechanism (see specific comment 15), therefore what you are observing is related to a transient effect, thus connected to the initialization of the problem. Would you observe a vortex pinch-off if the inflow rate was gently increased up to the target condition, rather than impulsively started? I suggest the authors to run a few more simulations for comparison.}
+
+\textbf{Reply}:
+
+\item \textcolor{red}{Every time the term “slit” is used as past participle, such as in the expression “slit plates”, it results in a grammar mistake. I would write “slatted plates” instead.}
+
+\textbf{Reply}:
+\\
+\end{itemize}
+
+\textcolor{red}{\textbf{Specific comments:}}\\
+
+\begin{enumerate}
+	
+	\item \textcolor{red}{P. 1, L. 54-58: The sentence “The resulting vortex pair growth is governed by the local flow as vorticity is fed into it through an attached trailing shear layer.” is quite unclear. Please rephrase.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 2, L. 15: The term “pinch-off” here is first introduced. I suggest to describe carefully what is physically meant for pinch-off.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 3, L. 55: Why is necessary to specify the width “b” in a purely two-dimensional configuration?}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 4, L. 6: How did you select this specific value of the Reynolds number Re=330? Any reason behind that?}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 4, L. 45: The definition of the Green-Lagrange (finite) strain tensor can be ubiquitous, depending on how you build the deformation gradient tensor. Please specify the form of $\nabla us$ ;}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 5 L. 42: I would specify that the LVP detach from the central jet, as here the concept of	vortex detachment is first discussed.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 5, L. 55-57: I don’t understand if the assumptions of the simplified model require neglecting the flow entrained by the central jet or neglecting the flow of the jet itself apart from the LVP.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 6, Figure 4: The right panel shows the normalized radius of the LVP to match the simplified model by Afanasyev (2006) in the unconfined case, where the growth follows a $\sqrt{t}$ law. Conversely, the confined case presents a bounded growth. I have two concerns about this. First, it is worth mentioning how you computed the radius of the vortex pair obtained from simulations. This is not a trivial task, especially in wall-bounded flows. Second, the growth of the $r/\delta_r$ ratio in the confined case is bounded by the normalized channel height $h/\delta_r= 6.67$. Therefore, what’s the point of this comparison}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 7, Figure 5: I suggest a more accurate representation of rotation-dominated and shear dominated regions. A discrete colormap with value blanking is useful for the illustrative purpose, but the contour edges are subjected to the arbitrary choice of the colormap bands. One option could be the use of the $\omega$-criterion [A1]. I found it very effective in delimiting the regions dominated by rotation. This approach can also be used to delimit the LVP, provided that a zero-rotation threshold is established. The same considerations hold for figures 8, 9,	12}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 7, L. 32: The sentence “…, it no longer receives the vorticity and advects in the downstream.” is misleading. The vorticity is a continuous field, and the shear layer does not push the LVP as elastic solids.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 7, L. 39: The following sentence suggests a curious result: “The confined case accumulates more positive circulation over time compared to the unconfined case.” I understand that the confinement introduces a preferential rotation direction in the flow structure, although the boundary conditions maintain the symmetry with respect to the jet center. Could you comment on that? Did you observe these features in other cases? Do you think it is an instability-dependent effect?}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 7, Figure 6b: Again, how did you compute the $x_lvp$? The procedure must be robust enough to be reliable in cases with complex vorticity pattern, such as some of the cases depicted by figure 10;}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 8, Figure 7c: The trend observed for the curve $Cd/Cd_{rig}$ as a function of the Cauchy deserves to be further investigated. Well established experimental studies showed a monotonic decrease of the drag force as a function of the Cauchy number [A3-A4] for isolated structures undergoing a steady reconfiguration. It looks from figure 7b that your beams are undergoing a steady deflected posture after a transient dynamics. Therefore, I think that the $Cd/Cd_{rig}$ curve is sensitive to the extension of the time-window used to perform the averaging procedure. Furthermore, the duration of the transient dynamics is case-dependent. Please specify exactly how did you compute the $Cd/Cd_{rig}$ curve and provide a plot of the same curve obtained in the steady state condition. The sentence at P.8,L. 47-48 needs to be modified as well.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{. P. 9, L. 49: The sentence “This increased drag is attributed to the fact that flexible oscillating structures offer more drag than rigid structures” is ubiquitous. Please rephrase with respect to the previous comment.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 12, L. 41: I think that the catapult metaphor is not suitable, since the vortex pair is not thrown by an elastic force. The LVP originates from the roll up of the shear layer created in the proximity of the beam edge. I think that the pinch-off is caused by the withdrawal of the plate trailing edge, which forces the creation of an opposite shear layer. This in turn breaks the momentum entrainment on the shear layer connected to the vortex, causing a “pinch off”.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{P. 13, Figure 13b: You could check if the frequency trend follows the first natural frequency of the clamped structure by superposing the curve $f_x h/u_0$ as a function of $Ca$. By considering the first natural frequency of a clamped beam [A2], with $k1$ = 3.52: $f_x=\frac{k1}{2\pi}\sqrt{\frac{EI}{bh^4}}$. This could be expressed as a function of the Cauchy number: $f_x\frac{h}{u_0}=\frac{k1}{2\pi}\sqrt{\frac{\rho_f h}{Ca}}$. Neglecting added mass effects and transient effects one can tell that the vortex pinch-off definitely depends on the structural oscillations. For Ca<0.01, the amplitude of structural oscillations is too small to trigger the pinch-off mechanism.}\\
+	
+		\color{red}{
+	\textbf{Additional References}
+
+	(A1) Liu, C., Wang, Y., Yang, Y., \& Duan, Z. (2016). New omega vortex identification method. Science China Physics, Mechanics \& Astronomy, 59, 1-9.\\
+	(A2) Conway, H. D. (1980). Formulas for Natural Frequency and Mode Shape, by Robert D. Blevins.\\
+	(A3) Gosselin, F., De Langre, E., \& Machado-Almeida, B. A. (2010). Drag reduction of flexible plates by reconfiguration. Journal of Fluid Mechanics, 650, 319-341.\\
+	(A4) Luhar, M., \& Nepf, H. M. (2011). Flow‐induced reconfiguration of buoyant and flexible aquatic vegetation. Limnology and Oceanography, 56(6), 2003-2017.}\\
+	\color{black}{
+		
+	\textbf{Reply}:
+	
+	
+}
+\end{enumerate}
+
+
+\newpage
+
+\section*{The third referee's comments and actions taken in that regard} 
+
+  
+\textcolor{red}{The authors of this manuscript numerically investigated the vortex formation propagation through a slit in a confined channel. The model of this study deserves to be investigated because new phenomena can be examined in terms of vortex dynamics and its coupling with structural deformation. However, overall the analysis on the numerical results appears to be shallow without sufficient analytical investigation on causality between vortex dynamics and structural deformation/confinement. The authors mainly focused on reporting the numerical results in diverse aspects (such as propagation speed, vortex topology). I have some comments that the authors should respond to in the revised manuscript.}
+
+
+\textbf{Reply}:
+
+\begin{enumerate}
+
+	\item \textcolor{red}{(Line 53 of page 5) The authors assumed no entrainment, which is problematic without rigorous justification. For the formation of the starting vortex, the entrainment of surrounding fluid is a natural process. Please justify this statement and the following analysis based on the volume of the LVP.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{The authors assumed a circle for the "boundary" of the LVP. The boundary of the vortex should be defined rigorously; as researchers have done for the 3D vortex ring. The assumption of a circular boundary should be supported with sufficient data.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{It is not appropriate to compare with the Lamb-Oseen vortex because the basic distribution of vorticity is distinctly different from the LVP. In the high Re, it is obvious that convection is a domain factor than diffusion in vorticity transport. Thus, this comparison does not provide any new insight.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{Regarding the results shown in Figure 6, the authors should explain in detail why the confined case has the larger circulation for both total and LVP and why the unconfined case has the larger propagation speed, with physical reasoning. The explanation in the current manuscript is too simple.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{(Line 23, page 8) "offers no additional throw". Please elaborate this phrase.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{(Lines 29-41, page 9) The authors considered the inertia-based linear momentum balance. It will be better to address the momentum balance with equations (Eq. (..)), in separated lines.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{The authors attributes the pinch-off of LVP to shear layer instability. What kind of instability mechanisms act for the pinch off of LVP? Is it justified to claim that the instability is critical for the pinch-off of LVP? The pinch-off may be explained with another mechanism.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{Regarding the results in Figure 10, the authors just reported the trends of $x_LVP$, $u_LVP$ with respect to Ca. The rigorous physical reasons for this trend should be provided.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{It will be good to include the results for the cases of the large and small Ca values in addition to the rigid case. It will be helpful to understand how the flexibility.}
+	
+	\textbf{Reply}:
+	
+	\item \textcolor{red}{The vortex formation process is unsteady process. Thus, it is not clear why the time-averaged velocity profiles in Figure 11 are meaningful. How is it correlated with the unsteady process of the vortex formation?}
+
+\textbf{Reply}:
+
+\end{enumerate}
+   
+
+\vspace{10cm} 
+Yours sincerely, \\
+\vspace{0.1cm} \\
+Gaurav Singh \\
+\today \\
+IIT Kharagpur, India.
+    
+\end{document}
