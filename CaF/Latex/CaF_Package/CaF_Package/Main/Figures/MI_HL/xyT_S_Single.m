@@ -1,0 +1,765 @@
+
+clear all;
+close all;
+fclose all;
+clc;
+
+Case=["Single_a","Single_b","Single_c","Single_d","Single_e"];
+
+%      
+
+[r,c]=size(Case)
+
+for i=5:5
+    i
+Case
+ str=convertStringsToChars(Case(i))
+% str(1)
+% str(2)
+
+fclose all;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% time information
+%-----------------
+t_start=1; t_end=5000; t_jump=1;   % change it to see different times
+fac=100; fac_1=10; fac_2=100;          % based on initial wite-up
+%
+%-----------------------------------------------
+% set geometry, velocity and other things
+%-----------------------------------------------
+h_ref=0.4;                              % channel width
+d_ref=0*h_ref;                         % filament gap
+L_channel=14*h_ref;                     % channel length
+W_channel=h_ref;   
+Re=500;Uchar=0.1;
+fil_ht=h_ref/2; nu=(Uchar*fil_ht/Re); 
+%
+%
+CaseNo=str(1:6);
+CaseID=str(8);
+
+file_tag=[CaseNo,'/',CaseID]
+%
+%
+fsh=5;                                 % #of points in horizontal direction of filament
+%
+%------------------------------
+% change them for each Case
+% x & y info: Gaurav
+%------------------------------
+%
+% dirname_1a=['/media/magcyan/cut30/runLong/',file_tag,'/fluid/'];
+% dirname_2a='/polyMesh/points';
+% u & v info
+%if (CaseNo=='2')
+ %   CaseNo
+ %   dirname_1b=['/media/magcyan/Disk_1/Gaurav/Article2/',file_tag,'/fluid/'];
+
+%elseif (CaseNo=='6')
+ %   CaseNo
+ %   dirname_1b=['/media/magcyan/Disk_1/Gaurav/Article2/',file_tag,'/fluid/']
+%else
+dirname_1b=['/media/magcyan/cut60/dbl_fil_scalar/',file_tag,'/fluid/'];
+
+dirname_2b='/T1';
+dirname_2a='/polyMesh/points';
+%
+%--------------------------------------
+% restructure the grid to to 50 points
+np=41; 
+
+n_snapshot=0;  % count variable
+Uf=[];Vf=[];
+
+% for t_loop=t_start:t_jump:t_end
+% %
+% % have a count
+% n_snapshot=n_snapshot+1;   
+% %
+% % time folder construction
+% dir_key=sprintf('%0.2f',t_loop/fac); % note subdirectory name
+% if(mod(t_loop,fac_1)==0)
+%     dir_key=sprintf('%0.1f',t_loop/fac); % note subdirectory name
+% end;
+% if(mod(t_loop,fac_2)==0)
+%     dir_key=sprintf('%0.0f',t_loop/fac); % note subdirectory name
+% end;
+% 
+% %
+% %-----------------------------------------------
+% % reading and reshaping u & v matrices
+% %---------------------------------------------
+% filename_uv=[dirname_1b,dir_key,dirname_2b];
+% 
+% fileID=fopen(filename_uv,'r');
+% Intro=textscan(fileID,'%s','Delimiter','\n');
+% 
+% % block 1
+% stl=23; edl=1272; % start and end lines
+% p1=50; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b1=reshape(ai(:),[p1,p2]);
+% 
+% % block 2
+% stl=1273; edl=1897;
+% p1=25; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b2=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % % block 3-Gap plate2
+% % stl=1898; edl=2022;
+% % p1=5; p2=25; % block size
+% % ai=[];
+% % for i=stl:edl
+% % RelevantLine=Intro{1}{i};
+% % ai=[ai;str2num(RelevantLine(1:end))];
+% % end
+% % t1_b3=reshape(ai(:),[p1,p2]);
+% 
+% % block 4
+% stl=2023; edl=5522;
+% p1=140; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b4=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 5
+% stl=5523; edl=6772;
+% p1=50; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b5=reshape(ai(:),[p1,p2]);
+% 
+% % % block 6-Gap plate1
+% % stl=6773; edl=6897;
+% % p1=5; p2=25; % block size
+% % ai=[];
+% % for i=stl:edl
+% % RelevantLine=Intro{1}{i};
+% % ai=[ai;str2num(RelevantLine(1:end))];
+% % end
+% % t1_b6=reshape(ai(:),[p1,p2]);
+% 
+% % block 7
+% stl=6898; edl=7522;
+% p1=25; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b7=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 8
+% stl=7523; edl=11022;
+% p1=140; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b8=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 9
+% stl=11023; edl=13522;
+% p1=100; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b9=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 10
+% stl=13523; edl=16022;
+% p1=100; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t1_b10=reshape(ai(:),[p1,p2]);
+% 
+% 
+% 
+% % constrcut x and y matrices
+% t1_b1=t1_b1'; 
+% t1_b2=t1_b2'; 
+% % t1_b6=t1_b6'; 
+% t1_b7=t1_b7'; 
+% %
+% % t1_b3=t1_b3'; 
+% t1_b4=t1_b4'; 
+% t1_b5=t1_b5'; 
+% %
+% t1_b8=t1_b8'; 
+% t1_b9=t1_b9'; 
+% t1_b10=t1_b10';
+% 
+% %u_zero_1=zeros(50,8); u_zero_2=zeros(50,8);v_zero_1=zeros(50,8); v_zero_2=zeros(50,8);
+% % u11=[[u_b1,u_zero_1,u_b2];[u_b3,u_b4,u_b5];[u_b6,u_zero_2,u_b7]];
+% % v11=[[v_b1,v_zero_1,v_b2];[v_b3,v_b4,v_b5];[v_b6,v_zero_2,v_b7]];
+% t1=[[t1_b1,t1_b2,t1_b4,t1_b9];[t1_b5,t1_b7,t1_b8,t1_b10]];
+% 
+% t11{n_snapshot,1}=t1;
+% 
+% 
+% t_loop
+% filename_uv
+% fclose all;
+% end
+
+n_snapshot=0;  % count variable
+for t_loop=t_start:t_jump:t_end
+%
+% have a count
+n_snapshot=n_snapshot+1;   
+%
+% time folder construction
+dir_key=sprintf('%0.2f',t_loop/fac); % note subdirectory name
+if(mod(t_loop,fac_1)==0)
+    dir_key=sprintf('%0.1f',t_loop/fac); % note subdirectory name
+end;
+if(mod(t_loop,fac_2)==0)
+    dir_key=sprintf('%0.0f',t_loop/fac); % note subdirectory name
+end;
+
+%
+%-----------------------------------------------
+% reading and reshaping u & v matrices
+%---------------------------------------------
+dirname_2b='/T2';
+filename_uv=[dirname_1b,dir_key,dirname_2b];
+
+fileID=fopen(filename_uv,'r');
+Intro=textscan(fileID,'%s','Delimiter','\n');
+
+% block 1
+stl=23; edl=1272; % start and end lines
+p1=50; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+t2_b1=reshape(ai(:),[p1,p2]);
+
+% block 2
+stl=1273; edl=5022;
+p1=150; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+t2_b2=reshape(ai(:),[p1,p2]);
+
+
+% block 3-Gap plate2
+stl=5023; edl=6272;
+p1=50; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+t2_b3=reshape(ai(:),[p1,p2]);
+
+% % block 4 plate
+% stl=6272; edl=6397;
+% p1=5; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t2_b4=reshape(ai(:),[p1,p2]);
+
+
+% block 5
+stl=6398; edl=10147;
+p1=150; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+t2_b5=reshape(ai(:),[p1,p2]);
+
+
+% block 6
+stl=10148; edl=12647;
+p1=100; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+t2_b6=reshape(ai(:),[p1,p2]);
+
+
+% block 7
+stl=12648; edl=15147;
+p1=100; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+t2_b7=reshape(ai(:),[p1,p2]);
+
+
+% constrcut x and y matrices
+t2_b1=t2_b1'; 
+t2_b2=t2_b2'; 
+t2_b6=t2_b6'; 
+t2_b7=t2_b7'; 
+%
+t2_b3=t2_b3'; 
+% t2_b4=t2_b4'; 
+t2_b5=t2_b5'; 
+
+
+
+%u_zero_1=zeros(50,8); u_zero_2=zeros(50,8);v_zero_1=zeros(50,8); v_zero_2=zeros(50,8);
+% u11=[[u_b1,u_zero_1,u_b2];[u_b3,u_b4,u_b5];[u_b6,u_zero_2,u_b7]];
+% v11=[[v_b1,v_zero_1,v_b2];[v_b3,v_b4,v_b5];[v_b6,v_zero_2,v_b7]];
+t2=[[t2_b1,t2_b2,t2_b6];[t2_b3,t2_b5,t2_b7]];
+
+t22{n_snapshot,1}=t2;
+
+
+t_loop
+filename_uv
+fclose all;
+end
+
+
+% n_snapshot=0;  % count variable
+% for t_loop=t_start:t_jump:t_end
+% %
+% % have a count
+% n_snapshot=n_snapshot+1;   
+% %
+% % time folder construction
+% dir_key=sprintf('%0.2f',t_loop/fac); % note subdirectory name
+% if(mod(t_loop,fac_1)==0)
+%     dir_key=sprintf('%0.1f',t_loop/fac); % note subdirectory name
+% end;
+% if(mod(t_loop,fac_2)==0)
+%     dir_key=sprintf('%0.0f',t_loop/fac); % note subdirectory name
+% end;
+% 
+% %
+% %-----------------------------------------------
+% % reading and reshaping u & v matrices
+% %---------------------------------------------
+% dirname_2b='/T3';
+% filename_uv=[dirname_1b,dir_key,dirname_2b];
+% 
+% fileID=fopen(filename_uv,'r');
+% Intro=textscan(fileID,'%s','Delimiter','\n');
+% 
+% % block 1
+% stl=23; edl=1272; % start and end lines
+% p1=50; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b1=reshape(ai(:),[p1,p2]);
+% 
+% % block 2
+% stl=1273; edl=1897;
+% p1=25; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b2=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % % block 3-Gap plate2
+% % stl=1898; edl=2022;
+% % p1=5; p2=25; % block size
+% % ai=[];
+% % for i=stl:edl
+% % RelevantLine=Intro{1}{i};
+% % ai=[ai;str2num(RelevantLine(1:end))];
+% % end
+% % t3_b3=reshape(ai(:),[p1,p2]);
+% 
+% % block 4
+% stl=2023; edl=5522;
+% p1=140; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b4=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 5
+% stl=5523; edl=6772;
+% p1=50; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b5=reshape(ai(:),[p1,p2]);
+% 
+% % % block 6-Gap plate1
+% % stl=6773; edl=6897;
+% % p1=5; p2=25; % block size
+% % ai=[];
+% % for i=stl:edl
+% % RelevantLine=Intro{1}{i};
+% % ai=[ai;str2num(RelevantLine(1:end))];
+% % end
+% % t3_b6=reshape(ai(:),[p1,p2]);
+% 
+% % block 7
+% stl=6898; edl=7522;
+% p1=25; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b7=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 8
+% stl=7523; edl=11022;
+% p1=140; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b8=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 9
+% stl=11023; edl=13522;
+% p1=100; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b9=reshape(ai(:),[p1,p2]);
+% 
+% 
+% % block 10
+% stl=13523; edl=16022;
+% p1=100; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% t3_b10=reshape(ai(:),[p1,p2]);
+% 
+% 
+% 
+% % constrcut x and y matrices
+% t3_b1=t3_b1'; 
+% t3_b2=t3_b2'; 
+% % t1_b6=t3_b6'; 
+% t3_b7=t3_b7'; 
+% %
+% % t1_b3=t3_b3'; 
+% t3_b4=t3_b4'; 
+% t3_b5=t3_b5'; 
+% %
+% t3_b8=t3_b8'; 
+% t3_b9=t3_b9'; 
+% t3_b10=t3_b10';
+% 
+% %u_zero_1=zeros(50,8); u_zero_2=zeros(50,8);v_zero_1=zeros(50,8); v_zero_2=zeros(50,8);
+% % u11=[[u_b1,u_zero_1,u_b2];[u_b3,u_b4,u_b5];[u_b6,u_zero_2,u_b7]];
+% % v11=[[v_b1,v_zero_1,v_b2];[v_b3,v_b4,v_b5];[v_b6,v_zero_2,v_b7]];
+% t3=[[t3_b1,t3_b2,t3_b4,t3_b9];[t3_b5,t3_b7,t3_b8,t3_b10]];
+% 
+% t33{n_snapshot,1}=t3;
+% 
+% 
+% t_loop
+% fclose all;
+% end
+
+n_snapshot=0;  % count variable
+for t_loop=t_start:t_jump:t_end
+%
+% have a count
+n_snapshot=n_snapshot+1;   
+%
+% time folder construction
+dir_key=sprintf('%0.2f',t_loop/fac); % note subdirectory name
+if(mod(t_loop,fac_1)==0)
+    dir_key=sprintf('%0.1f',t_loop/fac); % note subdirectory name
+end;
+if(mod(t_loop,fac_2)==0)
+    dir_key=sprintf('%0.0f',t_loop/fac); % note subdirectory name
+end;
+
+%
+%-----------------------------------------------
+% reading and reshaping u & v matrices
+%---------------------------------------------
+dirname_2b='/p';
+filename_uv=[dirname_1b,dir_key,dirname_2b];
+
+fileID=fopen(filename_uv,'r');
+Intro=textscan(fileID,'%s','Delimiter','\n');
+
+% block 1
+stl=23; edl=1272; % start and end lines
+p1=50; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+p_b1=reshape(ai(:),[p1,p2]);
+
+% block 2
+stl=1273; edl=5022;
+p1=150; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+p_b2=reshape(ai(:),[p1,p2]);
+
+
+% block 3-Gap plate2
+stl=5023; edl=6272;
+p1=50; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+p_b3=reshape(ai(:),[p1,p2]);
+
+% % block 4 plate
+% stl=6272; edl=6397;
+% p1=5; p2=25; % block size
+% ai=[];
+% for i=stl:edl
+% RelevantLine=Intro{1}{i};
+% ai=[ai;str2num(RelevantLine(1:end))];
+% end
+% p_b4=reshape(ai(:),[p1,p2]);
+
+
+% block 5
+stl=6398; edl=10147;
+p1=150; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+p_b5=reshape(ai(:),[p1,p2]);
+
+
+% block 6
+stl=10148; edl=12647;
+p1=100; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+p_b6=reshape(ai(:),[p1,p2]);
+
+
+% block 7
+stl=12648; edl=15147;
+p1=100; p2=25; % block size
+ai=[];
+for i=stl:edl
+RelevantLine=Intro{1}{i};
+ai=[ai;str2num(RelevantLine(1:end))];
+end
+p_b7=reshape(ai(:),[p1,p2]);
+
+
+% constrcut x and y matrices
+p_b1=p_b1'; 
+p_b2=p_b2'; 
+p_b6=p_b6'; 
+p_b7=p_b7'; 
+%
+p_b3=p_b3'; 
+% p_b4=p_b4'; 
+p_b5=p_b5'; 
+
+
+
+%u_zero_1=zeros(50,8); u_zero_2=zeros(50,8);v_zero_1=zeros(50,8); v_zero_2=zeros(50,8);
+% u11=[[u_b1,u_zero_1,u_b2];[u_b3,u_b4,u_b5];[u_b6,u_zero_2,u_b7]];
+% v11=[[v_b1,v_zero_1,v_b2];[v_b3,v_b4,v_b5];[v_b6,v_zero_2,v_b7]];
+p=[[p_b1,p_b2,p_b6];[p_b3,p_b5,p_b7]];
+
+pp{n_snapshot,1}=p;
+
+
+t_loop
+filename_uv
+fclose all;
+end
+
+
+        %---------------------------------------------
+        % reading and reshaping x & y matrices
+        %------------------------------------------
+        dir_key='0.01';
+        filename_xy=[dirname_1b,dir_key,dirname_2a]
+        fileID=fopen(filename_xy,'r');
+        Intro=textscan(fileID,'%s','Delimiter','\n');
+
+        % block 1
+        stl=21; edl=1346; % start and end lines
+        p1=51; p2=26; % block size
+        ai=[];
+        for i=stl:edl
+        RelevantLine=Intro{1}{i};
+        ai=[ai;str2num(RelevantLine(2:end-1))];
+        end
+        x_b1=reshape(ai(:,1),[p1,p2]);
+        y_b1=reshape(ai(:,2),[p1,p2]);
+
+        % block 2
+        stl=2673; edl=6598;
+        p1=151; p2=26; % block size
+        ai=[];
+        for i=stl:edl
+        RelevantLine=Intro{1}{i};
+        ai=[ai;str2num(RelevantLine(2:end-1))];
+        end
+        x_b2=reshape(ai(:,1),[p1,p2]);
+        y_b2=reshape(ai(:,2),[p1,p2]);
+
+        % block 3
+        stl=10525; edl=11799;
+        p1=51; p2=25; % block size  5*26-1
+        ai=[];
+        for i=stl:edl
+        RelevantLine=Intro{1}{i};
+        ai=[ai;str2num(RelevantLine(2:end-1))];
+        end
+        x_b3=reshape(ai(:,1),[p1,p2]);
+        y_b3=reshape(ai(:,2),[p1,p2]);
+
+        % 
+        % % block 4
+        % stl=13075; edl=13203;
+        % p1=5; p2=26; % block size 5*26-1
+        % ai=[];
+        % for i=stl:edl
+        % RelevantLine=Intro{1}{i};
+        % ai=[ai;str2num(RelevantLine(2:end-1))];
+        % end
+        % x_b4=reshape(ai(:,1),[p1,p2]);
+        % y_b4=reshape(ai(:,2),[p1,p2]);
+
+        % block 5
+        stl=13333; edl=17082;
+        p1=150; p2=25; % block size
+        ai=[];
+        for i=stl:edl
+        RelevantLine=Intro{1}{i};
+        ai=[ai;str2num(RelevantLine(2:end-1))];
+        end
+        x_b5=reshape(ai(:,1),[p1,p2]);
+        y_b5=reshape(ai(:,2),[p1,p2]);
+
+        % block 6
+        stl=20833; edl=23432;
+        p1=100; p2=26; % block size 5*26-1
+        ai=[];
+        for i=stl:edl
+        RelevantLine=Intro{1}{i};
+        ai=[ai;str2num(RelevantLine(2:end-1))];
+        end
+        x_b6=reshape(ai(:,1),[p1,p2]);
+        y_b6=reshape(ai(:,2),[p1,p2]);
+
+        % block 7
+        stl=26033; edl=28532;
+        p1=100; p2=25; % block size
+        ai=[];
+        for i=stl:edl
+        RelevantLine=Intro{1}{i};
+        ai=[ai;str2num(RelevantLine(2:end-1))];
+        end
+        x_b7=reshape(ai(:,1),[p1,p2]);
+        y_b7=reshape(ai(:,2),[p1,p2]);
+
+
+        % % constrcut x and y matrices
+        x_b1=x_b1'; y_b1=y_b1';
+        x_b2=x_b2'; y_b2=y_b2';
+        x_b6=x_b6'; y_b6=y_b6';
+        x_b7=x_b7'; y_b7=y_b7';
+        %
+        x_b3=x_b3'; y_b3=y_b3';
+        x_b5=x_b5'; y_b5=y_b5';
+        %
+        % x_b4=x_b4'; y_b4=y_b4';
+       
+        % size(x_b1(2:end,2:end))
+        % size(x_b2(2:end,2:end))
+        % size(x_b3(1:end,2:end))
+        % % size(x_b4(2:end,1:end))
+        % size(x_b5(1:end,1:end))
+        % size(x_b6(2:end,1:end))
+        % size(x_b7(1:end,1:end))
+        % % size(x_b8(1:end,2:end))
+        % % size(x_b9(2:end,1:end))
+        % % size(x_b10(1:end,1:end))
+        
+        % check-------------
+        % x=[[x_b1(2:end,2:end),x_b2(2:end,2:end)];[x_b6(1:end,2:end),x_b7(1:end,1:end-1)]];
+        % y=[[y_b1(2:end,2:end),y_b2(2:end,2:end)];[y_b6(1:end,2:end),y_b7(1:end,1:end-1)]];
+        %
+        % check-------------
+         x=[[x_b1(2:end,2:end),x_b2(2:end,2:end),x_b6(2:end,1:end)];[x_b3(1:end,2:end),x_b5(1:end,1:end),x_b7(1:end,1:end)]];
+         y=[[y_b1(2:end,2:end),y_b2(2:end,2:end),y_b6(2:end,1:end)];[y_b3(1:end,2:end),y_b5(1:end,1:end),y_b7(1:end,1:end)]];
+        %
+
+save(['pt2_',CaseNo,CaseID,'.mat'],'x','y','pp','t22');
+% save(['pt_',CaseNo,CaseID,'.mat'],'x','y','pp','t11','t22','t33');
+
+fclose all;
+end
