@@ -1,0 +1,295 @@
+\begin{thebibliography}{32}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Afanasyev(2006)}]{Afanasyev2006}
+\bibinfo{author}{Afanasyev, Y.D.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Formation of vortex dipoles}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{18},
+  \bibinfo{pages}{037103}.
+\newblock \URLprefix \url{10.1063/1.2182006},
+  \DOIprefix\doi{10.1063/1.2182006},
+  \href{http://arxiv.org/abs/10.1063/1.2182006}{{\tt arXiv:10.1063/1.2182006}}.
+%Type = Article
+\bibitem[{Ahlnas et~al.(1987)Ahlnas, Royer and George}]{Ahlnas1987}
+\bibinfo{author}{Ahlnas, K.}, \bibinfo{author}{Royer, T.C.},
+  \bibinfo{author}{George, T.H.}, \bibinfo{year}{1987}.
+\newblock \bibinfo{title}{Multiple dipole eddies in the alaska coastal current
+  with landsat thematic mapper data}.
+\newblock \bibinfo{journal}{Journal of Geophysical Research: Oceans}
+  \bibinfo{volume}{92}, \bibinfo{pages}{13041--13047}.
+\newblock \DOIprefix\doi{10.1029/JC092iC12p13041}.
+%Type = Article
+\bibitem[{Animation()}]{animation}
+\bibinfo{author}{Animation}, .
+\newblock \bibinfo{title}{See supplementary attachment}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} .
+%Type = Article
+\bibitem[{Barker and Crow(1977)}]{Barker1977}
+\bibinfo{author}{Barker, S.J.}, \bibinfo{author}{Crow, S.C.},
+  \bibinfo{year}{1977}.
+\newblock \bibinfo{title}{The motion of two-dimensional vortex pairs in a
+  ground effect}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{82},
+  \bibinfo{pages}{659–671}.
+\newblock \DOIprefix\doi{10.1017/S0022112077000913}.
+%Type = Article
+\bibitem[{Blondeaux and De~Bernardinis(1983)}]{Blondeaux1983}
+\bibinfo{author}{Blondeaux, P.}, \bibinfo{author}{De~Bernardinis, B.},
+  \bibinfo{year}{1983}.
+\newblock \bibinfo{title}{On the formation of vortex pairs near orifices}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{135},
+  \bibinfo{pages}{111–122}.
+\newblock \DOIprefix\doi{10.1017/S0022112083002980}.
+%Type = Article
+\bibitem[{Campbell and Paterson(2011)}]{CampbellPaterson2011}
+\bibinfo{author}{Campbell, R.L.}, \bibinfo{author}{Paterson, E.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Fluid–structure interaction analysis of flexible
+  turbomachinery}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{27}, \bibinfo{pages}{1376--1391}.
+\newblock \DOIprefix\doi{10.1016/j.jfluidstructs.2011.08.010}.
+%Type = Article
+\bibitem[{Casadei and Halleux(1995)}]{CasadeiHalleux1995}
+\bibinfo{author}{Casadei, F.}, \bibinfo{author}{Halleux, J.P.},
+  \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{{An algorithm for permanent fluid-structure
+  interaction in explicit transient dynamics}}.
+\newblock \bibinfo{journal}{Computer Methods in Applied Mechanics and
+  Engineering} \bibinfo{volume}{128}, \bibinfo{pages}{231--289}.
+%Type = Article
+\bibitem[{Casadei et~al.(2001)Casadei, Halleux, Sala and
+  Chill{\`{e}}}]{Casadei2001}
+\bibinfo{author}{Casadei, F.}, \bibinfo{author}{Halleux, J.P.},
+  \bibinfo{author}{Sala, A.}, \bibinfo{author}{Chill{\`{e}}, F.},
+  \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Transient fluid-structure algorithms for large
+  industrial applications}.
+\newblock \bibinfo{journal}{Computer Methods in Applied Mechanics and
+  Engineering} \bibinfo{volume}{190}, \bibinfo{pages}{3081--3110}.
+\newblock \DOIprefix\doi{10.1016/S0045-7825(00)00383-2}.
+%Type = Article
+\bibitem[{Dabiri and Gharib(2005)}]{gharib2005}
+\bibinfo{author}{Dabiri, J.O.}, \bibinfo{author}{Gharib, M.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Starting flow through nozzles with temporally
+  variable exit diameter}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{538},
+  \bibinfo{pages}{111–136}.
+\newblock \DOIprefix\doi{10.1017/S002211200500515X}.
+%Type = Article
+\bibitem[{Das et~al.(2013)Das, Govardhan and Arakeri}]{arakeri_2013}
+\bibinfo{author}{Das, P.}, \bibinfo{author}{Govardhan, R.N.},
+  \bibinfo{author}{Arakeri, J.H.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Effect of hinged leaflets on vortex pair generation}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{730},
+  \bibinfo{pages}{626–658}.
+\newblock \DOIprefix\doi{10.1017/jfm.2013.356}.
+%Type = Article
+\bibitem[{Das et~al.(2018)Das, Govardhan and Arakeri}]{arakeri_2018}
+\bibinfo{author}{Das, P.}, \bibinfo{author}{Govardhan, R.N.},
+  \bibinfo{author}{Arakeri, J.H.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Unsteady two-dimensional jet with flexible flaps at
+  the channel exit}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{845},
+  \bibinfo{pages}{462–498}.
+\newblock \DOIprefix\doi{10.1017/jfm.2018.230}.
+%Type = Article
+\bibitem[{Domenichini(2011)}]{domenichini_2011}
+\bibinfo{author}{Domenichini, F.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Three-dimensional impulsive vortex formation from
+  slender orifices}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{666},
+  \bibinfo{pages}{506–520}.
+\newblock \DOIprefix\doi{10.1017/S0022112010004994}.
+%Type = Article
+\bibitem[{Gao and Yu(2016)}]{Gao_Yu_2016}
+\bibinfo{author}{Gao, L.}, \bibinfo{author}{Yu, S.C.M.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Formation of leading vortex pair in two-dimensional
+  starting jets}.
+\newblock \bibinfo{journal}{AIAA Journal} \bibinfo{volume}{54},
+  \bibinfo{pages}{1364--1369}.
+\newblock \URLprefix \url{https://doi.org/10.2514/1.J054485},
+  \DOIprefix\doi{10.2514/1.J054485}.
+%Type = Article
+\bibitem[{Gharib et~al.(1998)Gharib, Rambod and Shariff}]{Gharib1998}
+\bibinfo{author}{Gharib, M.}, \bibinfo{author}{Rambod, E.},
+  \bibinfo{author}{Shariff, K.}, \bibinfo{year}{1998}.
+\newblock \bibinfo{title}{A universal time scale for vortex ring formation}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{360},
+  \bibinfo{pages}{121–140}.
+\newblock \DOIprefix\doi{10.1017/S0022112097008410}.
+%Type = Article
+\bibitem[{Gl{\"{u}}ck et~al.(2001)Gl{\"{u}}ck, Breuer, Durst, Halfmann and
+  Rank}]{Gluck2001}
+\bibinfo{author}{Gl{\"{u}}ck, M.}, \bibinfo{author}{Breuer, M.},
+  \bibinfo{author}{Durst, F.}, \bibinfo{author}{Halfmann, A.},
+  \bibinfo{author}{Rank, E.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{{Computation of fluid-structure interaction on
+  lightweight structures}}.
+\newblock \bibinfo{journal}{Journal of Wind Engineering and Industrial
+  Aerodynamics} \bibinfo{volume}{89}, \bibinfo{pages}{1351--1368}.
+%Type = Article
+\bibitem[{Gopalakrishnan et~al.(2014)Gopalakrishnan, Pier and
+  Biesheuvel}]{gopalakrishnan_2014}
+\bibinfo{author}{Gopalakrishnan, S.}, \bibinfo{author}{Pier, B.},
+  \bibinfo{author}{Biesheuvel, A.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Global stability analysis of flow through a fusiform
+  aneurysm: steady flows}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{752},
+  \bibinfo{pages}{90–106}.
+\newblock \DOIprefix\doi{10.1017/jfm.2014.292}.
+%Type = Article
+\bibitem[{Kheradvar et~al.(2006)Kheradvar, Houle, Pedrizzetti and
+  et~al.}]{Kheradvar2010}
+\bibinfo{author}{Kheradvar, A.}, \bibinfo{author}{Houle, H.},
+  \bibinfo{author}{Pedrizzetti, G.}, \bibinfo{author}{et~al.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Echocardiographic particle image velocimetry: a novel
+  technique for quantification of left ventricular blood vorticity pattern.}
+\newblock \bibinfo{journal}{J Am Soc Echocardiogr} \bibinfo{volume}{23},
+  \bibinfo{pages}{86--94}.
+\newblock \DOIprefix\doi{10.1016/j.echo.2009.09.007}.
+%Type = Article
+\bibitem[{Krieg and Mohseni(2015)}]{mohseni_2015}
+\bibinfo{author}{Krieg, M.}, \bibinfo{author}{Mohseni, K.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Pressure and work analysis of unsteady, deformable,
+  axisymmetric, jet producing cavity bodies}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{769},
+  \bibinfo{pages}{337–368}.
+\newblock \DOIprefix\doi{10.1017/jfm.2015.120}.
+%Type = Article
+\bibitem[{Luchini and Tognaccini(2002)}]{luchini_tognaccini_2002}
+\bibinfo{author}{Luchini, P.}, \bibinfo{author}{Tognaccini, R.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{The start-up vortex issuing from a semi-infinite flat
+  plate}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{455},
+  \bibinfo{pages}{175–193}.
+\newblock \DOIprefix\doi{10.1017/S0022112001007340}.
+%Type = Article
+\bibitem[{Nguyen(2010)}]{Nguyen2010}
+\bibinfo{author}{Nguyen, V.T.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{{An arbitrary Lagrangian--Eulerian discontinuous
+  Galerkin method for simulations of flows over variable geometries}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{26}, \bibinfo{pages}{312--329}.
+%Type = Article
+\bibitem[{N{\o}st and B{\o}rve(2021)}]{Borve_2021}
+\bibinfo{author}{N{\o}st, O.A.}, \bibinfo{author}{B{\o}rve, E.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Flow separation, dipole formation, and water exchange
+  through tidal straits}.
+\newblock \bibinfo{journal}{Ocean Science} \bibinfo{volume}{17},
+  \bibinfo{pages}{1403--1420}.
+\newblock \URLprefix \url{https://os.copernicus.org/articles/17/1403/2021/},
+  \DOIprefix\doi{10.5194/os-17-1403-2021}.
+%Type = Article
+\bibitem[{O’Farrell and Dabiri(2012)}]{ofarrell_dabiri_2012}
+\bibinfo{author}{O’Farrell, C.}, \bibinfo{author}{Dabiri, J.O.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Perturbation response and pinch-off of vortex rings
+  and dipoles}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{704},
+  \bibinfo{pages}{280–300}.
+\newblock \DOIprefix\doi{10.1017/jfm.2012.238}.
+%Type = Article
+\bibitem[{Pedrizzetti(2010)}]{pedrizzetti_2010}
+\bibinfo{author}{Pedrizzetti, G.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Vortex formation out of two-dimensional orifices}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{655},
+  \bibinfo{pages}{198–216}.
+\newblock \DOIprefix\doi{10.1017/S0022112010000844}.
+%Type = Article
+\bibitem[{Provenzale(1999)}]{Provenzale1999}
+\bibinfo{author}{Provenzale, A.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Transport by coherent barotropic vortices}.
+\newblock \bibinfo{journal}{Annual Review of Fluid Mechanics}
+  \bibinfo{volume}{31}, \bibinfo{pages}{55--93}.
+%Type = Article
+\bibitem[{Pullin(1978)}]{Pullin1978}
+\bibinfo{author}{Pullin, D.I.}, \bibinfo{year}{1978}.
+\newblock \bibinfo{title}{The large-scale structure of unsteady self-similar
+  rolled-up vortex sheets}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{88},
+  \bibinfo{pages}{401–430}.
+\newblock \DOIprefix\doi{10.1017/S0022112078002189}.
+%Type = Article
+\bibitem[{Pullin and Perry(1980)}]{pullin_perry_1980}
+\bibinfo{author}{Pullin, D.I.}, \bibinfo{author}{Perry, A.E.},
+  \bibinfo{year}{1980}.
+\newblock \bibinfo{title}{Some flow visualization experiments on the starting
+  vortex}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{97},
+  \bibinfo{pages}{239–255}.
+\newblock \DOIprefix\doi{10.1017/S0022112080002546}.
+%Type = Article
+\bibitem[{Rott(1956)}]{Rott1956}
+\bibinfo{author}{Rott, N.}, \bibinfo{year}{1956}.
+\newblock \bibinfo{title}{Diffraction of a weak shock with vortex generation}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{1},
+  \bibinfo{pages}{111–128}.
+\newblock \DOIprefix\doi{10.1017/S0022112056000081}.
+%Type = Article
+\bibitem[{Salsac et~al.(2006)Salsac, Sparks, Chomaz and Lasheras}]{salsac_2006}
+\bibinfo{author}{Salsac, A.V.}, \bibinfo{author}{Sparks, S.R.},
+  \bibinfo{author}{Chomaz, J.M.}, \bibinfo{author}{Lasheras, J.C.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Evolution of the wall shear stresses during the
+  progressive enlargement of symmetric abdominal aortic aneurysms}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{560},
+  \bibinfo{pages}{19–51}.
+\newblock \DOIprefix\doi{10.1017/S002211200600036X}.
+%Type = Article
+\bibitem[{Shelley and Zhang(2011)}]{Shelley2011}
+\bibinfo{author}{Shelley, M.}, \bibinfo{author}{Zhang, J.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{{Flapping and bending bodies interacting with fluid
+  flows}}.
+\newblock \bibinfo{journal}{Annual Review of Fluid Mechanics}
+  \bibinfo{volume}{43}, \bibinfo{pages}{449--465}.
+%Type = Article
+\bibitem[{Singh and Lakkaraju(2019)}]{Self2019}
+\bibinfo{author}{Singh, G.}, \bibinfo{author}{Lakkaraju, R.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Wall-mounted flexible plates in a two-dimensional
+  channel trigger early flow instabilities}.
+\newblock \bibinfo{journal}{Phys. Rev. E} \bibinfo{volume}{100},
+  \bibinfo{pages}{023109}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevE.100.023109},
+  \DOIprefix\doi{10.1103/PhysRevE.100.023109}.
+%Type = Article
+\bibitem[{Slone et~al.(2002)Slone, Pericleous, Bailey and Cross}]{Slone2002}
+\bibinfo{author}{Slone, A.K.}, \bibinfo{author}{Pericleous, K.},
+  \bibinfo{author}{Bailey, C.}, \bibinfo{author}{Cross, M.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Dynamic fluid–structure interaction using finite
+  volume unstructured mesh procedures}.
+\newblock \bibinfo{journal}{Computers \& Structures} \bibinfo{volume}{80},
+  \bibinfo{pages}{371--390}.
+\newblock \DOIprefix\doi{10.1016/S0045-7949(01)00177-8}.
+%Type = Article
+\bibitem[{Weston et~al.(2002)Weston, Colin, Costello and Abbott}]{Costello2002}
+\bibinfo{author}{Weston, J.}, \bibinfo{author}{Colin, S.},
+  \bibinfo{author}{Costello, J.}, \bibinfo{author}{Abbott, E.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Morphology, swimming performance and propulsive mode
+  of six co-occurring hydromedusae.}
+\newblock \bibinfo{journal}{The Journal of experimental biology}
+  \bibinfo{volume}{374}, \bibinfo{pages}{427–437}.
+\newblock \DOIprefix\doi{10.1242/jeb.205.3.427}.
+
+\end{thebibliography}
