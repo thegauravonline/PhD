@@ -1,0 +1,811 @@
+% ****** Start of file aipsamp.tex ******
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL Revision_1.tex               Thu Dec 21 12:28:52 2023
+%DIF ADD Revision_2_oldabstract.tex   Sat Jan  6 22:43:45 2024
+%
+%   This file is part of the AIP files in the AIP distribution for REVTeX 4.
+%   Version 4.1 of REVTeX, October 2009
+%
+%   Copyright (c) 2009 American Institute of Physics.
+%
+%   See the AIP README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+% 
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex  aipsamp
+%  2)  bibtex aipsamp
+%  3)  latex  aipsamp
+%  4)  latex  aipsamp
+%
+% Use this file as a source of example code for your aip document.
+% Use the file aiptemplate.tex as a template for your document.
+\documentclass[%
+aip,
+% jmp,
+% bmf,
+% sd,
+% rsi,
+amsmath,amssymb,
+%preprint,%
+reprint,
+%author-year,%
+%author-numerical,%
+% Conference Proceedings
+]{revtex4-1}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{etoolbox}
+
+%-----ADDED LATER---
+\usepackage{mathtools,amssymb}
+\usepackage[abs]{overpic}
+\usepackage{xcolor,varwidth}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\usepackage{setspace} 
+%%%%Author definitions
+%\def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
+%\tsc{WGM}
+%\tsc{QE}
+%\tsc{EP}
+%\tsc{PMS}
+%\tsc{BEC}
+%\tsc{DE}
+%%%%
+\usepackage{lineno}
+
+%% Apr 2021: AIP requests that the corresponding 
+%% email to be moved after the affiliations
+\makeatletter
+\def\@email#1#2{%
+	\endgroup
+	\patchcmd{\titleblock@produce}
+	{\frontmatter@RRAPformat}
+	{\frontmatter@RRAPformat{\produce@RRAP{*#1\href{mailto:#2}{#2}}}\frontmatter@RRAPformat}
+	{}{}
+	
+}%
+\makeatother
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF LISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+	\preprint{AIP/123-QED}
+
+	\title[]{Flexible structures enhance fluid mixing in a channel flow}
+	\author{Gaurav Singh*}
+	% \altaffiliation[Also at]{Advanced Technology and Development Centre}%Lines break automatically or can be forced with \\
+	\affiliation{Advanced Technology and Development Centre, Indian Institute of Technology Kharagpur, West Bengal, India -721302}
+	\email{thegauravonline@gmail.com}
+
+	\author{Arahata Senapati}%
+	\affiliation{Advanced Technology and Development Centre, Indian Institute of Technology Kharagpur, West Bengal, India -721302}
+
+	\author{Abhishek Sharma}
+	\affiliation{Department of Chemical Engineering, Indian Institute of Technology Kharagpur, West Bengal, India -721302}
+	\author{Arnab Atta}
+	\affiliation{%
+		Department of Chemical Engineering, Indian Institute of Technology Kharagpur, West Bengal, India -721302}
+	\author{Rajaram Lakkaraju}
+	\DIFaddbegin 
+
+	\DIFaddend % \homepage{http://www.Second.institution.edu/~Charlie.Author.}
+	\affiliation{Turbulent Interfaces And Dispersion (TRIAD) Group, Department of Mechanical Engineering, Indian Institute of Technology Kharagpur, West Bengal, India -721302 }
+	%	  \email{rajaram.lv@gmail.com}
+
+	\date{\today}% It is always \today, today,
+	%  but any date may be explicitly specified
+
+	\begin{abstract}
+		%DIF > Early fluid mixing in channel flows without incurring much drop in the pressure head is desired in industrial applications. In this work, we show the enhanced mixing performance in a channel flow by using wall-mounted flexible plates as obstacles. Using fluid-structure-scalar interaction simulations, we investigate the oscillations of the flexible plates under the flow, which serve as a vortex generator and help increase the mixing. The channel flow consists of a scalar field with two distinct concentrations, which are initially separated across the channel and intermix over the time due to several scales of vortical structures. We have used the `Mixing Index' and mechanical `Head Loss' metrics along the channel length to assess the mixing quality when plates with different flexibility (characterized by the Cauchy number, $Ca$) are used. To investigate the net mixing performance in our setup based on the equivalent mixing and head loss in an empty channel case (with no obstacles) and deduced a comprehensive criteria called `co-efficient of performance'. Aggregating results across cases with various $Ca$ on this scale reveals that the use of flexible plates as obstacles instead of rigid plates in channel flow results in significant enhancement in fluid mixing. We have also investigated the effect of pulsatile fluid inlet (quantified by the Strouhal number, $St_f$) on mixing and found that lower inlet flow pulsation ($St_f<32$) adversely impacts mixing performance in our setup, recommending the use of a steady inlet flow. However, at high $St_f$ flow, i.e. the configuration with $Ca=0.06$ and $St_f=32$ offers the best mixing performance downstream in the channel which outperforms the steady inlet case marginally. The major conclusive takeaways from this study are that the plates with increased flexibility result in better mixing outcomes, and higher inlet pulsation can be employed to fine-tune the mixing performance further for enhancement.
+		\DIFaddbegin 
+
+		
+\DIFaddend Early fluid mixing in channel flows without incurring much drop in the pressure head is desired in industrial applications. \DIFdelbegin \DIFdel{In this work, we show the enhanced mixing performance in a channel flow by using }\DIFdelend \DIFaddbegin \DIFadd{This study explores }\DIFaddend wall-mounted flexible plates as obstacles \DIFaddbegin \DIFadd{to enhance mixing in channel flows}\DIFaddend . Using fluid-structure-scalar interaction simulations, we investigate the oscillations of the flexible plates under the flow, which serve as \DIFaddbegin \DIFadd{a }\DIFaddend vortex generator and help increase the mixing. The channel flow \DIFdelbegin \DIFdel{consists of }\DIFdelend \DIFaddbegin \DIFadd{involves }\DIFaddend a scalar field with \DIFdelbegin \DIFdel{two distinct concentrations , which are }\DIFdelend \DIFaddbegin \DIFadd{distinct concentrations }\DIFaddend initially separated across the channel\DIFdelbegin \DIFdel{and inter-mix over the time due to several scales of vortical structures }\DIFdelend \DIFaddbegin \DIFadd{, gradually intermixing due to vortical structures of varying scales}\DIFaddend . 
+We have used the `Mixing Index' and \DIFdelbegin \DIFdel{mechanical }\DIFdelend `Head Loss' metrics along the channel length to assess the mixing quality when plates with different flexibility (characterized by the Cauchy number, $Ca$) are used. \DIFaddbegin \DIFadd{The study introduces a comprehensive criterion, the 'coefficient of performance,' derived by comparing mixing and head loss in the presence and absence of obstacles. Aggregating results across various $Ca$ values reveal that flexible plates substantially improve fluid mixing compared to rigid plates. }\DIFaddend We have also investigated the effect of \DIFaddbegin \DIFadd{the }\DIFaddend pulsatile fluid inlet (quantified by \DIFdelbegin \DIFdel{the }\DIFdelend Strouhal number, $St_f$) \DIFdelbegin \DIFdel{on mixing. To investigate the efficacy of our setup based on the equivalent mixing and head loss in an empty channel case (with no obstacles) and deduced a comprehensive criteria called `co-efficient of performance'. On aggregating all our cases on this scale, we conclude that the case }\DIFdelend \DIFaddbegin \DIFadd{and found that lower inlet flow pulsation ($St_f<32$) adversely impacts mixing performance, recommending a steady inlet flow. However, at high $St_f$, specifically in the configuration }\DIFaddend with $Ca=0.06$ \DIFdelbegin \DIFdel{with }\DIFdelend \DIFaddbegin \DIFadd{and }\DIFaddend $St_f=32$\DIFdelbegin \DIFdel{offers }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend the best mixing performance \DIFdelbegin \DIFdel{downstream }\DIFdelend \DIFaddbegin \DIFadd{is achieved }\DIFaddend in the channel\DIFdelbegin \DIFdel{when estimated against the head loss as the cost. A major conclusive takeaway from this work is }\DIFdelend \DIFaddbegin \DIFadd{, which marginally outperforms the steady inlet case. The conclusive takeaways from this study are }\DIFaddend that the plates with increased flexibility result in better mixing\DIFdelbegin \DIFdel{outcomes, and using a pulsatile inlet can marginally enhance this performance in certain instances}\DIFdelend \DIFaddbegin \DIFadd{, and high inlet pulsation can be employed to fine-tune the mixing performance for further enhancement}\DIFaddend .
+	\end{abstract}
+	\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \maketitle
+
+	\setstretch{1.6}
+	\section{\DIFdelbegin \DIFdel{Inroduction}\DIFdelend \DIFaddbegin \DIFadd{Introduction}\DIFaddend }
+	\label{sec:headings}
+	Fluid mixing plays a crucial role as a pretreatment process in various industrial applications, including fuel emulsification in the petrochemical sector, the blending of raw materials in the food industry, and the mixing of different chemical components in chemical engineering domains \citep{Peterwitz2021,Wang2021, Nunez-Flores2020, Yeh2015}. To enhance the mixing of fluids in a channel flow, a commonly employed strategy involves modifying the structural and dimensional aspects of the mixing channels. For instance, \cite{Kim2011} introduced ribbed configurations of varying dimensions into micromixers, resulting in a significant 32.2\% reduction in the mixing path. \cite{Yang2015} developed a channel design inspired by the three-dimensional Tesla design, demonstrating a robust mixing index of $0.97$ (where $0$ meant no-mixing and $1$ meant perfect-mixing case) within a Reynolds number range of $0.1$ to $100$. \DIFdelbegin \DIFdel{Additional studies, such as those by \mbox{%DIFAUXCMD
+\cite{Chen2016} }\hspace{0pt}%DIFAUXCMD
+, }\DIFdelend \DIFaddbegin \DIFadd{Another study\mbox{%DIFAUXCMD
+\cite{Chen2016} }\hspace{0pt}%DIFAUXCMD
+}\DIFaddend illustrated that topological alterations in serpentine mixer channels could induce chaotic convective motions and molecular diffusion, consequently enhancing mixing outcomes. \DIFaddbegin \DIFadd{A recent work on flow transition}\DIFaddend \cite{Lobasov2018} provided valuable insights into the relationship between channel geometry and the critical Reynolds number that dictates the transition from stable symmetric to asymmetric flow regimes, with the latter resulting in significant improvements in mixing efficiency.
+
+	Apart from modifications in channel design, the incorporation of vortex generators within mixing channels has emerged as a key approach to enhancing the mixing process \citep{Ali2015,Khatavkar2007,Dadvand2019,Ali2016,Hsiao2014,Hosseini2021,Van_Loon2007,Eizadi2022}. A fundamental method within this approach involves the placement of shaped obstructions that act as catalysts for Kármán vortex streets and flow agitation, thereby facilitating enhanced mixing \citep{Abdelhamid2021,Yadav2021,Jing2022,Yu2017}. However, in the case of such vortex generators, the vortex mainly concentrates in the small wake zone behind the obstacle, resulting in weak mixing near the channel wall, especially when the channel dimension greatly exceeds the obstacle size \citep{Wang2020}. A promising solution to this limitation is to employ flexible structures as vortex generators \citep{Chen2020,Park2019,Saleh2019,Zhao2020,Pfister2020}. When fluid flows over flexible structures, it induces hydrodynamic and structural instabilities that manifest as various flow scales, self-induced structural oscillations, and acoustic noise \citep{Balachandar1999, Zhang2000, Mahadevan2004, Vandenberghe2004, Shelley2011}. These instabilities arise when there is an imbalance between destabilizing hydrodynamic forces and stabilizing elastic restoring forces \citep{Taneda1968, Zhang2000, Watanabe2002, Eloy2008, ZhuPeskin2002, Alben2008}. Typically, such instabilities lead to flow agitation in a channel, which is highly advantageous in applications like micro-total analysis \citep{Manz2002} and other applications such as heat exchangers or chemical reactors where enhanced mixing is crucial. In addition to these strategies, leveraging inertial effects in fluid mixing within a channel is also a popular method \citep{Carlo2009,Carlo2007} such as utilizing unsteady time-periodic flow methods or pulsatile flows \citep{Cai2017}, to take advantage of time-varying pressure, velocity, shear stresses. These strategies have also been applied for enhanced separation and mixing \citep{Ward2015}, microdroplet pinch-off and control \citep{Zhu2017, SENAPATI2019}, efficient on-chip process automation, and clog mitigation \citep{Mehendale2018}. \DIFaddbegin \DIFadd{Previous investigations on gravity-driven free surface flow are also worth attention, which deal with varied periodic corrugations as obstacles and understanding its effect on the flow stability, mixing and overall flow dynamics \mbox{%DIFAUXCMD
+\cite{Aksel2012,Aksel2018,Aksel2020, Kuehner2021,Kuehner2022}}\hspace{0pt}%DIFAUXCMD
+. The studies identify how such topologically varied geometries lead to transient phenomena and periodic travelling waves, which influence flow mixing. 
+	}\DIFaddend 
+
+	Drawing inspiration from previous research on microchannel flow \cite{Khatvakar2007, LambertRangel2010, Gleeson2005, Pathak2012, Kim2010, Stone2001, Stone2004}, our study involves two-dimensional numerical simulations to investigate the flow past two flexible plates, each occupying nearly half of the channel height and mounted on the opposite channel walls (as shown in \DIFdelbegin \DIFdel{Figure }\DIFdelend \DIFaddbegin \DIFadd{Fig. }\DIFaddend \ref{fig:schematic}). \DIFdelbegin \DIFdel{Our investigation focuses }\DIFdelend \DIFaddbegin \DIFadd{This geometrical configuration builds upon our earlier work \mbox{%DIFAUXCMD
+\cite{Self2019}}\hspace{0pt}%DIFAUXCMD
+, where we investigated the scaling of energy dissipation in a channel flow featuring flexible obstacles across different Reynolds numbers. The previous study highlighted that flexible plates contribute to early flow transition and identified an optimized geometric setup. This current work utilizes the established geometric configuration to explore mixing in the context of scalar concentrations and pulsatile flow inlet, introducing a novel aspect to our research. We focus }\DIFaddend on an approach to inertial \DIFdelbegin \DIFdel{micromixing }\DIFdelend \DIFaddbegin \DIFadd{mixing }\DIFaddend that capitalizes on the flow-induced bending and oscillations of the flexible plates to enhance mixing. \DIFdelbegin \DIFdel{We also examine the impact of wall-mounted plates on fluid mixing in a channel under both steady inlet conditions and pulsatile flow inlets at various periodicities. }\DIFdelend The objective is to determine whether flexible wall-mounted plates outperform rigid ones in the Reynolds number regime of $\mathcal{O}(100)$. This study aims to assess optimal fluid mixing and the associated head loss in the channel to identify the optimal configuration that offers the best mixing performance.
+
+	\begin{figure}
+		\begin{center}
+			\begin{minipage}[c]{1\linewidth}	
+				\begin{overpic}[width=1\linewidth]{Figures/Schematic-02.png}
+					\put(80,97){{\parbox{1\linewidth}{$\phi = 1$}}}	
+					\put(80,82){{\parbox{1\linewidth}{$\phi = 0$}}}	
+					\put(-56,-4){{\parbox{1\linewidth}{$Re/Re_s$}}}	
+					\put(-108,36){{\parbox{1\linewidth}{\rotatebox{90}{$y/h$}}}}	
+				\end{overpic}
+			\end{minipage}
+		\end{center}
+		\caption{Schematic of the flow past wall-mounted flexible plates. Flow enters from the inlet (left), passes through the gap between the two oppositely mounted plates, and leaves the channel from the outlet (right). The channel is pre-filled with a scalar concentration field $\phi$, which is distinctly separated as $\phi=1$ on top and $\phi=0$ in the bottom half of the channel as an initial condition. The inlet flow is considered \DIFdelbeginFL \DIFdelFL{as }\DIFdelendFL pulsatile, and the flow oscillation is shown in the bottom panel. Also, a zoom-in of the typical mesh grid used in the simulation is shown.}
+		\label{fig:schematic}
+	\end{figure}
+
+	
+	\section{Mathematical formulation and computational setup}\label{sec:maths}
+	A schematic of our model as a two-dimensional channel geometry of height $h$ and length $14h$ is shown in Fig. \ref{fig:schematic}. Two flexible plates, each of length $l $$\approx$$ 0.5h$ (0.425h) \DIFaddbegin \DIFadd{and thickness $b=0.05h$}\DIFaddend , are fixed on the opposite walls at a distance of $2h$ from the channel inlet. A gap of $0.15h$ is spared between the tip edges of the two plates to prevent frictional effects \DIFdelbegin \DIFdel{as suggested in }\DIFdelend \cite{ Zenit2015} and also to facilitate numerical ease. The chosen geometry is inspired by \DIFdelbegin \DIFdel{the works of }\DIFdelend \DIFaddbegin \DIFadd{some previous works }\DIFaddend \cite{ Zenit2014, Zenit2015, Zenit2016}, where flow past one flexible plate mounted on a channel wall is studied. Our model is a symmetric form of the same as it employs two wall-mounted plates. \DIFdelbegin \DIFdel{The thickness and width of each plate are $b = 0.05h$ and $w=0.125h$ (into the plane), respectively. A }\DIFdelend \DIFaddbegin \DIFadd{A fully developed }\DIFaddend flow enters from the left, interacts with the wall-mounted structures\DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend forms vortices into the downstream, generating intricate flow features\DIFdelbegin \DIFdel{. }\DIFdelend \DIFaddbegin \DIFadd{, and leaves from the right outlet at ambient pressure conditions. 
+	%DIF > The channel walls and plates' surface are considered as no-slip walls.
+	}
+
+	\DIFaddend We have carried out the fluid (incompressible and Newtonian) and structure (linear elastic) interaction simulations in this geometry\DIFdelbegin \DIFdel{using a partitioned approach, where the fluid and solid solvers are run separately, and their solutions are exchanged. The mathematical framework consists of the Navier-Stokes equations for the fluid and the equations of motion for the solid, which are formulated using the Arbitrary Lagrangian-Eulerian (ALE) framework~\mbox{%DIFAUXCMD
+\cite{Nguyen2010, Slone2002, CampbellPaterson2011}}\hspace{0pt}%DIFAUXCMD
+. 
+The }\DIFdelend \DIFaddbegin \DIFadd{, which features relative mesh motion to accommodate the structure motion in the }\DIFaddend governing equations for \DIFdelbegin \DIFdel{the mass and momentum conservation for the fluids and the structural deformation are, }\begin{displaymath}
+	\DIFdel{\nabla\cdot\left[(\mathbf{u}_f-\mathbf{u}_m)\right] = 0,
+	}\end{displaymath}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{both fluids and solids, i.e.
+	}
+
+	
+	\begin{equation}
+		\DIFadd{\nabla\cdot\left[(\mathbf{u}_f-\mathbf{u}_m)\right] = 0,
+	}\end{equation}\DIFaddend \vspace{-1.25cm}
+	\DIFdelbegin \begin{displaymath}
+	{\DIFdel{\partial\mathbf{u}_f\over\partial t}} \DIFdel{+ \left[(\mathbf{u}_f-\mathbf{u}_m) \cdot\mathbf{\nabla}\right]\mathbf{u}_f = -\nabla p+\frac{1}{Re}\nabla^2\mathbf{u}_f,
+}\end{displaymath}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{equation}
+		{\DIFadd{\partial\mathbf{u}_f\over\partial t}} \DIFadd{+ \left[(\mathbf{u}_f-\mathbf{u}_m) \cdot\mathbf{\nabla}\right]\mathbf{u}_f = -\nabla p+\frac{1}{Re}\nabla^2\mathbf{u}_f,
+	}\end{equation}\DIFaddend \vspace{-1.25cm}
+	\DIFdelbegin \begin{displaymath}
+	\DIFdel{\rho_s{\partial^2\mathbf{u}_s\over\partial t^2} = \mathbf{\nabla}\cdot\mathbf{\boldsymbol{\sigma}}_s
+}\end{displaymath}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{equation}
+		\DIFadd{\rho_s{\partial^2\mathbf{u}_s\over\partial t^2} = \mathbf{\nabla}\cdot\mathbf{\boldsymbol{\sigma}}_s
+	}\end{equation}\DIFaddend 
+	where $\mathbf{u}_f=(u_x,u_y)$ is the flow velocity, $\mathbf{u}_m$ is the mesh velocity, $p$ is the pressure, $\rho_s$ is the structure density, $\mathbf{u}_s$ is the structural displacement, $t$ is the time and $\sigma_s$ is the Cauchy stress tensor. The operator $\frac{\partial}{\partial t}$ represents the time derivative, and $\nabla\equiv\left(\frac{\partial}{\partial x},\frac{\partial}{\partial y}\right)$ is the spatial gradient, and $\nabla^2$ is the Laplacian operator. $Re$ is the Reynolds number i.e., $Re=Uh/\nu_f$ where $U$ is the mean inlet flow velocity, and $\nu_f$ is the fluid kinematic viscosity. The subscripts $_f$, $_s$, and $_m$ correspond to fluid, solid, and mesh, respectively. As the plates' deform under the fluid load, the strain rate is defined as $\boldsymbol{\varepsilon}_s={1\over2}[(\mathbf{\nabla}\mathbf{u}_s+\mathbf{\nabla}\mathbf{u}_s^T)+(\mathbf{\nabla}\mathbf{u}_s - \mathbf{\nabla}\mathbf{u}_s^T)]$. The stress and the strain tensors are related by $\boldsymbol{\sigma}_s=2\mu_s \boldsymbol{\varepsilon}_s+\lambda( \mathbf{\nabla}\cdot\mathbf{u}_s)\mathcal{I}$, where $\mu_s=\mathcal{E}/[2(1+\kappa)]$ and $\lambda=\kappa \mathcal{E}/[(1+\kappa)(1-2\kappa)]$ are the Lame's constants, $\kappa$ is the Poisson's ratio, $\mathcal{E}$ is the Young's modulus, and $\mathcal{I}$ is the identity tensor of rank two. The superscript $^T$ denotes the transpose of a given tensor. The flow stress information and the structural displacement are mutually dependent across the interface by no-slip boundary conditions, and the mesh velocity is considered equal to the structure velocity, i.e., $\mathbf{u}_m\equiv {\partial\mathbf{u}_s\over\partial t}$.
+
+	\begin{figure}
+		\begin{center}
+			\begin{minipage}[c]{0.5\linewidth}	
+				\centering	
+				\includegraphics[width=1\linewidth]{Figures/def_shape3.png}
+				\DIFaddbeginFL \includegraphics[width=1\linewidth]{Figures/tipFreq/tip_freq_S_3D2}
+			\DIFaddendFL \end{minipage}  
+			\begin{minipage}[c]{0.49\linewidth}	
+				\centering
+				\DIFdelbeginFL %DIFDELCMD < \begin{overpic}[width=1\linewidth]{Figures/gap_sig_4S_5S_5E_6D_6F.png} 
+%DIFDELCMD < 				\put(-180,95){{\parbox{1\linewidth}{$(a)$}}}	
+%DIFDELCMD < 				\put(-60,95){{\parbox{1\linewidth}{$(b)$}}}
+%DIFDELCMD < 			%%%
+\DIFdelendFL \DIFaddbeginFL \begin{overpic}[width=1\linewidth]{Figures/gap_sig_4S_5S_5E_6D_6F_with amp.png} 
+					\put(-180,95){{\parbox{1\linewidth}{\footnotesize$(a)$}}}	
+					\put(-60,95){{\parbox{1\linewidth}{\footnotesize$(b)$}}}
+					\put(-180,0){{\parbox{1\linewidth}{\footnotesize$(c)$}}}	
+					\put(-60,0){{\parbox{1\linewidth}{\footnotesize$(d)$}}}
+				\end{overpic}
+				\begin{overpic}[width=0.97\linewidth]{Figures/tipFreq/tip_freq_S2.png} 
+				\DIFaddendFL \end{overpic}
+			\end{minipage} 
+		\end{center}
+		\vspace{-10px}
+		\caption{\DIFdelbeginFL \DIFdelFL{(a) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$ }\DIFaddendFL Stroboscopic images showing the plate reconfiguration for the steady inlet case with $Ca = 0.04$. The thick blue line represents the steady-state reconfigured shape, and the red circles mark the plates' tip position. \DIFdelbeginFL \DIFdelFL{(b) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(b)$ }\DIFaddendFL Time history of gap-width between the tip of the two plates normalized by the channel height ($\delta_g/h$). \DIFaddbeginFL \DIFaddFL{$(c)$ Frequency spectra of the tip oscillations over time under steady inlet conditions for different $Ca$. $(d)$ Dominant frequency peaks identified from the spectra with $Ca$. }\DIFaddendFL }
+		\label{fig:del_g_vs_Ca_steady}
+	\end{figure}
+
+	
+	
+	
+	\DIFdelbegin \DIFdel{We have tracked an additional }\DIFdelend \DIFaddbegin \DIFadd{Additionally, we have tracked }\DIFaddend scalar concentration field $\phi$\DIFdelbegin \DIFdel{which }\DIFdelend \DIFaddbegin \DIFadd{, which ranges from 0 to 1, mimicking fluid at two distinct concentrations which begin to diffuse over time under the effect of inertial flow dynamics. The evolution of the concentration field }\DIFaddend is governed by an advection-diffusion equation\DIFdelbegin \DIFdel{as: 
+	}\begin{displaymath}
+	{\DIFdel{\partial\phi\over\partial t}}\DIFdel{+(\mathbf{u}_f-\mathbf{u}_m)\cdot\mathbf{\nabla}\mathbf{\phi} = \frac{1}{Re\cdot Sc}\nabla^2\mathbf{\phi},
+}\end{displaymath}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{: 
+	}\begin{equation}
+		{\DIFadd{\partial\phi\over\partial t}}\DIFadd{+(\mathbf{u}_f-\mathbf{u}_m)\cdot\mathbf{\nabla}\mathbf{\phi} = \frac{1}{Re\cdot Sc}\nabla^2\mathbf{\phi},
+	}\end{equation}\DIFaddend 
+	\DIFdelbegin \DIFdel{where }\DIFdelend \DIFaddbegin \DIFadd{Where }\DIFaddend $\phi$ is the scalar concentration field, which ranges from 0 to 1, and $Sc=\nu_f/D$ is the \DIFdelbegin \DIFdel{Schimdt }\DIFdelend \DIFaddbegin \DIFadd{Schmidt }\DIFaddend number, where $D$ is the mass diffusivity of the scalar concentration field. 
+	\DIFaddbegin 
+
+	\DIFaddend To solve the governing equations, we employed the finite volume method with a second-order accurate Euler-implicit scheme for temporal discretization, a second order vanLeer TVD scheme for spatial discretization of the convection and central differencing scheme with Gaussian integration to resolve diffusion terms. \DIFdelbegin \DIFdel{In our work, we ensure that the Courant number, based on the local velocity magnitude, the time-step of integration, and the length of the computational cell, remains below $0.2$}\DIFdelend \DIFaddbegin \DIFadd{We used a partitioned approach, where the fluid and solid solvers are run separately, and their solutions are exchanged. The mathematical framework for our fluid-structure interaction is formulated using the Arbitrary Lagrangian-Eulerian (ALE) method~\mbox{%DIFAUXCMD
+\cite{Nguyen2010, Slone2002}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . Our solution approach predicts the interface displacement and calculates the initial interface residual. This involves estimating the movement of the interface between the fluid and structure domains and determining the deviation from the initial position. Once the initial interface residual has been calculated, the algorithm initiates the fluid-structure interaction via a strongly coupled iterative procedure until the convergence criterion is met~\cite{Hrvoje2007, CampbellPaterson2011}. This iterative process is repeated under the Aitken dynamic relaxation approach until the desired tolerance level is achieved\DIFdelbegin \DIFdel{.
+}%DIFDELCMD < \begin{figure*}
+%DIFDELCMD < 	\begin{minipage}[c]{0.495\linewidth}
+%DIFDELCMD < 		\includegraphics[width=1\linewidth]{Figures/vort_S_2500.png}
+%DIFDELCMD < 	\end{minipage}
+%DIFDELCMD < 	\begin{minipage}[c]{0.495\linewidth}		
+%DIFDELCMD < 		\begin{overpic}[width=1\linewidth]{Figures/scalar_S_2500.png}
+%DIFDELCMD < 			\put(-365,163){{\parbox{1\linewidth}{$rigid$}}}	
+%DIFDELCMD < 			\put(-355,131){{\parbox{1\linewidth}{$Ca=0.001$}}}
+%DIFDELCMD < 			\put(-355,100){{\parbox{1\linewidth}{$Ca=0.01$}}}	
+%DIFDELCMD < 			\put(-355,69){{\parbox{1\linewidth}{$Ca=0.02$}}}	
+%DIFDELCMD < 			\put(-355,38){{\parbox{1\linewidth}{$Ca=0.04$}}}
+%DIFDELCMD < 			\put(-355,6){{\parbox{1\linewidth}{$Ca=0.06$}}}
+%DIFDELCMD < 			\put(-130,-20){\includegraphics[width=0.45\linewidth]{Figures/legend_vortex.png}}
+%DIFDELCMD < 			\put(110,-20){\includegraphics[width=0.45\linewidth]{Figures/legend_scalar.png}}
+%DIFDELCMD < 			\put(-255,-10){{\parbox{1\linewidth}{$-\infty$}}}	
+%DIFDELCMD < 			\put(-220,-10){{\parbox{1\linewidth}{$-5$}}}
+%DIFDELCMD < 			\put(-141,-10){{\parbox{1\linewidth}{$\infty$}}}
+%DIFDELCMD < 			\put(-200,-10){{\parbox{1\linewidth}{$\omega_z$}}}	
+%DIFDELCMD < 			\put(-180,-10){{\parbox{1\linewidth}{$5$}}}
+%DIFDELCMD < 			\put(-15,-10){{\parbox{1\linewidth}{$0$}}}
+%DIFDELCMD < 			\put(44,-10){{\parbox{1\linewidth}{$\phi$}}}
+%DIFDELCMD < 			\put(95,-10){{\parbox{1\linewidth}{$1$}}}
+%DIFDELCMD < 			\put(-125,190){{\parbox{1\linewidth}{$(b)$}}}
+%DIFDELCMD < 			\put(-390,190){{\parbox{1\linewidth}{$(a)$}}}
+%DIFDELCMD < 		\end{overpic}
+%DIFDELCMD < 	\end{minipage}  
+%DIFDELCMD < 	\vspace{0.5cm}
+%DIFDELCMD < 	%%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Instantaneous (a) iso-contour plots of spanwise vorticity $(\omega_z)$ and (b) scalar concentration field for steady inlet flow case. The top to bottom panels are cases with rigid and flexible wall mounted plates with $Ca=0.001-0.06$.}}
+	%DIFAUXCMD
+%DIFDELCMD < \label{fig:contour_Ca}
+%DIFDELCMD < \end{figure*}
+%DIFDELCMD < %%%
+\DIFdel{For our investigation on fluid mixing, we have varied Young's Modulus $\mathcal{E}$ such that the plates's flexibility can be varied as a parameter. This parameter, Cauchy Number, $Ca=\rho_f U^2 h^3 b/{\mathcal{E}I}$ is defined as the ratio between fluid inertial force to the structural restoring force of the plate where $\rho_f$ is the fluid density, and $I=bw^3/12$ is the area moment of inertia of the structure. Due to the significance of structural forces and following prior works on microchannels involving flexible structures \mbox{%DIFAUXCMD
+\citep{Vandenberghe2004}}\hspace{0pt}%DIFAUXCMD
+, we have varied $Ca$ in the range from $0$ to $0.06$, where $Ca=0$ is referred to as a rigid plate case. The time scale in this work is }\DIFdelend \DIFaddbegin \DIFadd{, ensuring that the Courant number, }\DIFaddend based on the \DIFdelbegin \DIFdel{fluid convection measure as $\tau \approx h/U$. The ratio of fluid density to structure density, in our case, is $\beta$ $=\rho_s b / \rho_f l = 5$. A pulsatile flow enters from the left (see Fig. \ref{fig:schematic}) composed of $(a)$ a steady flow of Reynolds number, $Re_{s} = 500$, based on channel height $h$ and mean free-stream inlet velocity $U$ and $(b)$ an oscillatory flow such that the inlet Reynolds Number, ${Re}(t)$ pulses with a sinusoidal functional shape of the waveform:
+}\begin{displaymath}
+	\DIFdel{\centering
+	}{\DIFdel{Re}}\DIFdel{(t) = }{\DIFdel{Re_s}}\DIFdel{\{1+0.5sin(2\pi St_f \tau)\}
+	%DIFDELCMD < \label{eqn:pulse}%%%
+}\end{displaymath}%DIFAUXCMD
+\DIFdel{where $St_f (= f_f h/U)$ is the Strouhal number for an applied flow inlet frequency $f_f$. We have varied $St_f$ in the range $0$ to $32$, where $St_f=0$ represents a steady inlet condition. Such single-harmonic pulse waveform is previously used in many other experimental and numerical works about unsteady flows in channel and tube constrictions \mbox{%DIFAUXCMD
+\cite{Giddens1984, hummel1989, carmo2019}}\hspace{0pt}%DIFAUXCMD
+. The inlet flow profile across the channel is set to mimic a fully developed parabolic nature as in Poiseuille channel flow and is expressed as $u_f(y)=6U\left(\frac{y}{h}\right)\left(1-\frac{y}{h}\right)$. 
+	}\DIFdelend \DIFaddbegin \DIFadd{local velocity magnitude, the time-step of integration, and the length of the computational cell, remains below $0.2$. 
+	}
+
+	\DIFaddend The channel domain comprises a grid of $42480$ hexahedral cells as $360$ cells along the channel length and $118$ cells along its height. The thin plate structures are also computationally discretized into a hexahedral grid as $12$ cells along the thickness and $50$ cells along the plate height for each of the two plates. A zoom-in of the domain mesh grid at a section near the plates is shown in \DIFdelbegin \DIFdel{Figure }\DIFdelend \DIFaddbegin \DIFadd{Fig. }\DIFaddend \ref{fig:schematic}. To establish the most appropriate grid size for our simulations, we ascertain grid convergence analysis. We conducted a base simulation with $Re_s=500$ and steady flow conditions past the flexible plates with $Ca=0.04$ and $Sc=1$. In the simulation setup, the resolution in each direction was increased by a scale factor of $1.5$, leading us to utilize a total grid size of $480 \times 177$ cells, thus an increase in the overall number of points by approximately $3$ times. Consequently, we noted that head loss and the mixing index differed insignificantly with less than a variance rate amounting to no more than $1\%$, while the mixing index only varied very slightly with less than 1\% variation in results. \DIFdelbegin %DIFDELCMD < \begin{figure*}
+%DIFDELCMD < 	\begin{minipage}[c]{0.42\linewidth}
+%DIFDELCMD < 		\includegraphics[trim={1.1cm 0 0 0},clip,width=1\linewidth]{Figures/MI_S_8h_ico.png}
+%DIFDELCMD < 	\end{minipage}
+%DIFDELCMD < 	\begin{minipage}[c]{0.41\linewidth}		
+%DIFDELCMD < 		\begin{overpic}[trim={1.1cm 0 0 0},clip,width=1\linewidth]{Figures/HL_S_ico.png}
+%DIFDELCMD < 			\put(-320,170){{\parbox{1\linewidth}{$(a)$}}}	
+%DIFDELCMD < 			\put(-95, 170){{\parbox{1\linewidth}{$(b)$}}}
+%DIFDELCMD < 		\end{overpic}
+%DIFDELCMD < 	\end{minipage}  
+%DIFDELCMD < 	%%%
+%DIF < 	\vspace{0.1cm}
+	%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Time-averaged (a) mixing index $MI$ and (b) head loss $HL$ along the channel length in the downstream for steady inlet flow. The grey rectangle marks the location of plates in the channel.}}
+	%DIFAUXCMD
+%DIFDELCMD < \label{fig:MI_Ca}
+%DIFDELCMD < \end{figure*}
+%DIFDELCMD < %%%
+\DIFdelend Upon analyzing the results, we found that the flow and structural dynamics are well resolved at the present grid size. The grid refinement test and validation study on a similar simulation setup has been carried out extensively and exhibited in our prior work\cite{Self2019}. 
+	\DIFdelbegin \DIFdel{The velocity boundary conditions applied to the channel walls and flexible structuresurfaces are no-slip and impermeable. The velocity gradients at the channel outlet boundary (on the right side) are set to zero, whereas the inlet velocity is set to pulsatile inflow, as described previously. Additionally, the interface velocity of the solid structure and the flow are the same. The pressure boundary conditions are set to zero gradients at channel walls, channel inlet and the fluid-solid interface and the channel outlet has ambient pressure ($zero$) conditions as a reference}\DIFdelend \DIFaddbegin 
+
+	%DIF > The velocity boundary conditions applied to the channel walls and flexible structure surfaces are no-slip and impermeable. The velocity gradients at the channel outlet boundary (on the right side) are set to zero, whereas the inlet velocity is set to pulsatile inflow, as described previously. Additionally, the interface velocity of the solid structure and the flow are the same. The pressure boundary conditions are set to zero gradients at channel walls, channel inlet and the fluid-solid interface, and the channel outlet has ambient pressure ($zero$) conditions as a reference. We have focussed our study at the streamwise location $x=8h$ so there would be no boundary reflections, and the properties cushion out before leaving the channel.
+
+	
+	\begin{figure*}
+		\begin{minipage}[c]{0.495\linewidth}
+			%DIF > 		\includegraphics[width=1\linewidth]{Figures/vort_S_2500_2.png}
+			\includegraphics[width=1\linewidth,height=6.75cm]{Figures/vort_S_3100_trim10.png}
+		\end{minipage}
+		\begin{minipage}[c]{0.495\linewidth}		
+			%DIF > 		\begin{overpic}[width=1\linewidth]{Figures/scalar_S_2500.png}
+				\begin{overpic}[width=1\linewidth,height=6.75cm]{Figures/Scalar_S_3100_trim10.png}
+					\put(-365,164){{\parbox{1\linewidth}{$rigid$}}}	
+					\put(-355,132){{\parbox{1\linewidth}{$Ca=0.001$}}}
+					\put(-355,101){{\parbox{1\linewidth}{$Ca=0.01$}}}	
+					\put(-355,69){{\parbox{1\linewidth}{$Ca=0.02$}}}	
+					\put(-355,38){{\parbox{1\linewidth}{$Ca=0.04$}}}
+					\put(-355,7){{\parbox{1\linewidth}{$Ca=0.06$}}}
+					\put(-380,-5){{\parbox{1\linewidth}{\footnotesize$0h$}}}
+					\put(-330,-5){{\parbox{1\linewidth}{\footnotesize$2h$}}}
+					\put(-280,-5){{\parbox{1\linewidth}{\footnotesize$4h$}}}
+					\put(-230,-5){{\parbox{1\linewidth}{\footnotesize$6h$}}}
+					\put(-180,-5){{\parbox{1\linewidth}{\footnotesize$8h$}}}
+					\put(-135,-5){{\parbox{1\linewidth}{\footnotesize$10h$}}}	
+					\put(-130,-28){\includegraphics[width=0.45\linewidth]{Figures/legend_vortex.png}}
+					\put(130,-28){\includegraphics[width=0.45\linewidth]{Figures/legend_scalar.png}}
+					\put(-255,-17){{\parbox{1\linewidth}{$-\infty$}}}	
+					\put(-220,-17){{\parbox{1\linewidth}{$-5$}}}
+					\put(-141,-17){{\parbox{1\linewidth}{$\infty$}}}
+					\put(-200,-17){{\parbox{1\linewidth}{$\omega_z$}}}	
+					\put(-180,-17){{\parbox{1\linewidth}{$5$}}}
+					\put(8,-15){{\parbox{1\linewidth}{$0$}}}
+					\put(60,-15){{\parbox{1\linewidth}{$\phi$}}}
+					\put(115,-15){{\parbox{1\linewidth}{$1$}}}
+					\put(-125,193){{\parbox{1\linewidth}{$(b)$}}}
+					\put(-390,193){{\parbox{1\linewidth}{$(a)$}}}			
+					\put(125,-5){{\parbox{1\linewidth}{\footnotesize$10h$}}}
+					\put(75,-5){{\parbox{1\linewidth}{\footnotesize$8h$}}}
+					\put(25,-5){{\parbox{1\linewidth}{\footnotesize$6h$}}}
+					\put(-25,-5){{\parbox{1\linewidth}{\footnotesize$4h$}}}
+					\put(-75,-5){{\parbox{1\linewidth}{\footnotesize$2h$}}}
+					\put(-123,-5){{\parbox{1\linewidth}{\footnotesize$0h$}}}
+				\end{overpic}
+			\end{minipage}  
+			\vspace{0.75cm}
+			\caption{\DIFaddFL{Instantaneous $(a)$ iso-contour plots of spanwise vorticity $(\omega_z)$ and $(b)$ scalar concentration field for steady inlet flow case. The top-to-bottom panels are cases with rigid and flexible wall-mounted plates with $Ca=0.001-0.06$.}}
+			\label{fig:contour_Ca}
+		\end{figure*}
+
+		\DIFadd{For our investigation on fluid mixing, we have varied Young's Modulus $(\mathcal{E})$ such that the plates' flexibility can be varied as a parameter. This parameter, Cauchy Number, $Ca=\rho_f U^2 h^3 b/{\mathcal{E}I}$ is defined as the ratio between fluid inertial force to the structural restoring force of the plate where $\rho_f$ is the fluid density, and $I=bw^3/12$ is the area moment of inertia of the structure. Due to the significance of structural forces and following prior works on microchannels involving flexible structures \mbox{%DIFAUXCMD
+\citep{Vandenberghe2004}}\hspace{0pt}%DIFAUXCMD
+, we have varied $Ca$ in the range from $0$ to $0.06$, where $Ca=0$ is referred to as a rigid plate case. The time scale in this work is based on the fluid convection measure as $\tau \approx h/U$. The ratio of fluid density to structure density, in our case, is $\beta$ $=\rho_s b / \rho_f l = 5$. 
+		%DIF > The inlet flow profile across the channel is set to mimic a fully developed parabolic nature as in Poiseuille channel flow and is expressed as $u_f|_{(x=0)}=6U\left(\frac{y}{h}\right)\left(1-\frac{y}{h}\right)$.
+		}
+
+		\DIFadd{We have also extended this investigation for pulsatile flow inlet from the left (see Fig. \ref{fig:schematic}) composed of $(a)$ a steady flow of Reynolds number, $Re_{s} = 500$, based on channel height $h$ and mean free-stream inlet velocity $U$ and $(b)$ an oscillatory flow such that the inlet Reynolds Number, ${Re}(t)$ pulses with a sinusoidal functional shape of the waveform:
+		}\begin{equation}
+			\DIFadd{\centering
+			}{\DIFadd{Re}}\DIFadd{(t) = }{\DIFadd{Re_s}}\DIFadd{\{1+0.5sin(2\pi St_f \tau)\}
+			\label{eqn:pulse}
+		}\end{equation}
+		\DIFadd{where $St_f (= f_f h/U)$ is the Strouhal number for an applied flow inlet frequency $f_f$}\DIFaddend . We have \DIFdelbegin \DIFdel{focussed our study at the streamwise location $x=8h$ such that there would be no boundary reflections and the properties cushion out before leaving the channel .
+}\DIFdelend \DIFaddbegin \DIFadd{varied $St_f$ in the range $0$ to $32$ as an independent parameter, where $St_f=0$ represents a steady inlet condition. Such single-harmonic pulse waveform is previously used in many other experimental and numerical works about unsteady flows in channel and tube constrictions \mbox{%DIFAUXCMD
+\cite{Giddens1984, hummel1989, carmo2019}}\hspace{0pt}%DIFAUXCMD
+. 
+		}\begin{figure*}
+			\begin{minipage}[c]{0.42\linewidth}
+				\includegraphics[trim={1.1cm 0 0 0},clip,width=1\linewidth]{Figures/MI_S_8h_ico.png}
+			\end{minipage}
+			\begin{minipage}[c]{0.41\linewidth}		
+				\begin{overpic}[trim={1.1cm 0 0 0},clip,width=1\linewidth]{Figures/HL_S_ico.png}
+					\put(-320,170){{\parbox{1\linewidth}{$(a)$}}}	
+					\put(-95, 170){{\parbox{1\linewidth}{$(b)$}}}
+				\end{overpic}
+			\end{minipage}  
+			%DIF > 	\vspace{0.1cm}
+			\caption{\DIFaddFL{Time-averaged $(a)$ mixing index $MI$ and $(b)$ head loss $HL$ along the channel length in the downstream for steady inlet flow. The grey rectangle marks the location of plates in the channel.}}
+			\label{fig:MI_Ca}
+		\end{figure*}
+		\DIFaddend 
+
+		
+		\section{Results}
+		We have studied the mixing performance in a channel flow with passively oscillating flexible plates under impact the flow. Such plates under the action of an incoming flow may deform \DIFdelbegin \DIFdel{as }\DIFdelend \DIFaddbegin \DIFadd{in }\DIFaddend lodging mode, regular VIV mode (vortex-induced vibration or flutter) or static reconfiguration mode \DIFdelbegin \DIFdel{as suggested by }\DIFdelend \cite{Zhang2020}. Based on the parameter range used, our cases lie in the phase space that exhibits static reconfiguration of the plates as shown in \cite{Zhang2020} where the plates comply with the flow, the projected area perpendicular to the flow reduces, and negligible flutter can be observed at \DIFaddbegin \DIFadd{a }\DIFaddend later time (steady-state). In \DIFdelbegin \DIFdel{Figure \ref{fig:del_g_vs_Ca_steady}(a)}\DIFdelend \DIFaddbegin \DIFadd{Fig. \ref{fig:del_g_vs_Ca_steady}$(a)$}\DIFaddend , stroboscopic visualization of the plates for steady inlet flow and $Ca=0.04$ are shown. The plate bends maximum at the tip in the streamwise direction, represented as the red circle in the figure. After the initial transients die\DIFdelbegin \DIFdel{down}\DIFdelend , the plates' tips flutter at very small amplitudes about a mean state (shown as the thick blue line). The gap opened between the plates creates spatial variation in the flow. 
+		\DIFdelbegin \DIFdel{In Figure \ref{fig:del_g_vs_Ca_steady}(b), the amplitude of gap between the two plates' tips, $(\delta_g)$ is shown with the }\DIFdelend \DIFaddbegin 
+
+		\DIFadd{In Fig. \ref{fig:del_g_vs_Ca_steady}$(b)$, the variation of the gap $\delta_g$ is shown over }\DIFaddend time for different cases for reference\DIFaddbegin \DIFadd{, which also indicate the tip oscillations of the plate}\DIFaddend . We can observe the effect of tip oscillations in different cases as varying gap amplitude due to pulsatile inlet conditions. We can \DIFdelbegin \DIFdel{also }\DIFdelend note the higher bending state for increased $Ca$ cases\DIFdelbegin \DIFdel{.
+}\DIFdelend \DIFaddbegin \DIFadd{, and the initial transients of the plates' oscillation die down in low $Ca$ steady inlet cases, whereas tiny tip oscillations are observed at higher $Ca$ cases. The inset figure shows the increase in the mean gap amplitude ($\overline{\delta_g}$) with $Ca$ for steady inlet case in the steady state regime. However, in the case of pulsatile inlet conditions, we see that the gap oscillations or tip flutter amplitude undergo a periodic flutter regime in line with the inlet conditions but exhibit lower mean bending due to the intermittent inertia from the inlet. Based on the tip oscillations of the flexible plates subjected to fluid flow over time, we investigated the frequency characteristics of these tip oscillations in the steady-state regime and computed a Fast Fourier Transform (FFT) of the time-domain data. Fig. \ref{fig:del_g_vs_Ca_steady}$c$ visually represents the frequency spectra for plates with varying values of the Cauchy number ($Ca$). To facilitate a more generalized comparison, we non-dimensionalized the tip oscillation frequency ($f_{tip}$) by expressing it as the tip Strouhal number ($St_{tip} = \frac{f_{tip}h}{U}$).
+		In Fig. \ref{fig:del_g_vs_Ca_steady}$d$, we identify and present the $St_{tip}$ associated with the maximum energy content ($E$). These dominant peak frequencies denote the primary oscillation modes exerted by the flexible plates under the influence of the fluid flow. Notably, our observations reveal that the plates exhibit the highest frequency of tip fluttering in the case with $Ca=0.03$. Beyond this critical value, the tip flutter frequency experiences a reduction. This intricate interplay of fluttering modes in the plates contributes to the generation of multiple vortices, fostering the development of a complex flow field. This complexity stands in contrast to the rigid plate case, highlighting the significant influence of plate flexibility on the fluid-structure interaction dynamics.
+		}\DIFaddend 
+
+		\DIFdelbegin \DIFdel{In Figure \ref{fig:contour_Ca}(a)}\DIFdelend \DIFaddbegin \DIFadd{In Fig. \ref{fig:contour_Ca}$(a)$}\DIFaddend , instantaneous iso-contours of flow vorticity (into the plane, $\omega_z=\nabla\times u_f$ ) for rigid plate and flexible plate cases are shown. The \DIFdelbegin \DIFdel{flow }\DIFdelend \DIFaddbegin \DIFadd{steady flow, as it }\DIFaddend accelerates through the gap\DIFdelbegin \DIFdel{between the platesto form }\DIFdelend \DIFaddbegin \DIFadd{, forms a shear layer off each plates' tip into the downstream and forms }\DIFaddend a jet-like flow. In rigid plate cases, this jet-like flow \DIFdelbegin \DIFdel{is observed for long lengths }\DIFdelend \DIFaddbegin \DIFadd{extends longer into the downstream up to the length, $x\approx5h$, }\DIFaddend beyond which the flow instabilities \DIFdelbegin \DIFdel{take place}\DIFdelend \DIFaddbegin \DIFadd{occur}\DIFaddend . However, this jet length breaks up earlier \DIFaddbegin \DIFadd{($x\approx3h$) }\DIFaddend in flexible plate case due to the plates' tiny tip-oscillations \DIFdelbegin \DIFdel{, which act as a source for perturbation into this jet-like flow and generate }\DIFdelend \DIFaddbegin \DIFadd{under their corresponding dominant frequency modes, which cause periodic vortex shedding. In the steady state regime, this periodic shedding causes the shorter jet length to oscillate across the channel, generating }\DIFaddend oppositely rotating vortex structures which spread out in the channel downstream in alternating fashion. These vortex structures, under the effect of inlet inertia, get advected in the downstream direction and lose momentum by diffusion into the flow, which in turn act as \DIFdelbegin \DIFdel{a }\DIFdelend `stirring effect' and induce fluid mixing.
+		\begin{figure*}
+			\begin{minipage}[c]{0.495\linewidth}
+				\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=1\linewidth]{Figures/vort_4_2500.png}
+%DIFDELCMD < 	%%%
+\DIFdelendFL %DIF > 		\includegraphics[width=1\linewidth]{Figures/vort_4_2500.png}
+				\DIFaddbeginFL \includegraphics[width=1\linewidth,height=7.49cm]{Figures/Vort_5_4000_trim10.png}
+			\DIFaddendFL \end{minipage}
+			\begin{minipage}[c]{0.495\linewidth}		
+				\DIFdelbeginFL %DIFDELCMD < \begin{overpic}[width=1\linewidth]{Figures/scalar_4_2500.png}
+%DIFDELCMD < 			\put(-362,190){{\parbox{1\linewidth}{$St_f=1$}}}	
+%DIFDELCMD < 			\put(-362,159){{\parbox{1\linewidth}{$St_f=2$}}}
+%DIFDELCMD < 			%%%
+\DIFdelendFL %DIF > 		\begin{overpic}[width=1\linewidth]{Figures/scalar_4_2500.png}
+					\DIFaddbeginFL \begin{overpic}[width=1\linewidth,height=7.5cm]{Figures/Scalar_5_4000_trim10}
+						\put(-362,188){{\parbox{1\linewidth}{$St_f=1$}}}	
+						\put(-362,158){{\parbox{1\linewidth}{$St_f=2$}}}
+						\DIFaddendFL \put(-362,128){{\parbox{1\linewidth}{$St_f=4$}}}	
+						\put(-362,98){{\parbox{1\linewidth}{$St_f=8$}}}	
+
+						\DIFdelbeginFL %DIFDELCMD < \put(-360,66){{\parbox{1\linewidth}{$St_f=16$}}}
+%DIFDELCMD < 			\put(-360,35){{\parbox{1\linewidth}{$St_f=32$}}}
+%DIFDELCMD < 			\put(-360,3){{\parbox{1\linewidth}{$steady$}}}
+%DIFDELCMD < 			%%%
+\DIFdelendFL \DIFaddbeginFL \put(-360,67){{\parbox{1\linewidth}{$St_f=16$}}}
+						\put(-360,37){{\parbox{1\linewidth}{$St_f=32$}}}
+						\put(-360,6){{\parbox{1\linewidth}{$steady$}}}
+						\DIFaddendFL %	\put(-60,105){{\parbox{1\linewidth}{\rotatebox{87}{$transiton$}}}}
+						\DIFdelbeginFL %DIFDELCMD < \put(-130,-20){\includegraphics[width=0.45\linewidth]{Figures/legend_vortex.png}}
+%DIFDELCMD < 			\put(125,-20){\includegraphics[width=0.45\linewidth]{Figures/legend_scalar.png}}
+%DIFDELCMD < 			\put(-252,-10){{\parbox{1\linewidth}{$-\infty$}}}	
+%DIFDELCMD < 			\put(-220,-10){{\parbox{1\linewidth}{$-5$}}}
+%DIFDELCMD < 			\put(-200,-10){{\parbox{1\linewidth}{$\omega_z$}}}
+%DIFDELCMD < 			\put(-145,-10){{\parbox{1\linewidth}{$\infty$}}}	
+%DIFDELCMD < 			\put(-180,-10){{\parbox{1\linewidth}{$5$}}}
+%DIFDELCMD < 			
+
+%DIFDELCMD < 			\put(1,-10){{\parbox{1\linewidth}{$0$}}}
+%DIFDELCMD < 			\put(53,-10){{\parbox{1\linewidth}{$\phi$}}}
+%DIFDELCMD < 			\put(110,-10){{\parbox{1\linewidth}{$1$}}}
+%DIFDELCMD < 			
+
+%DIFDELCMD < 			%%%
+\DIFdelendFL \put(-125,217){{\parbox{1\linewidth}{$(b)$}}}
+						\put(-385,217){{\parbox{1\linewidth}{$(a)$}}}
+						\DIFaddbeginFL 
+
+						
+						\put(-380,-5){{\parbox{1\linewidth}{\footnotesize$0h$}}}
+						\put(-330,-5){{\parbox{1\linewidth}{\footnotesize$2h$}}}
+						\put(-280,-5){{\parbox{1\linewidth}{\footnotesize$4h$}}}
+						\put(-230,-5){{\parbox{1\linewidth}{\footnotesize$6h$}}}
+						\put(-180,-5){{\parbox{1\linewidth}{\footnotesize$8h$}}}
+						\put(-135,-5){{\parbox{1\linewidth}{\footnotesize$10h$}}}	
+						\put(-130,-26){\includegraphics[width=0.45\linewidth]{Figures/legend_vortex.png}}
+						\put(130,-26){\includegraphics[width=0.45\linewidth]{Figures/legend_scalar.png}}
+						\put(-255,-15){{\parbox{1\linewidth}{$-\infty$}}}	
+						\put(-220,-15){{\parbox{1\linewidth}{$-3$}}}
+						\put(-141,-15){{\parbox{1\linewidth}{$\infty$}}}
+						\put(-200,-15){{\parbox{1\linewidth}{$\omega_z$}}}	
+						\put(-180,-15){{\parbox{1\linewidth}{$3$}}}
+						\put(8,-15){{\parbox{1\linewidth}{$0$}}}
+						\put(60,-15){{\parbox{1\linewidth}{$\phi$}}}
+						\put(115,-15){{\parbox{1\linewidth}{$1$}}}			
+						\put(125,-5){{\parbox{1\linewidth}{\footnotesize$10h$}}}
+						\put(75,-5){{\parbox{1\linewidth}{\footnotesize$8h$}}}
+						\put(25,-5){{\parbox{1\linewidth}{\footnotesize$6h$}}}
+						\put(-25,-5){{\parbox{1\linewidth}{\footnotesize$4h$}}}
+						\put(-75,-5){{\parbox{1\linewidth}{\footnotesize$2h$}}}
+						\put(-123,-5){{\parbox{1\linewidth}{\footnotesize$0h$}}}
+					\DIFaddendFL \end{overpic}
+				\end{minipage}
+				\DIFdelbeginFL %DIFDELCMD < \vspace{0.6cm}
+%DIFDELCMD < 	%%%
+\DIFdelendFL \DIFaddbeginFL \vspace{0.75cm}
+				\DIFaddendFL \caption{Instantaneous contour plots of \DIFdelbeginFL \DIFdelFL{(a) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$ }\DIFaddendFL spanwise vorticity and \DIFdelbeginFL \DIFdelFL{(b) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(b)$ }\DIFaddendFL scalar concentration field for \DIFdelbeginFL \DIFdelFL{$Ca=0.02$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$Ca=0.04$ }\DIFaddendFL case. The \DIFdelbeginFL \DIFdelFL{top to bottom }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{top-to-bottom }\DIFaddendFL panels are cases with pulsatile inlet at \DIFdelbeginFL \DIFdelFL{$St_f=1,2,4,8,16,32 \, and$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$St_f=1,2,4,8,16,32$ and }\DIFaddendFL steady flow inlet.}
+				\label{fig:contour_St}
+			\end{figure*}
+			In \DIFdelbegin \DIFdel{Figure \ref{fig:contour_Ca}(b)}\DIFdelend \DIFaddbegin \DIFadd{Fig.~\ref{fig:contour_Ca}$(b)$}\DIFaddend , the scalar concentration field is shown\DIFdelbegin \DIFdel{which, initially}\DIFdelend , \DIFaddbegin \DIFadd{which initially }\DIFaddend is distinctly separated by an interface about the midline along the channel length, but as the flow progresses, the scalar field diffuses into one another across the interface layer. In the rigid plate case, the scalar fields remain unmixed until jet-like flow oscillates at a later downstream location when the vortex structures begin to detach. The vortex structures agitate the flow, and the layer separating the two scalars stretches in length. The larger `interface length' causes the diffusion process to act more efficiently and thereby increases the mixing process. With the increase in plate flexibility ($Ca=0.001-0.06$), the jet-like flow breakups early in the downstream larger count of advecting vortex structures can be observed. The aforementioned `stirring effect' caused by these vortex rolls due to increased interface layers induces the mixing of the scalars towards homogeneity. The alternate rolling of clockwise and counter-clockwise vortices entrain scalar alternately from the top \DIFdelbegin \DIFdel{wall side }\DIFdelend and bottom wall \DIFdelbegin \DIFdel{side}\DIFdelend \DIFaddbegin \DIFadd{sides}\DIFaddend . This entrainment from both sides evolves into \DIFdelbegin \DIFdel{localised }\DIFdelend \DIFaddbegin \DIFadd{localized }\DIFaddend mixing zones, which advect under the effect of inertia. Such local mixing zones cause agitation in the flow and hence accelerate the diffusive mixing.
+			\begin{figure*}
+				\begin{minipage}[c]{0.44\linewidth}
+					\includegraphics[width=1\linewidth,trim={1cm 0 0 0},clip]{Figures/MI_5_ico.png}
+				\end{minipage}
+				\begin{minipage}[c]{0.43\linewidth}		
+					\begin{overpic}[width=1\linewidth,trim={1cm 0 0 0},clip]{Figures/HL_5_ico.png}
+						\put(-320,170){{\parbox{1\linewidth}{$(a)$}}}	
+						\put(-100,170){{\parbox{1\linewidth}{$(b)$}}}
+					\end{overpic}
+				\end{minipage} %	\vspace{0.5cm}
+				\caption{Time averaged \DIFdelbeginFL \DIFdelFL{(a) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$ }\DIFaddendFL mixing index $MI$ and \DIFdelbeginFL \DIFdelFL{(b) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(b)$ }\DIFaddendFL head loss $HL$ along the channel length in the downstream for flexible plate case with $Ca=0.04$. The grey rectangle marks the location of plates in the channel.}
+				\label{fig:MI_St}
+			\end{figure*}
+			To evaluate the mixing performance in channel flows, various metrics have been used in the past \citep{Danckwerts1952,Kockmann2006,Liscinsky1993}. In our work, we have used one of the most widely used metrics called `Mixing Index' ($MI$), which is evaluated along the streamwise location as:
+			\DIFdelbegin \begin{align*}
+	\DIFdel{MI(x)=1-\sqrt{\frac{\sigma(x)^2}{{\sigma^2_{max}}}}
+		}\\
+	\DIFdel{where \quad \sigma(x)=\sqrt{{1\over h} \int_{0}^{h} [\phi(x,y)-\phi_m]^2 \,dy}}\\
+	\DIFdel{}\end{align*}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{eqnarray}
+				\DIFadd{MI(x)=1-\sqrt{\frac{\sigma(x)^2}{{\sigma^2_{max}}}}
+			}\end{eqnarray}
+			\begin{eqnarray}
+				\DIFadd{where \quad \sigma(x)=\sqrt{{1\over h} \int_{0}^{h} [\phi(x,y)-\phi_m]^2 \,dy}
+			}\end{eqnarray}\DIFaddend 
+			where $\sigma(x)$ is the standard deviation of the vertically integrated scalar field across the channel height, $\phi_m$ is the scalar concentration value for a completely mixed solution or mean of the scalar concentration field range and $\sigma_{max}$ is the maximum deviation in the scalar concentration field within the fluid domain. As per the expression, $MI=0$ represents a completely unmixed field, whereas $MI=1$ means full mixing with completely \DIFdelbegin \DIFdel{homogenised }\DIFdelend \DIFaddbegin \DIFadd{homogenized }\DIFaddend scalar concentration. We have also computed vertically integrated mechanical head loss $(HL)$ in the flow evaluated along the streamwise location during the mixing process as:
+			\DIFdelbegin \begin{align*}
+	\DIFdel{\mathcal{H}^*(x)=\frac{\mathcal{H}(x)}{\rho_f U^2}=\frac{1}{h}\int_{0}^{h}[p(x,y)+{1\over2}  u^2(x,y)]\,dy }\\ \\\DIFdel{Head \: Loss, HL(x) = \mathcal{H}^*(0)-\mathcal{H}^*(x)
+}\end{align*}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{eqnarray}
+				\DIFadd{\mathcal{H}^*(x)=\frac{\mathcal{H}(x)}{\rho_f U^2}=\frac{1}{h}\int_{0}^{h}[p(x,y)+{1\over2}  u^2(x,y)]\,dy
+			}\end{eqnarray}
+			\begin{eqnarray}
+				\DIFadd{Head \: Loss, HL(x) = \mathcal{H}^*(0)-\mathcal{H}^*(x)
+			}\end{eqnarray}\DIFaddend 
+			In \DIFdelbegin \DIFdel{Figure \ref{fig:MI_Ca}(a)}\DIFdelend \DIFaddbegin \DIFadd{Fig. \ref{fig:MI_Ca}$(a)$}\DIFaddend , $MI(x)$ \DIFdelbegin \DIFdel{a }\DIFdelend for steady inlet flow is shown for rigid and flexible plate cases. The grey shaded rectangle at $x/h=2$ marks the location of the plates in the channel. The $MI$ suddenly shoots high next to the plates ($2<x/h<4$) for flexible plate cases, unlike the rigid plate case, where the $MI$ increases gradually along the channel length. This is due to the lower entrainment of the scalar concentration field in the rigid plate case because of the inertia-driven jet-like flow next to the plates, as discussed above. With increasing $Ca$, the $MI$ shows an even steeper curve and exhibits the fluid mixing early in the channel location. We have also shown the $MI$ along the channel length in an empty channel, i.e. with no obstacles for reference. In \DIFdelbegin \DIFdel{Figure \ref{fig:MI_Ca}(b)}\DIFdelend \DIFaddbegin \DIFadd{Fig. \ref{fig:MI_Ca}$(b)$}\DIFaddend , the total mechanical head loss, $HL$, is shown along the channel streamwise direction. The $HL$ jumps suddenly at the plates' location to a value based on the plates' flexibility. \DIFdelbegin \DIFdel{Most }\DIFdelend \DIFaddbegin \DIFadd{The most }\DIFaddend flexible case ($Ca=0.06$) \DIFdelbegin \DIFdel{show }\DIFdelend \DIFaddbegin \DIFadd{shows }\DIFaddend minimum $HL$, whereas the rigid plates case offers the highest $HL$ among all the cases.
+
+			To understand the effect of pulsatile inlet conditions in the flow dynamics and mixing performance, we have shown the instantaneous vorticity contour in \DIFdelbegin \DIFdel{Figure \ref{fig:contour_St} for $Ca=0.02$ }\DIFdelend \DIFaddbegin \DIFadd{Fig. \ref{fig:contour_St} for $Ca=0.04$ }\DIFaddend with $St_f=1-32$, and steady inlet.
+			\DIFdelbegin \DIFdel{In comparison to the }\DIFdelend \DIFaddbegin 
+
+			\DIFadd{Upon careful examination, we find that the pulsatile inlet flow interacts with the oscillations of the flexible plates, giving rise to vortex structures in varying numbers. These vortices arrange themselves in an alternating fashion at later times and persistently roll, contributing to local mixing as they advect downstream. The size of these rolling vortices gradually diminishes due to the influence of viscosity. Particularly noteworthy is the observation that cases with $St_f = 1-16$ generate even more organized vortices and achieve a delayed steady state compared to }\DIFaddend steady inlet conditions\DIFdelbegin \DIFdel{, an increase in flow pulsation generates even more complex vorticity dynamics due to the plates' tip oscillation. In Figure \ref{fig:MI_St}, }\DIFdelend \DIFaddbegin \DIFadd{. However, in the case of $St_f = 32$, the vorticity patterns closely resemble those of the steady inlet scenario and also similar mixing patterns can be observed. This observation suggests that, for higher values of $St_f$, the vorticity dynamics and resulting mixing patterns under pulsatile inlet conditions converge towards those observed in the steady inlet case. The interplay between flow pulsation and plate oscillations continues to shape the vorticity structures, emphasizing the intricate relationship between inlet conditions, plate flexibility, and ensuing flow dynamics.		 
+			Upon quantifying the corresponding mixing index }\DIFaddend $MI$ and \DIFaddbegin \DIFadd{head loss }\DIFaddend $HL$\DIFdelbegin \DIFdel{are shown }\DIFdelend \DIFaddbegin \DIFadd{, we show these metrics }\DIFaddend along the downstream location \DIFaddbegin \DIFadd{in Fig. \ref{fig:MI_St}}\DIFaddend . $MI$ \DIFdelbegin \DIFdel{increases earliest }\DIFdelend \DIFaddbegin \DIFadd{for pulsatile inlet cases show a steeper increase early }\DIFaddend in the channel \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{compared to the steady inlet case. The flow exiting through the gap between the plates in pulsatile inlet cases show increased flow agitation near the plates due to the interaction between flow pulsation and tip oscillations. This interplay breaks up the emanating jet-like flow and releases various scales of vortices that move laterally and further interact, merge, and advect to influence the $MI$. This behavior is attributed to the interplay between flow pulsation and the tip oscillations of the flexible plates. The emanating jet-like flow breaks up near the plates, generating various scales of vortices that contribute to enhanced mixing. In }\DIFaddend the case with \DIFdelbegin \DIFdel{flow inlet at }\DIFdelend $St_f=2$\DIFdelbegin \DIFdel{whereas, the }\DIFdelend \DIFaddbegin \DIFadd{, we observe the steepest shoot in the $MI$ next to the plates as the flow and structure oscillations intensifies due to the multiple modes involved. In contrast, the steady inlet case primarily relies on the oscillations of flexible plates for flow agitation and subsequent mixing, resulting in a longer jet length. However, at $x=8h$ downstream, the $MI$ results converge for all cases, indicating that the mixing characteristics stabilize further along the channel. This convergence suggests that, despite differences in the mixing process initiation, the mixing index reaches a consistent state at this specific downstream location. The corresponding }\DIFaddend $HL$ \DIFdelbegin \DIFdel{remains nearly indifferent to the effect of pulsatile inlet flow}\DIFdelend \DIFaddbegin \DIFadd{values are higher immediately next to the flexible plates in the pulsatile inlet conditions, reflecting the increased flow agitation near the plates due to the interaction between flow pulsation and tip oscillations. This is because at low inlet pulsation the flow exhibit lower flow inertia which results in a diminishing effect of the periodic inlet at longer downstream locations when computing steady-state statistics}\DIFaddend . 
+
+			
+			\begin{figure*}
+				\begin{center}
+					\begin{minipage}[c]{0.44\linewidth}
+						\begin{overpic}[width=1\linewidth]{Figures/MI_8h_HL.png}
+						\end{overpic}
+					\end{minipage}
+					\begin{minipage}[c]{0.44\linewidth}
+						\begin{overpic}[width=1\linewidth]{Figures/CoP_8h.png}
+							\put(-320,170){{\parbox{1\linewidth}{$(a)$}}}	
+							\put(-105,170){{\parbox{1\linewidth}{$(b)$}}}
+							\put(-60,7){{\parbox{1\linewidth}{$(rigid)$}}}
+						\end{overpic}
+					\end{minipage}
+				\end{center}
+				\vspace{-0.5cm}
+				\caption{\DIFdelbeginFL \DIFdelFL{(a) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$ }\DIFaddendFL Performance comparison in terms of mixing index and head loss $HL$ for the different cases in this work. The solid mark corresponds to the steady inlet flow case. A zoom-in of each \DIFdelbeginFL \DIFdelFL{of the clusters }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{cluster }\DIFaddendFL based on the plates' flexibility is shown separately in the Appendix section for $St_f$ cases. \DIFdelbeginFL \DIFdelFL{(b) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(b)$ }\DIFaddendFL Coefficient of performance $CoP$ for increasing $Ca$ and different $St_f$ cases.}
+				\label{fig:MImax_HL}
+			\end{figure*}
+
+			
+			In \DIFdelbegin \DIFdel{Figure \ref{fig:MImax_HL}(a)}\DIFdelend \DIFaddbegin \DIFadd{Fig. \ref{fig:MImax_HL}$(a)$}\DIFaddend , we have summarised the mixing performance of all the cases studied in our work. We have shown $MI$ and $HL$ attained at the channel length $x/h=8$ for cases with different $Ca$ and $St_f$. The clusters of data points arranged according to the Cauchy numbers $(Ca)$ can be observed where the solid marker point corresponds to the steady inlet conditions. 
+			Among these summarized data points, the most flexible plate case ($Ca=0.06$) offers significant mixing at \DIFdelbegin \DIFdel{considerably low }\DIFdelend \DIFaddbegin \DIFadd{a considerably lower }\DIFaddend $HL$ \DIFdelbegin \DIFdel{compared to }\DIFdelend \DIFaddbegin \DIFadd{than }\DIFaddend all other cases. However, even more mixing can be achieved at the cost of a slight increase in $HL$ in the case of $Ca=0.04$. This fluid mixing can be fine-tuned to the best performance by modulating the inlet flow pulsation, such as in the case with $Ca=0.06,\, St_f=32$. In contrast, the mixing performance of the flexible plate cases is significantly better than that of rigid plate cases.
+
+			
+			%%
+			A primary goal when designing a small mixer is to make it as small as possible while ensuring effective mixing. To find out the "compactness" of the channel mixer with wall-mounted plates, we can look at how long a mixer channel without any plates (or an empty channel) would need to be to achieve the same mixing level as the channel with plates at the streamwise location $x/h = 8$. Similarly, to understand efficiency losses in such channel mixers is to find the length of the empty channel that experiences the same loss as one with plates. These equivalent channel lengths for an empty channel case are separately quantified for mixing length $E_M$ and for head loss $E_H$. To estimate these equivalent lengths, we find that the mixing index and head loss in the empty channel with steady inlet flow (i.e., with no plate) can be very accurately fit as a linear profile, i.e., $MI = 0.015x/h$ and $HL(x)=0.0032x/h$, in our setup (see \DIFdelbegin \DIFdel{Figure }\DIFdelend \DIFaddbegin \DIFadd{Fig. }\DIFaddend \ref{fig:MI_Ca}). From this understanding, we can introduce a Coefficient of Performance (\DIFdelbegin \DIFdel{CoP}\DIFdelend \DIFaddbegin \DIFadd{$CoP$}\DIFaddend ) for the mixer, calculated as the ratio of equivalent lengths for mixing and loss (i.e., $CoP = E_M/E_H$) \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Aaron2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{Aaron2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . This coefficient helps us see how much the mixing improves in relation to the increase in efficiency loss for a mixer compared to a design without any plates. We have provided the equivalent lengths and Coefficient of Performance for some instances in Table 1. This data shows how \DIFdelbegin \DIFdel{adding plates }\DIFdelend \DIFaddbegin \DIFadd{using plates as obstacle }\DIFaddend can make a mixer more compact and offers a way to compare different mixer designs.
+\DIFdelbegin \DIFdel{In Figure \ref{fig:MImax_HL}(b), we have shown the $CoP$ for different $Ca$ and $St_f$ cases. We can confirm }\DIFdelend \DIFaddbegin 
+
+			\DIFadd{In Fig. \ref{fig:MImax_HL}$(b)$, the observed CoP trends reveal important features in the relationship between plate flexibility, pulsatile inlet conditions, and the resulting mixing performance. For lower $Ca$ values in the range of $0-0.02$, the mixing performance does not exhibit significant improvement. This is attributed to the higher Head Loss $(HL)$ in the flow caused by less flexible plates, counteracting the potential benefits of plate oscillations. Conversely, as $Ca$ increases beyond $0.02$ i.e. highly flexible plates, the reduction in $HL$ becomes more pronounced due to the larger gap opening between the plates. Additionally, the oscillations of the flexible plates induce vortex shedding, contributing to enhanced Mixing Index $(MI)$ compared to rigid plate cases. The curve clearly indicates }\DIFaddend that the flexible plates \DIFdelbegin \DIFdel{offer better mixer performance. In contrast, the pulsatile inlet does not offer any significant }\DIFdelend \DIFaddbegin \DIFadd{indeed offer superior mixing performance. However, pulsatile inlet conditions do not yield a substantial }\DIFaddend improvement in overall mixing performance compared to the steady inlet cases\DIFdelbegin \DIFdel{because of the head loss incurred by the pulsatile inlet conditions . However, among all the cases , $Ca=0.06$ with $St_f=32$ offers the best fluid mixing in our setup}\DIFdelend \DIFaddbegin \DIFadd{. This is due to the diminishing effect of periodic inlet conditions at longer downstream locations during steady-state conditions. Moreover, higher $HL$ values in cases with lower $St_f$ negatively impact mixing performance, resulting in marginally lower net $CoP$. Instead, the cases with lower $St_f$ $(<32)$ show adverse mixing performance and it is recommended to use steady inlet conditions. However, at $St_f = 32$  i.e. with higher pulsatile inlet conditions, the mixing performance closely resembles that of steady inlet cases, demonstrating a similar $CoP$ but achieves a marginally better $CoP$ compared to the steady inlet case. This indicates that the interplay between plate flexibility and pulsatile inlet conditions when under similar flow inertia results in enhanced $CoP$}\DIFaddend .
+
+			\begin{table*}
+				\caption{\label{tab:table1}Equivalent lengths for mixing and head loss and \DIFaddbeginFL \DIFaddFL{the }\DIFaddendFL corresponding coefficient of pressure for our cases.}
+				\begin{ruledtabular}
+					\begin{tabular}{ccccccc}
+						\multicolumn{2}{c}{Case} & MI(8) & HL(8) & $E_M$ & $E_H$ & $CoP$\\
+						\hline \\
+						%		\multicolumn{2}{c}{Case} & MI(8) & HL(8) & $E_M$ & $E_H$ & $CoP$\\
+						rigid & steady& 0.886 &1.625 &59.08 &507.80 & 0.116\\
+						$0.01$ & steady&  0.973& 1.660 &64.87 &518.85 &  0.125\\
+						$0.04$ & steady&  0.962& 0.875 &64.16 &273.35 & 0.235\\
+						$0.06$ & steady&  0.908& 0.453 &60.51 &141.53 & 0.427\\
+						$0.06$ & $St_f$=8& 0.887& 0.459 &62.53 &143.44 & 0.412\\
+						$0.06$ & $St_f$=32&0.896 &0.445 &59.73 &138.90 & 0.430\\
+					\end{tabular}
+				\end{ruledtabular}
+			\end{table*}
+
+			\section{Summary}
+			We have conducted computer simulations to analyze the mixing of two initially separated fluids in a channel mixer characterized by the \DIFdelbegin \DIFdel{parameters }\DIFdelend Reynolds number, $Re=500$ and Schmidt number, $Sc=1$. The design of this channel incorporates two flexible plates affixed to its walls. As the fluid flows, these plates experience bending and demonstrate tip oscillations (about a mean position), contributing to the mixing process. Additionally, we have also examined the impact of periodic inlet conditions on mixing outcomes. We have used standard metrics to determine \DIFdelbegin \DIFdel{both the efficiency of mixing }\DIFdelend \DIFaddbegin \DIFadd{the mixing efficiency }\DIFaddend and the associated mechanical head loss. Our observations reveal that flexible plates not only enhance the mixing quality when compared to rigid plates but also lead to reduced head loss. \DIFdelbegin \DIFdel{Whereas, in scenarios with pulsatile inlet conditions, mixing results varied based on the $St_f$ value and were accompanied by }\DIFdelend \DIFaddbegin \DIFadd{The flexible plates induce flow transition early in the channel by introducing vortex generation. The flexibility of the plates allows for dynamic interactions with the flowing fluid, promoting vortex shedding and enhancing the mixing process. This effect contributes to improved mixing performance compared to the rigid plate case.	
+			}
+
+			\DIFadd{On the other hand, in the case of a pulsatile inlet, while there are benefits associated with the flexibility of the plates, the overall mixing performance is not substantially improved. This is attributed to the intermittent flow inertia caused by the pulsatile flow condition which impart relatively lower agitation in the flow, and additionally, the effect of pulsation tends to get washed away at longer downstream locations at steady-state times. The combination of these factors results in a limited impact on the overall mixing performance, and on the contrary, }\DIFaddend an increased head loss \DIFaddbegin \DIFadd{is observed}\DIFaddend . To provide a comprehensive evaluation of mixing performance, taking into account both the quality of mixing and the \DIFaddbegin \DIFadd{associated }\DIFaddend head loss, we have compared our configuration with a scenario involving an empty channel (with no obstacles). We utilized equivalent empty channel lengths ($E_M$ and $E_H$) for this comparison, aiming to achieve metrics comparable to the channel equipped with plates. Subsequently, we computed the coefficient of performance, defined as $CoP=E_M/E_H$, for all examined scenarios to rank our setups based on their mixing performance. \DIFdelbegin \DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{Based on this comprehensive metrics, we found that the flexible plates as obstacle in our setup clearly offer significant enhancement in the mixing performance. Whereas, the inlet pulsatile flow adversely affect the $CoP$ when $St_f<32$ and it is recommended to use steady flow as inlet. However, the }\DIFaddend optimal mixing performance was observed in the \DIFdelbegin \DIFdel{scenario characterized by }\DIFdelend \DIFaddbegin \DIFadd{configuration with }\DIFaddend $Ca=0.06$ and $St_f=32$ \DIFaddbegin \DIFadd{(high inlet pulsation)}\DIFaddend , followed closely by $Ca=0.06$ with a steady inlet condition.  In conclusion, greater flexibility in the plates leads to better mixing performance. This performance can be marginally refined by using \DIFaddbegin \DIFadd{high  }\DIFaddend pulsatile inlet in some cases.
+			Nevertheless, our study has its limitations. Primarily, the geometric design of the channel mixer used is simplistic, representing a straight, two-dimensional channel. In practical applications, mixers might possess more intricate, duct-like channels where three-dimensional flow dynamics are significant. Such three-dimensional attributes could potentially alter the dynamics of the elastic plates and the overarching flow dynamics. Future research could explore \DIFdelbegin \DIFdel{the influence of plates' geometry and their location within the channel }\DIFdelend \DIFaddbegin \DIFadd{a myriad of geometric possibilities, including the introduction of wall-mounted plates at an offset, each plate having different flexibility characteristics, or even considering a tandem series of such plates. Each of these variations could result in unique flow patterns and interactions, and a comprehensive investigation into these geometric configurations is warranted to better understand their impact }\DIFaddend on mixing efficiency.
+
+			\section{Acknowledgement}
+			We thank our fellow members of TuRbulent Interfaces And Dispersion (TRIAD), IIT Kharagpur \DIFdelbegin \DIFdel{, }\DIFdelend for their support. We acknowledge research grants from the Board of Research and Nuclear Science (BRNS), INSPIRE and MATRICS sponsored by the Science and Engineering Research Board of the Government of India. We sincerely thank Param Shakti for computing resources developed under the National Supercomputing Mission at IIT Kharagpur, India.
+
+			
+			
+			%
+			%\begin{ruledtabular}
+			%\begin{tabular}{cccccccc}
+			% &$r_c$ (\AA)&$r_0$ (\AA)&$\kappa r_0$&
+			% &$r_c$ (\AA) &$r_0$ (\AA)&$\kappa r_0$\\
+			%\hline
+			%Cu& 0.800 & 14.10 & 2.550 &Sn\footnotemark[1]
+			%& 0.680 & 1.870 & 3.700 \\
+			%Ag& 0.990 & 15.90 & 2.710 &Pb\footnotemark[2]
+			%& 0.450 & 1.930 & 3.760 \\
+			%Au& 1.150 & 15.90 & 2.710 &Ca\footnotemark[3]
+			%& 0.750 & 2.170 & 3.560 \\
+			%Mg& 0.490 & 17.60 & 3.200 &Sr\footnotemark[4]
+			%& 0.900 & 2.370 & 3.720 \\
+			%Zn& 0.300 & 15.20 & 2.970 &Li\footnotemark[2]
+			%& 0.380 & 1.730 & 2.830 \\
+			%Cd& 0.530 & 17.10 & 3.160 &Na\footnotemark[5]
+			%& 0.760 & 2.110 & 3.120 \\
+			%Hg& 0.550 & 17.80 & 3.220 &K\footnotemark[5]
+			%&  1.120 & 2.620 & 3.480 \\
+			%Al& 0.230 & 15.80 & 3.240 &Rb\footnotemark[3]
+			%& 1.330 & 2.800 & 3.590 \\
+			%Ga& 0.310 & 16.70 & 3.330 &Cs\footnotemark[4]
+			%& 1.420 & 3.030 & 3.740 \\
+			%In& 0.460 & 18.40 & 3.500 &Ba\footnotemark[5]
+			%& 0.960 & 2.460 & 3.780 \\
+			%Tl& 0.480 & 18.90 & 3.550 & & & & \\
+			%\end{tabular}
+			%\end{ruledtabular}
+			%\footnotetext[1]{Here's the first, from Ref.~\onlinecite{feyn54}.}
+			%\footnotetext[2]{Here's the second.}
+			%\footnotetext[3]{Here's the third.}
+			%\footnotetext[4]{Here's the fourth.}
+			%\footnotetext[5]{And etc.}
+			%\end{table}
+
+			
+			
+			%\appendix
+
+			%\section{Appendixes}
+
+			%\nocite{*}
+			\bibliography{pre2.bib}% Produces the bibliography via BibTeX.
+			\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \clearpage
+			\DIFaddend \newpage
+
+			\section*{Appendix}
+			\appendix
+
+			%\section{Flow features behind plates}
+			\onecolumngrid
+			%\singlespacing
+			In \DIFdelbegin \DIFdel{Figure}\DIFdelend \DIFaddbegin \DIFadd{Fig.}\DIFaddend ~\ref{fig:vel_Q}, instantaneous streamwise velocity contour (left) and \DIFdelbegin \DIFdel{Q-criterion based }\DIFdelend \DIFaddbegin \DIFadd{Q-criterion-based }\DIFaddend vortex structures are shown. Using $Q$-criterion, strong vortices in the flow (with $Q>0$) can be detected during run time calculations~\cite{Hunt1994, Hussain1995, Holmes2012, Rowley2014}. The \DIFdelbegin \DIFdel{vortex dominated zones and the }\DIFdelend \DIFaddbegin \DIFadd{vortex-dominated and }\DIFaddend strained zones can be identified by $Q>0$ and $Q<0$, respectively. We can observe accelerated flow through the gap and multiple recirculation zones attached \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{to }\DIFaddend the downstream side. \DIFdelbegin \DIFdel{Figure}\DIFdelend \DIFaddbegin \DIFadd{Fig.}\DIFaddend ~\ref{fig:vel_pro} indicates the amplitude of flow speed up and subsequent decay along the channel length. \DIFdelbegin \DIFdel{Figure }\DIFdelend \DIFaddbegin \DIFadd{Fig. }\DIFaddend \ref{fig:vel_Q} shows the zoomed-in view of each \DIFdelbegin \DIFdel{clusters }\DIFdelend \DIFaddbegin \DIFadd{cluster }\DIFaddend of data points shown in \ref{fig:MImax_HL}\DIFdelbegin \DIFdel{(a) which indicates }\DIFdelend \DIFaddbegin \DIFadd{$(a)$, which indicates the }\DIFaddend effect of $St_f$ on mixing performance.
+			\begin{figure}[h]
+				\begin{minipage}[c]{0.09\linewidth}	
+					\includegraphics[width=1\linewidth]{blank.png} 
+				\end{minipage}
+				\begin{minipage}[c]{0.45\linewidth}		
+					\begin{overpic}[width=1\linewidth]{Figures/1S1D3S3D5S5D_Umag.png}
+						\put(-145,107){{\parbox{1\linewidth}{\footnotesize{$rigid, steady$}}}}	
+						\put(-145,86){{\parbox{1\linewidth}{\footnotesize{$rigid,St_f=8$}}}}
+						\put(-145,66){{\parbox{1\linewidth}{\footnotesize{$Ca=0.01, steady$}}}}	
+						\put(-145,45){{\parbox{1\linewidth}{\footnotesize{$Ca=0.01, St_f=8$}}}}	
+						\put(-145,25){{\parbox{1\linewidth}{\footnotesize{$Ca=0.04, steady$}}}}
+						\put(-145,4){{\parbox{1\linewidth}{\footnotesize{$Ca=0.04, St_f=8$}}}}
+						%	\put(-60,105){{\parbox{1\linewidth}{\rotatebox{87}{$transiton$}}}}
+						\put(100,-20){\includegraphics[width=0.45\linewidth]{Figures/leg_U.png}}
+						\put(315,-20){\includegraphics[width=0.45\linewidth]{Figures/leg_Q.png}}
+						\put(35,-10){{\parbox{1\linewidth}{$u_x/U$}}}	
+						\put(-14,-10){{\parbox{1\linewidth}{$-0.5$}}}
+						\put(253,-8){{\parbox{1\linewidth}{$Q$}}}	
+						\put(87,-10){{\parbox{1\linewidth}{$0.5$}}}
+						\put(200,-10){{\parbox{1\linewidth}{$-10$}}}
+						\put(305,-10){{\parbox{1\linewidth}{$10$}}}
+						\put(-120,122){{\parbox{1\linewidth}{$(a)$}}}
+						\put(120,122){{\parbox{1\linewidth}{$(b)$}}}
+					\end{overpic}
+				\end{minipage}
+				\begin{minipage}[c]{0.45\linewidth}
+					\includegraphics[width=1\linewidth]{Figures/1S1D3S3D5S5D_Q.png} 
+				\end{minipage}\vspace{0.6cm}
+				\caption{\DIFdelbeginFL \DIFdelFL{(a) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$ }\DIFaddendFL Instantaneous streamwise velocity contour for different cases. \DIFdelbeginFL \DIFdelFL{(b) Q-criterion based }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(b)$ Q-criterion-based }\DIFaddendFL vortex structures are shown.}
+				\label{fig:vel_Q}
+			\end{figure}
+			\begin{figure}[h]
+				\begin{minipage}[c]{0.09\linewidth}	
+					\includegraphics[width=1\linewidth]{blank.png} 
+				\end{minipage}
+				\begin{minipage}[c]{0.45\linewidth}
+					\includegraphics[width=1\linewidth]{velpro/1S_parabolic_velpro.png} 
+					\includegraphics[width=1\linewidth]{velpro/4S_parabolic_velpro.png} 
+					\includegraphics[width=1\linewidth]{velpro/1D_velpro.png} 
+					\includegraphics[width=1\linewidth]{velpro/4D_velpro.png} 
+				\end{minipage}
+				\begin{minipage}[c]{0.45\linewidth}
+					\includegraphics[width=1\linewidth,height=1.41cm]{midline/1S_midline_parabolic.png}
+					\includegraphics[width=1\linewidth,height=1.41cm]{midline/1D_midline.png}
+					\includegraphics[width=1\linewidth,height=1.41cm]{midline/4S_midline_parabolic.png}
+					\begin{overpic}[width=1\linewidth,height=1.41cm]{midline/4D_midline.png}
+						\put(-375,139){{\parbox{1\linewidth}{\footnotesize{$rigid, steady$}}}}	
+						\put(-375,100){{\parbox{1\linewidth}{\footnotesize{$rigid,St_f=8$}}}}
+						\put(-380,60){{\parbox{1\linewidth}{\footnotesize{$Ca=0.02, steady$}}}}	
+						\put(-380,18){{\parbox{1\linewidth}{\footnotesize{$Ca=0.02, St_f=8$}}}}	
+						\put(-355,160){{\parbox{1\linewidth}{$(a)$}}}
+						\put(-112,160){{\parbox{1\linewidth}{$(b)$}}}
+					\end{overpic}
+				\end{minipage}	
+				\caption{\DIFdelbeginFL \DIFdelFL{(a) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$ }\DIFaddendFL Time-averaged velocity profiles across the channel at six different streamwise locations. \DIFdelbeginFL \DIFdelFL{(b) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(b)$ }\DIFaddendFL Time-averaged center-line Reynolds number ($Re_c$) along the channel's length normalized with  ($Re_{S}$).}
+				\label{fig:vel_pro}
+			\end{figure}
+			\vspace{0.45cm} 
+			\begin{figure}
+				\begin{center}
+					\begin{minipage}[c]{0.3\linewidth}
+						\includegraphics[width=1\linewidth,trim=0.5cm 0cm 0cm 0cm,clip]{Figures/MI_8h_HL_1.png}
+					\end{minipage}
+					\begin{minipage}[c]{0.3\linewidth}
+						\includegraphics[width=1\linewidth,trim=0.5cm 0cm 0cm 0cm,clip]{Figures/MI_8h_HL_2.png}
+					\end{minipage}
+					\begin{minipage}[c]{0.3\linewidth}
+						\includegraphics[width=1\linewidth,trim=0.5cm 0cm 0cm 0cm,clip]{Figures/MI_8h_HL_3.png}
+					\end{minipage}\\
+					\begin{minipage}[c]{0.3\linewidth}
+						\includegraphics[width=1\linewidth,trim=0.5cm 0cm 0cm 0cm,clip]{Figures/MI_8h_HL_4.png}
+					\end{minipage}
+					\begin{minipage}[c]{0.3\linewidth}
+						\includegraphics[width=1\linewidth,trim=0.5cm 0cm 0cm 0cm,clip]{Figures/MI_8h_HL_5.png}
+					\end{minipage}
+					\begin{minipage}[c]{0.3\linewidth}
+						\begin{overpic}[width=1\linewidth,trim=0.5cm 0cm 0cm 0cm,clip]{Figures/MI_8h_HL_6.png}
+							\put(-325,235){{\parbox{1\linewidth}{$rigid$}}}	
+							\put(-158,235){{\parbox{1\linewidth}{$Ca=0.001$}}}
+							\put(-8,235){{\parbox{1\linewidth}{$Ca=0.01$}}}	
+							\put(-335,25){{\parbox{1\linewidth}{$Ca=0.02$}}}	
+							\put(-110,25){{\parbox{1\linewidth}{$Ca=0.04$}}}	
+							\put(40,25){{\parbox{1\linewidth}{$Ca=0.06$}}}	
+						\end{overpic}
+					\end{minipage}\vspace{-0.4cm}
+				\end{center}
+				\caption{Zoom-in of each clusters of data points shown in \DIFdelbeginFL \DIFdelFL{Figure }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Fig. }\DIFaddendFL \ref{fig:MImax_HL}\DIFdelbeginFL \DIFdelFL{(a)}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$(a)$}\DIFaddendFL . The solid \DIFdelbeginFL \DIFdelFL{marker corresponds }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{markers correspond }\DIFaddendFL to the steady inlet \DIFdelbeginFL \DIFdelFL{case}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{cases}\DIFaddendFL , whereas the \DIFdelbeginFL \DIFdelFL{rest }\DIFdelendFL hollow \DIFdelbeginFL \DIFdelFL{markers }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{marker shapes }\DIFaddendFL are for periodic inlet \DIFdelbeginFL \DIFdelFL{condtions }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{conditions, }\DIFaddendFL and \DIFaddbeginFL \DIFaddFL{the }\DIFaddendFL $St_f$ value is shown near each data point.}
+				\label{fig:MImax_HL2_zoom}
+			\end{figure}
+
+		\end{document}
+		
+		
+		
+		%
+		% ****** End of file aipsamp.tex ******

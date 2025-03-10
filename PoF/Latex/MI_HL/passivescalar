@@ -1,0 +1,34 @@
+cd /media/magcyan/Disk_1/Gaurav/Article2/4/4S/fluid/
+
+
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6A/fluid/0/
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6B/fluid/0/
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6C/fluid/0/
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6D/fluid/0/
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6E/fluid/0/
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6F/fluid/0/
+cp 0/T1 0/T2 0/T3 /media/magcyan/Disk_1/Gaurav/Article2/6/6S/fluid/0/
+
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6A/fluid/system/
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6B/fluid/system/
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6C/fluid/system/
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6D/fluid/system/
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6E/fluid/system/
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6F/fluid/system/
+cp system/fvSolution system/fvSchemes system/controlDict system/setFieldsDict /media/magcyan/Disk_1/Gaurav/Article2/6/6S/fluid/system/
+
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6A/fluid/constant/
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6B/fluid/constant/
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6C/fluid/constant/
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6D/fluid/constant/
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6E/fluid/constant/
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6F/fluid/constant/
+cp constant/transportProperties /media/magcyan/Disk_1/Gaurav/Article2/6/6S/fluid/constant/
+
+
+fe41
+setFields
+icoFsiElasticNonLinULSolidScalarFoam
+
+
+

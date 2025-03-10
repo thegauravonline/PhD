@@ -1,0 +1,178 @@
+////////////////////////////////////////////////////
+
+
+mkdir -p "UnrunLong/2/2A/fluid"
+cp -r 2/2A/fluid/0 UnrunLong/2/2A/fluid/
+cp -r 2/2A/fluid/constant UnrunLong/2/2A/fluid/
+cp -r 2/2A/fluid/system/  UnrunLong/2/2A/fluid/
+cp -r 2/2A/fluid/batch.setSet UnrunLong/2/2A/fluid/
+cp -r 2/2A/solid/ UnrunLong/2/2A/
+cp 2/2A/*  UnrunLong/2/2A/
+cd UnrunLong/2/2A/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/2/2B/fluid"
+cp -r 2/2B/fluid/0 UnrunLong/2/2B/fluid/
+cp -r 2/2B/fluid/constant UnrunLong/2/2B/fluid/
+cp -r 2/2B/fluid/system/  UnrunLong/2/2B/fluid/
+cp -r 2/2B/fluid/batch.setSet UnrunLong/2/2B/fluid/
+cp -r 2/2B/solid/ UnrunLong/2/2B/
+cp 2/2B/*  UnrunLong/2/2B/
+cd UnrunLong/2/2B/
+fe32
+./Allclean
+cd ../../../
+
+
+mkdir -p "UnrunLong/2/2C/fluid"
+cp -r 2/2C/fluid/0 UnrunLong/2/2C/fluid/
+cp -r 2/2C/fluid/constant UnrunLong/2/2C/fluid/
+cp -r 2/2C/fluid/system/  UnrunLong/2/2C/fluid/
+cp -r 2/2C/fluid/batch.setSet UnrunLong/2/2C/fluid/
+cp -r 2/2C/solid/ UnrunLong/2/2C/
+cp 2/2C/*  UnrunLong/2/2C/
+cd UnrunLong/2/2C/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/2/2D/fluid"
+cp -r 2/2D/fluid/0 UnrunLong/2/2D/fluid/
+cp -r 2/2D/fluid/constant UnrunLong/2/2D/fluid/
+cp -r 2/2D/fluid/system/  UnrunLong/2/2D/fluid/
+cp -r 2/2D/fluid/batch.setSet UnrunLong/2/2D/fluid/
+cp -r 2/2D/solid/ UnrunLong/2/2D/
+cp 2/2D/*  UnrunLong/2/2D/
+cd UnrunLong/2/2D/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/2/2E/fluid"
+cp -r 2/2E/fluid/0 UnrunLong/2/2E/fluid/
+cp -r 2/2E/fluid/constant UnrunLong/2/2E/fluid/
+cp -r 2/2E/fluid/system/  UnrunLong/2/2E/fluid/
+cp -r 2/2E/fluid/batch.setSet UnrunLong/2/2E/fluid/
+cp -r 2/2E/solid/ UnrunLong/2/2E/
+cp 2/2E/*  UnrunLong/2/2E/
+cd UnrunLong/2/2E/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/2/2F/fluid"
+cp -r 2/2F/fluid/0 UnrunLong/2/2F/fluid/
+cp -r 2/2F/fluid/constant UnrunLong/2/2F/fluid/
+cp -r 2/2F/fluid/system/  UnrunLong/2/2F/fluid/
+cp -r 2/2F/fluid/batch.setSet UnrunLong/2/2F/fluid/
+cp -r 2/2F/solid/ UnrunLong/2/2F/
+cp 2/2F/*  UnrunLong/2/2F/
+cd UnrunLong/2/2F/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/2/2S/fluid"
+cp -r 2/2S/fluid/0 UnrunLong/2/2S/fluid/
+cp -r 2/2S/fluid/constant UnrunLong/2/2S/fluid/
+cp -r 2/2S/fluid/system/  UnrunLong/2/2S/fluid/
+cp -r 2/2S/fluid/batch.setSet UnrunLong/2/2S/fluid/
+cp -r 2/2S/solid/ UnrunLong/2/2S/
+cp 2/2S/*  UnrunLong/2/2S/
+cd UnrunLong/2/2S/
+fe32
+./Allclean
+cd ../../../
+
+///////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+
+
+mkdir -p "UnrunLong/6/6A/fluid"
+cp -r 6/6A/fluid/0 UnrunLong/6/6A/fluid/
+cp -r 6/6A/fluid/constant UnrunLong/6/6A/fluid/
+cp -r 6/6A/fluid/system/  UnrunLong/6/6A/fluid/
+cp -r 6/6A/fluid/batch.setSet UnrunLong/6/6A/fluid/
+cp -r 6/6A/solid/ UnrunLong/6/6A/
+cp 6/6A/*  UnrunLong/6/6A/
+cd UnrunLong/6/6A/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/6/6B/fluid"
+cp -r 6/6B/fluid/0 UnrunLong/6/6B/fluid/
+cp -r 6/6B/fluid/constant UnrunLong/6/6B/fluid/
+cp -r 6/6B/fluid/system/  UnrunLong/6/6B/fluid/
+cp -r 6/6B/fluid/batch.setSet UnrunLong/6/6B/fluid/
+cp -r 6/6B/solid/ UnrunLong/6/6B/
+cp 6/6B/*  UnrunLong/6/6B/
+cd UnrunLong/6/6B/
+fe32
+./Allclean
+cd ../../../
+
+
+mkdir -p "UnrunLong/6/6C/fluid"
+cp -r 6/6C/fluid/0 UnrunLong/6/6C/fluid/
+cp -r 6/6C/fluid/constant UnrunLong/6/6C/fluid/
+cp -r 6/6C/fluid/system/  UnrunLong/6/6C/fluid/
+cp -r 6/6C/fluid/batch.setSet UnrunLong/6/6C/fluid/
+cp -r 6/6C/solid/ UnrunLong/6/6C/
+cp 6/6C/*  UnrunLong/6/6C/
+cd UnrunLong/6/6C/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/6/6D/fluid"
+cp -r 6/6D/fluid/0 UnrunLong/6/6D/fluid/
+cp -r 6/6D/fluid/constant UnrunLong/6/6D/fluid/
+cp -r 6/6D/fluid/system/  UnrunLong/6/6D/fluid/
+cp -r 6/6D/fluid/batch.setSet UnrunLong/6/6D/fluid/
+cp -r 6/6D/solid/ UnrunLong/6/6D/
+cp 6/6D/*  UnrunLong/6/6D/
+cd UnrunLong/6/6D/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/6/6E/fluid"
+cp -r 6/6E/fluid/0 UnrunLong/6/6E/fluid/
+cp -r 6/6E/fluid/constant UnrunLong/6/6E/fluid/
+cp -r 6/6E/fluid/system/  UnrunLong/6/6E/fluid/
+cp -r 6/6E/fluid/batch.setSet UnrunLong/6/6E/fluid/
+cp -r 6/6E/solid/ UnrunLong/6/6E/
+cp 6/6E/*  UnrunLong/6/6E/
+cd UnrunLong/6/6E/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/6/6F/fluid"
+cp -r 6/6F/fluid/0 UnrunLong/6/6F/fluid/
+cp -r 6/6F/fluid/constant UnrunLong/6/6F/fluid/
+cp -r 6/6F/fluid/system/  UnrunLong/6/6F/fluid/
+cp -r 6/6F/fluid/batch.setSet UnrunLong/6/6F/fluid/
+cp -r 6/6F/solid/ UnrunLong/6/6F/
+cp 6/6F/*  UnrunLong/6/6F/
+cd UnrunLong/6/6F/
+fe32
+./Allclean
+cd ../../../
+
+mkdir -p "UnrunLong/6/6S/fluid"
+cp -r 6/6S/fluid/0 UnrunLong/6/6S/fluid/
+cp -r 6/6S/fluid/constant UnrunLong/6/6S/fluid/
+cp -r 6/6S/fluid/system/  UnrunLong/6/6S/fluid/
+cp -r 6/6S/fluid/batch.setSet UnrunLong/6/6S/fluid/
+cp -r 6/6S/solid/ UnrunLong/6/6S/
+cp 6/6S/*  UnrunLong/6/6S/
+cd UnrunLong/6/6S/
+fe32
+./Allclean
+cd ../../../
+

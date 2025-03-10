@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Revision_2.aux
+The style file: aipnum4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: Revision_2Notes.bib
+Database file #2: pre2.bib
+Repeated entry---line 1355 of file pre2.bib
+ : @article{zenit2014
+ :                   , title={Experimental study of a model valve with flexible leaflets in a pulsatile flow}, volume={739}, journal={Journal of Fluid Mechanics}, publisher={Cambridge University Press}, author={Ledesma-Alonso, R. and Guzmán, J. E. V. and Zenit, R.}, year={2014}, pages={338–362}}
+I'm skipping whatever remains of this entry
+Repeated entry---line 3415 of file pre2.bib
+ : @article{Zenit2016
+ :                   ,
+I'm skipping whatever remains of this entry
+control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{aip41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{0}, control.pages{1}, control.year{N/A}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
+Name 1 in "Ward, Kevin, and Z Hugh Fan" has a comma at the end for entry Ward2015
+while executing---line 3259 of file aipnum4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs aipnum4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (0) allowed
+Control: page (1) range
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Name 1 in "Ward, Kevin, and Z Hugh Fan" has a comma at the end for entry Ward2015
+while executing---line 3465 of file aipnum4-1.bst
+Name 1 in "Ward, Kevin, and Z Hugh Fan" has a comma at the end for entry Ward2015
+while executing---line 3465 of file aipnum4-1.bst
+Name 1 in "Ward, Kevin, and Z Hugh Fan" has a comma at the end for entry Ward2015
+while executing---line 3465 of file aipnum4-1.bst
+Name 1 in "Ward, Kevin, and Z Hugh Fan" has a comma at the end for entry Ward2015
+while executing---line 3465 of file aipnum4-1.bst
+Warning--missing journal in Liscinsky1993
+You've used 78 entries,
+            5918 wiz_defined-function locations,
+            2136 strings with 28698 characters,
+and the built_in function-call counts, 85860 in all, are:
+= -- 5797
+> -- 2639
+< -- 481
++ -- 803
+- -- 651
+* -- 13387
+:= -- 8868
+add.period$ -- 152
+call.type$ -- 78
+change.case$ -- 380
+chr.to.int$ -- 79
+cite$ -- 79
+duplicate$ -- 7832
+empty$ -- 6284
+format.name$ -- 1310
+if$ -- 16720
+int.to.chr$ -- 2
+int.to.str$ -- 85
+missing$ -- 1012
+newline$ -- 280
+num.names$ -- 228
+pop$ -- 3156
+preamble$ -- 1
+purify$ -- 380
+quote$ -- 0
+skip$ -- 2688
+stack$ -- 0
+substring$ -- 2520
+swap$ -- 7573
+text.length$ -- 234
+text.prefix$ -- 0
+top$ -- 10
+type$ -- 1082
+warning$ -- 2
+while$ -- 330
+width$ -- 0
+write$ -- 737
+(There were 7 error messages)

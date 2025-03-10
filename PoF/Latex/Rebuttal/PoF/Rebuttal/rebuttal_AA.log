@@ -1,0 +1,2537 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.13)  23 DEC 2024 00:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**rebuttal_AA.tex
+(./rebuttal_AA.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(c:/texlive/2024/texmf-dist/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for d
+ocumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 640.
+\intertabularlinepenalty=\count196
+\@tbpen=\count197
+\@arstrutbox@hline=\box52
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1654.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count198
+\output=\toks17
+\@protection@box=\box53
+\@topmark@saved=\toks18
+\footins@saved=\box54
+\pagesofar=\box55
+\footbox=\box56
+\pagegrid@col=\count199
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3736.
+(c:/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@affil=\count266
+\absbox=\box57
+\c@part=\count267
+\c@section=\count268
+\c@subsection=\count269
+\c@subsubsection=\count270
+\c@paragraph=\count271
+\c@subparagraph=\count272
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\c@figure=\count273
+\c@table=\count274
+
+(c:/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count275
+)
+\widetext@top=\box58
+\widetext@bot=\box59
+
+(c:/texlive/2024/texmf-dist/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for document
+ation)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen141
+))
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count276
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count277
+\leftroot@=\count278
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count279
+\DOTSCASE@=\count280
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count281
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count282
+\dotsspace@=\muskip18
+\c@parentequation=\count283
+\dspbrk@lvl=\count284
+\tag@help=\toks20
+\row@=\count285
+\column@=\count286
+\maxfields@=\count287
+\andhelp@=\toks21
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks22
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentat
+ion)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+
+(c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen152
+\ar@mcellbox=\box62
+\extrarowheight=\dimen153
+\NC@list=\toks25
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box63
+))
+(c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip58
+\subfigcapskip=\skip59
+\subfigcaptopadj=\dimen154
+\subfigbottomskip=\skip60
+\subfigcapmargin=\dimen155
+\subfiglabelskip=\skip61
+\c@subfigure=\count288
+\c@lofdepth=\count289
+\c@subtable=\count290
+\c@lotdepth=\count291
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip62
+\subfig@bottom=\skip63
+)
+(c:/texlive/2024/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip64
+\f@nch@O@elh=\skip65
+\f@nch@O@erh=\skip66
+\f@nch@O@olh=\skip67
+\f@nch@O@orh=\skip68
+\f@nch@O@elf=\skip69
+\f@nch@O@erf=\skip70
+\f@nch@O@olf=\skip71
+\f@nch@O@orf=\skip72
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(c:/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen156
+\lightrulewidth=\dimen157
+\cmidrulewidth=\dimen158
+\belowrulesep=\dimen159
+\belowbottomsep=\dimen160
+\aboverulesep=\dimen161
+\abovetopsep=\dimen162
+\cmidrulesep=\dimen163
+\cmidrulekern=\dimen164
+\defaultaddspace=\dimen165
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen166
+\@belowrulesep=\dimen167
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen168
+)
+(c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(c:/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(c:/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+
+Package nameref Warning: The definition of \label has changed! 
+(nameref)                Check your packages! 
+(nameref)                Replacing it with the kernel definition on input line 
+149.
+
+\c@section@level=\count296
+) (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count297
+)
+(c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen169
+\Hy@linkcounter=\count298
+\Hy@pagecounter=\count299
+
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count300
+
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count301
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen170
+
+(c:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count302
+\Field@Width=\dimen171
+\Fld@charsize=\dimen172
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count303
+\c@Item=\count304
+\c@Hfootnote=\count305
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count306
+\c@bookmark@seq@number=\count307
+
+(c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip73
+)
+(c:/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box64
+\UL@hyphenbox=\box65
+\UL@skip=\skip74
+\UL@hook=\toks26
+\UL@height=\dimen173
+\UL@pe=\count308
+\UL@pixel=\dimen174
+\ULC@box=\box66
+Package: ulem 2019/11/18
+\ULdepth=\dimen175
+)
+(c:/texlive/2024/texmf-dist/tex/latex/overpic/overpic.sty
+Package: overpic 2024/01/06 2.1 picture overlays (RN)
+
+(c:/texlive/2024/texmf-dist/tex/latex/eepic/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count309
+\d@lta=\count310
+\@delta=\dimen176
+\@@delta=\dimen177
+\@gridcnt=\count311
+\@joinkind=\count312
+\@dotgap=\dimen178
+\@ddotgap=\dimen179
+\@x@diff=\count313
+\@y@diff=\count314
+\x@diff=\dimen180
+\y@diff=\dimen181
+\@dotbox=\box67
+\num@segments=\count315
+\num@segmentsi=\count316
+\@datafile=\read2
+)
+\OVP@box=\box68
+) (c:/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+(c:/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks27
+\footnotemargin=\dimen182
+\@outputbox@depth=\dimen183
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+.
+)
+\CenteringLeftskip=\skip75
+\RaggedLeftLeftskip=\skip76
+\RaggedRightLeftskip=\skip77
+\CenteringRightskip=\skip78
+\RaggedLeftRightskip=\skip79
+\RaggedRightRightskip=\skip80
+\CenteringParfillskip=\skip81
+\RaggedLeftParfillskip=\skip82
+\RaggedRightParfillskip=\skip83
+\JustifyingParfillskip=\skip84
+\CenteringParindent=\skip85
+\RaggedLeftParindent=\skip86
+\RaggedRightParindent=\skip87
+\JustifyingParindent=\skip88
+)
+(c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count317
+\l__pdf_internal_box=\box69
+)
+
+LaTeX Warning: Unused global option(s):
+    [amssym].
+
+(./rebuttal_AA.aux)
+\openout1 = `rebuttal_AA.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Class revtex4 Info: Unrecognized array package. Please update this document cla
+ss! (Proceeding with fingers crossed.) on input line 30.
+Class revtex4 Info: cite was not loaded (OK!) on input line 30.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 30.
+
+(c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count318
+\scratchdimen=\dimen184
+\scratchbox=\box70
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen185
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks29
+)
+Package hyperref Info: Link coloring OFF on input line 30.
+ (./rebuttal_AA.out) (./rebuttal_AA.out)
+\@outlinefile=\write3
+\openout3 = `rebuttal_AA.out'.
+
+Package ragged2e Info: ABD: executing \RaggedRight on input line 30.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\OT1/cmr/m/n/10 Thank you for con-sid-er-ing the manuscript in the jour-nal and
+ pro-vid-ing valu-able feed-back from the re-view-ers. We
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\OT1/cmr/m/n/10 care-fully went through the re-view-ers' re-ports and ap-pre-ci
+-ate the con-struc-tive com-ments. We want to ex-press our
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\OT1/cmr/m/n/10 grat-i-tude to the re-view-ers for their thor-ough eval-u-a-tio
+n of the manuscript. We have ad-dressed each of the re-view-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[]\OT1/cmr/m/n/10 We have in-cor-po-rated the sug-gested mod-i-fi-ca-tions and 
+im-prove-ments in the re-vised ver-sion of the manuscript.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+\OT1/cmr/m/n/10 These im-prove-ments in-clude ad-di-tional anal-y-ses, more de-
+tails on the ex-pla-na-tion and a re-fine-ment in terms of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+\OT1/cmr/m/n/10 lan-guage and ty-po-graphic er-rors. Over-all, the re-view pro-
+cess has greatly en-hanced the qual-ity of the re-vised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+\OT1/cmr/m/n/10 manuscript. Fur-ther-more, as per your rec-om-men-da-tion, we h
+ave sub-mit-ted two ver-sions of the re-vised manuscript.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+\OT1/cmr/m/n/10 One ver-sion in-cludes the changes made, high-lighted us-ing a 
+dif-fer-ent font color, and the other is a clean, re-vised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+\OT1/cmr/m/n/10 ver-sion for eas-ier as-sess-ment. We ex-press our grat-i-tude 
+for the guid-ance on the sub-mis-sion pro-cess and value the
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.104 				
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.104 				
+          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.104 				
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.104 				
+          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.104 				
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.104 				
+          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[1{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[][]\OT1/cmr/m/n/10 This ar-ti-cle ex-plores the im-prove-ment of fluid mix-ing
+ in chan-nel flows with-out a sig-nif-i-cant pres-sure drop by uti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\OT1/cmr/m/n/10 liz-ing wall-mounted flex-i-ble plates as ob-sta-cles. Through 
+fluid-structure-scalar in-ter-ac-tion sim-u-la-tions, the study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\OT1/cmr/m/n/10 an-a-lyzes the os-cil-la-tions of these plates, act-ing as vor-
+tex gen-er-a-tors, to en-hance mix-ing. Eval-u-at-ing mix-ing qual-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\OT1/cmr/m/n/10 with met-rics like the 'Mix-ing In-dex' and 'Head Loss,' the re
+-search com-pares var-i-ous plate flex-i-bil-i-ties and in-ves-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\OT1/cmr/m/n/10 ti-gates the im-pact of pul-satile fluid in-lets. De-spite the 
+ar-ti-cle's suit-abil-ity for pub-li-ca-tion in PoF, the au-thors are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Thank you very much for the thor-ough r
+e-view and pro-vid-ing us a con-struc-tive feed-back on our re-search
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\OT1/cmr/m/n/10 ar-ti-cle. We ap-pre-ci-ate the recog-ni-tion of the study's su
+it-abil-ity for pub-li-ca-tion. Your in-sights are in-valu-able, and we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\OT1/cmr/m/n/10 have made the nec-es-sary cor-rec-tions and im-prove-ments base
+d on your sug-ges-tions to en-hance the over-all qual-ity of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\OT1/cmr/m/n/10 the manuscript.. We are grate-ful for your time and ex-per-tise
+ in re-view-ing the ar-ti-cle, and we look for-ward to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+[][]\OT1/cmr/m/n/10 Regarding Fig-ure 3(a), could you pro-vide more de-tails on
+ the fre-quency and am-pli-tude of the tiny tip os-cil-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+\OT1/cmr/m/n/10 tions of flex-i-ble plates that lead to the breakup of the jet-
+like flow? How ex-actly do these os-cil-la-tions act as a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+\OT1/cmr/m/n/10 source for per-tur-ba-tion, gen-er-at-ing op-po-sitely ro-tat-i
+ng vor-tex struc-tures, and sub-se-quently con-tribute to the
+ []
+
+<Figures/gap_sig_4S_5S_5E_6D_6F_with amp.png, id=24, 620.98666pt x 506.78223pt>
+
+File: Figures/gap_sig_4S_5S_5E_6D_6F_with amp.png Graphic file (type png)
+<use Figures/gap_sig_4S_5S_5E_6D_6F_with amp.png>
+Package pdftex.def Info: Figures/gap_sig_4S_5S_5E_6D_6F_with amp.png  used on i
+nput line 126.
+(pdftex.def)             Requested size: 153.00156pt x 124.86255pt.
+<Figures/tipFreq/tip_freq_S_3D2.png, id=26, 713.77777pt x 535.33333pt>
+File: Figures/tipFreq/tip_freq_S_3D2.png Graphic file (type png)
+<use Figures/tipFreq/tip_freq_S_3D2.png>
+Package pdftex.def Info: Figures/tipFreq/tip_freq_S_3D2.png  used on input line
+ 130.
+(pdftex.def)             Requested size: 153.00156pt x 114.75134pt.
+<Figures/tipFreq/tip_freq_S2.png, id=27, 819.06pt x 597.7889pt>
+File: Figures/tipFreq/tip_freq_S2.png Graphic file (type png)
+<use Figures/tipFreq/tip_freq_S2.png>
+Package pdftex.def Info: Figures/tipFreq/tip_freq_S2.png  used on input line 13
+8.
+(pdftex.def)             Requested size: 148.41168pt x 108.31795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/9 FIG. 1: []$(\OML/cmm/m/it/9 a\OT1/cmr/m/n/9 )$ Time his-tory o
+f gap-width be-tween the tip of the two plates nor-mal-ized by the chan-nel hei
+ght ($\OML/cmm/m/it/9 ^^N[]=h$\OT1/cmr/m/n/9 ). $(\OML/cmm/m/it/9 b\OT1/cmr/m/n
+/9 )$ Fre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\OT1/cmr/m/n/9 quency spec-tra of the tip os-cil-la-tions over time un-der stea
+dy in-let con-di-tions for dif-fer-ent $\OML/cmm/m/it/9 Ca$\OT1/cmr/m/n/9 . $(\
+OML/cmm/m/it/9 c\OT1/cmr/m/n/9 )$ Dom-i-nant fre-quency peaks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We present a more de-tailed anal-y-si
+s of the dy-namic be-haviour of flex-i-ble plates ex-posed to fluid flow,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 with a fo-cus on the fre-quency and am-pli-tude of the tiny tip
+ os-cil-la-tions. We show that higher $\OML/cmm/m/it/10 Ca$ \OT1/cmr/m/n/10 val
+-ues lead
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 to in-creased bend-ing states. We have com-puted and scaled the
+ mean bend-ing am-pli-tude for dif-fer-ent $\OML/cmm/m/it/10 Ca$ \OT1/cmr/m/n/1
+0 as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 in the fol-low-ing Fig. []1[](a) (Fig 2 in the re-vised manuscr
+ipt). The in-set fig-ure high-lights the mean gap am-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 pli-tude ($[]$) in-crease with $\OML/cmm/m/it/10 Ca$ \OT1/cmr/m
+/n/10 in steady in-let cases dur-ing the steady-state regime. How-ever, un-der 
+pul-satile
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 in-let con-di-tions, the gap os-cil-la-tions or tip flut-ter am
+-pli-tude ex-hibits a pe-ri-odic regime aligned with the in-let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 con-di-tions. The in-ter-mit-tent in-er-tia from the in-let re-
+sults in lower mean bend-ing de-spite the pe-ri-odic flut-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 ter. We fur-ther show the fre-quency char-ac-ter-is-tics of tip
+ os-cil-la-tions by con-duct-ing a Fast Fourier Trans-form
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 (FFT) anal-y-sis of the time-domain data in Fig. []1[](b). The 
+fre-quency spec-tra are non-dimensionalized into tip
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 Strouhal num-ber ($\OML/cmm/m/it/10 St[]$\OT1/cmr/m/n/10 ), ex-
+pressed as $[]$. In Fig. []1[]$\OML/cmm/m/it/10 c$\OT1/cmr/m/n/10 , the iden-ti
+-fied $\OML/cmm/m/it/10 St[]$ \OT1/cmr/m/n/10 as-so-ci-ated with max-i-mum en-e
+rgy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 con-tent ($\OML/cmm/m/it/10 E$\OT1/cmr/m/n/10 ) re-veals dom-i-
+nant peak fre-quen-cies rep-re-sent-ing pri-mary os-cil-la-tion modes. We found
+ that the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 in-tri-cate in-ter-play of flut-ter-ing modes con-tributes to t
+he gen-er-a-tion of mul-ti-ple vor-tices, cre-at-ing a com-plex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 flow field. The text em-pha-sizes that this com-plex-ity is sig
+-nif-i-cantly in-flu-enced by plate flex-i-bil-ity, high-light-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--147
+\OT1/cmr/m/n/10 the im-por-tance of con-sid-er-ing fluid-structure in-ter-ac-ti
+on dy-nam-ics in flex-i-ble plate sce-nar-ios com-pared to rigid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+[]\OT1/cmr/m/n/10 We have in-cor-po-rated the above de-tails on the bend-ing am
+-pli-tude and tip os-cil-la-tion fre-quency of flex-i-ble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+\OT1/cmr/m/n/10 plates in Fig-ure 2 of the re-vised manuscript. Fur-ther-more, 
+in the re-sults sec-tion of the re-vised manuscript, we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+\OT1/cmr/m/n/10 have ex-panded the dis-cus-sion on how these os-cil-la-tions se
+rve as a source for per-tur-ba-tions, gen-er-at-ing op-po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+\OT1/cmr/m/n/10 sitely ro-tat-ing vor-tex struc-tures. The de-tailed im-pact of
+ these vor-tex struc-tures on the stir-ring ef-fect for fluid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+\OT1/cmr/m/n/10 mix-ing down-stream is now dis-cussed more ex-plic-itly in the 
+dis-cus-sion of Fig-ure 3. We hope these ad-di-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+[][]\OT1/cmr/m/n/10 In Fig-ure 3(b), when dis-cussing the scalar con-cen-tra-ti
+on field, what is the crit-i-cal down-stream lo-ca-tion in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+\OT1/cmr/m/n/10 rigid plate case where the jet-like flow os-cil-lates, lead-ing
+ to the de-tach-ment of vor-tex struc-tures and, even-tu-
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.152 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.152 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.152 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.152 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \vbox (2.0pt too high) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.152 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.152 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[2 <./Figures/gap_sig_4S_5S_5E_6D_6F_with amp.png> <./Figures/tipFreq/tip_freq_
+S_3D2.png (PNG copy)> <./Figures/tipFreq/tip_freq_S2.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Our sin-cere apolo-gies for the over-
+sight of this crit-i-cal de-tail. We have now added a co-or-di-nate axis to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+\OT1/cmr/m/n/10 the fig-ure 3(b), pro-vid-ing a clear ref-er-ence for down-stre
+am lo-ca-tions. In the re-spec-tive para-graph dis-cussing
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 153--154
+\OT1/cmr/m/n/10 the scalar con-cen-tra-tion field, we have ex-plic-itly men-tio
+ned the crit-i-cal down-stream lo-ca-tion, i.e. `$\OML/cmm/m/it/10 x \OMS/cmsy/
+m/n/10 ^^Y \OT1/cmr/m/n/10 5\OML/cmm/m/it/10 h$\OT1/cmr/m/n/10 '
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+\OT1/cmr/m/n/10 in the rigid plate case where the jet-like flow os-cil-lates, l
+ead-ing to the de-tach-ment of vor-tex struc-tures and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+[][]\OT1/cmr/m/n/10 What spe-cific char-ac-ter-is-tics or pa-ram-e-ters de-ter-
+mine the de-layed mix-ing ob-served in the rigid plate case
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : The mix-ing in the flex-i-ble plates 
+case is ob-served early in the chan-nel com-pared to rigid plates case
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+\OT1/cmr/m/n/10 which shows grad-ual in-crease in $\OML/cmm/m/it/10 MI$\OT1/cmr
+/m/n/10 . As the flow passes through the gap be-tween the rigid plates the shea
+r
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+\OT1/cmr/m/n/10 layer ex-tends longer in the down-stream di-rec-tion which form
+s a jet-like flow. Upon a crit-i-cal length, this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+\OT1/cmr/m/n/10 jet desta-bilises and be-gins to os-cil-late gen-er-at-ing vor-
+tex struc-ture which in-duce inter-mixing of the scalar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+\OT1/cmr/m/n/10 fields. This jet length is longer in rigid plates case in com-p
+ar-i-son to flex-i-ble plates case where, the em-a-nat-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+\OT1/cmr/m/n/10 jet breaks up im-me-di-ately due to the plates' os-cil-la-tion.
+ Thus, the re-sult-ing flow fea-tures, es-pe-cially the jet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+\OT1/cmr/m/n/10 length can be iden-ti-fied as the dis-cernible char-ac-ter-is-t
+ics for de-layed mix-ing in the rigid plate case. We have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We thank the re-viewer for al-low-ing
+ us the op-por-tu-nity to re-work on the de-tails. In re-sponse, we have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+[]\OT1/cmr/m/it/10 Upon care-ful ex-am-i-na-tion of Fig. 5, we find that the pu
+l-satile in-let flow in-ter-acts with the os-cil-la-tions of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 flex-i-ble plates, giv-ing rise to vor-tex struc-tures in vary
+-ing num-bers. These vor-tices ar-range them-selves in an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 al-ter-nat-ing fash-ion at later times and per-sis-tently roll
+, con-tribut-ing to lo-cal mix-ing as they ad-vect down-stream.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 The size of these rolling vor-tices grad-u-ally di-min-ishes d
+ue to the in-flu-ence of vis-cos-ity. Par-tic-u-larly note-
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 wor-thy is the ob-ser-va-tion that cases with $\OML/cmm/m/it/1
+0 St[] \OT1/cmr/m/n/10 = 1 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 16$ \OT1/cmr/m/
+it/10 gen-er-ate even more or-ga-nized vor-tices and achieve
+ []
+
+
+Underfull \hbox (badness 6691) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 a de-layed steady state com-pared to steady in-let con-di-tion
+s. How-ever, in the case of $\OML/cmm/m/it/10 St[] \OT1/cmr/m/n/10 = 32$\OT1/cm
+r/m/it/10 , the vor-tic-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 pat-terns closely re-sem-ble those of the steady in-let sce-na
+rio and also sim-i-lar mix-ing pat-terns can be ob-served.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 This ob-ser-va-tion sug-gests that, for higher val-ues of $\OM
+L/cmm/m/it/10 St[]$\OT1/cmr/m/it/10 , the vor-tic-ity dy-nam-ics and re-sult-in
+g mix-ing pat-terns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 un-der pul-satile in-let con-di-tions con-verge to-wards those
+ ob-served in the steady in-let case. The in-ter-play be-tween
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/it/10 flow pul-sa-tion and plate os-cil-la-tions con-tin-ues to shap
+e the vor-tic-ity struc-tures, em-pha-siz-ing the in-tri-cate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+[]\OT1/cmr/m/n/10 In the re-vised manuscript, we have in-cluded the above de-ta
+iled in-for-ma-tion in the rel-e-vant sec-tion con-cern-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+[][]\OT1/cmr/m/n/10 Additionally, what in-sights can be de-rived from Fig-ure 6
+ re-gard-ing the Mix-ing In-dex (MI) and Head Loss
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We ap-pre-ci-ate the op-por-tu-nity t
+o pro-vide ad-di-tional in-sights into the Mix-ing In-dex (MI) and Head
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+[]\OT1/cmr/m/it/10 Upon quan-ti-fy-ing the cor-re-spond-ing mix-ing in-dex $\OM
+L/cmm/m/it/10 MI$ \OT1/cmr/m/it/10 and head loss $\OML/cmm/m/it/10 HL$\OT1/cmr/
+m/it/10 , we show these met-rics along the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 down-stream lo-ca-tion in Fig. 6. $\OML/cmm/m/it/10 MI$ \OT1/c
+mr/m/it/10 for pul-satile in-let cases show a steeper in-crease early in the ch
+an-nel com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 pared to the steady in-let case. The flow ex-it-ing through th
+e gap be-tween the plates in pul-satile in-let cases show
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 in-creased flow ag-i-ta-tion near the plates due to the in-ter
+-ac-tion be-tween flow pul-sa-tion and tip os-cil-la-tions. This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 in-ter-play breaks up the em-a-nat-ing jet-like flow and re-le
+ases var-i-ous scales of vor-tices that move lat-er-ally and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 fur-ther in-ter-act, merge, and ad-vect to in-flu-ence the $\O
+ML/cmm/m/it/10 MI$\OT1/cmr/m/it/10 . This be-hav-ior is at-tributed to the in-t
+er-play be-tween
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 flow pul-sa-tion and the tip os-cil-la-tions of the flex-i-ble
+ plates. The em-a-nat-ing jet-like flow breaks up near the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 ob-serve the steep-est shoot in the $\OML/cmm/m/it/10 MI$ \OT1
+/cmr/m/it/10 next to the plates as the flow and struc-ture os-cil-la-tions in-t
+en-si-fies due
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 to the mul-ti-ple modes in-volved. In con-trast, the steady in
+-let case pri-mar-ily re-lies on the os-cil-la-tions of flex-i-ble
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 plates for flow ag-i-ta-tion and sub-se-quent mix-ing, re-sult
+-ing in a longer jet length. How-ever, at $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 =
+ 8\OML/cmm/m/it/10 h$ \OT1/cmr/m/it/10 down-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 stream, the $\OML/cmm/m/it/10 MI$ \OT1/cmr/m/it/10 re-sults co
+n-verge for all cases, in-di-cat-ing that the mix-ing char-ac-ter-is-tics sta-b
+i-lize fur-ther along
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 the chan-nel. This con-ver-gence sug-gests that, de-spite dif-
+fer-ences in the mix-ing pro-cess ini-ti-a-tion, the mix-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 in-dex reaches a con-sis-tent state at this spe-cific down-str
+eam lo-ca-tion. The cor-re-spond-ing $\OML/cmm/m/it/10 HL$ \OT1/cmr/m/it/10 val
+-ues are higher
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 im-me-di-ately next to the flex-i-ble plates in the pul-satile
+ in-let con-di-tions, re-flect-ing the in-creased flow ag-i-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 near the plates due to the in-ter-ac-tion be-tween flow pul-sa
+-tion and tip os-cil-la-tions. This is be-cause at low in-let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/cmr/m/it/10 pul-sa-tion the flow ex-hibit lower flow in-er-tia which re-su
+lts in a di-min-ish-ing ef-fect of the pe-ri-odic in-let at longer
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.173 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.173 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.173 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.173 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.173 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.173 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+[]\OT1/cmr/m/n/10 In re-sponse to your in-quiry, we have in-cluded these ad-di-
+tional de-tails in the rel-e-vant sec-tion, elab-o-rat-ing on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\OT1/cmr/m/n/10 the in-sights de-rived from Fig-ure 6 re-gard-ing the Mix-ing I
+n-dex (MI) and Head Loss (HL) along the down-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\OT1/cmr/m/n/10 stream lo-ca-tion. The up-dated manuscript pro-vides a more tho
+r-ough dis-cus-sion of the flow fea-tures, high-light-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\OT1/cmr/m/n/10 ing the spe-cific char-ac-ter-is-tics ob-served in the Mix-ing 
+In-dex and Head Loss statis-tics along the down-stream
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[][]\OT1/cmr/m/n/10 Provide fur-ther de-tails on how the Co-ef-fi-cient of Per-
+for-mance (CoP) varies across dif-fer-ent $\OML/cmm/m/it/10 Ca$ \OT1/cmr/m/n/10
+ and $\OML/cmm/m/it/10 St[]$ \OT1/cmr/m/n/10 cases,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : In the re-vised manuscript, we have i
+n-cluded the fol-low-ing ad-di-tional de-tails in the rel-e-vant sec-tion to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+\OT1/cmr/m/n/10 elab-o-rate on how the Co-ef-fi-cient of Per-for-mance ($\OML/c
+mm/m/it/10 CoP$\OT1/cmr/m/n/10 ) varies across dif-fer-ent $\OML/cmm/m/it/10 Ca
+$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 St[]$ \OT1/cmr/m/n/10 cases, as shown i
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+[]\OT1/cmr/m/it/10 In Fig. 7(b), the ob-served CoP trends re-veal im-por-tant f
+ea-tures in the re-la-tion-ship be-tween plate flex-i-bil-ity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 the mix-ing per-for-mance does not ex-hibit sig-nif-i-cant im-
+prove-ment. This is at-tributed to the higher Head Loss
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HL\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 in the 
+flow caused by less flex-i-ble plates, coun-ter-act-ing the po-ten-tial ben-e-f
+its of plate os-cil-la-tions. Con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 versely, as $\OML/cmm/m/it/10 Ca$ \OT1/cmr/m/it/10 in-creases 
+be-yond $\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02$ \OT1/cmr/m/it/1
+0 i.e. highly flex-i-ble plates, the re-duc-tion in $\OML/cmm/m/it/10 HL$ \OT1/
+cmr/m/it/10 be-comes more pro-nounced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 due to the larger gap open-ing be-tween the plates. Ad-di-tion
+-ally, the os-cil-la-tions of the flex-i-ble plates in-duce
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 vor-tex shed-ding, con-tribut-ing to en-hanced Mix-ing In-dex 
+$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 MI\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 com-pa
+red to rigid plate cases. The curve clearly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 in-di-cates that the flex-i-ble plates in-deed of-fer su-pe-ri
+or mix-ing per-for-mance. How-ever, pul-satile in-let con-di-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 do not yield a sub-stan-tial im-prove-ment in over-all mix-ing
+ per-for-mance com-pared to steady in-let cases. This is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 due to the di-min-ish-ing ef-fect of pe-ri-odic in-let con-di-
+tions at longer down-stream lo-ca-tions dur-ing steady-state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 con-di-tions. More-over, higher $\OML/cmm/m/it/10 HL$ \OT1/cmr
+/m/it/10 val-ues in cases with lower $\OML/cmm/m/it/10 St[]$ \OT1/cmr/m/it/10 n
+eg-a-tively im-pact mix-ing per-for-mance, re-sult-
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 ing in marginally lower net $\OML/cmm/m/it/10 CoP$\OT1/cmr/m/i
+t/10 . In-stead, the cases with lower $\OML/cmm/m/it/10 St[]$ $\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 < \OT1/cmr/m/n/10 32)$ \OT1/cmr/m/it/10 show ad-verse mix-ing
+ per-for-mance
+ []
+
+
+Underfull \hbox (badness 6032) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 and it is rec-om-mended to use steady in-let con-di-tions. How
+-ever, at $\OML/cmm/m/it/10 St[] \OT1/cmr/m/n/10 = 32$ \OT1/cmr/m/it/10 i.e. wi
+th higher pul-satile in-let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 con-di-tions, the mix-ing per-for-mance closely re-sem-bles th
+at of steady in-let cases, demon-strat-ing a sim-i-lar $\OML/cmm/m/it/10 CoP$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\OT1/cmr/m/it/10 but achieves a marginally bet-ter $\OML/cmm/m/it/10 CoP$ \OT1/
+cmr/m/it/10 com-pared to the steady in-let case. This in-di-cates that the in-t
+er-play be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+[]\OT1/cmr/m/n/10 The up-dated manuscript now pro-vides a more thor-ough dis-cu
+s-sion, of-fer-ing in-sights into the spe-cific trends
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+[][]\OT1/cmr/m/n/10 How do the flex-i-ble plates con-tribute to bet-ter mixer p
+er-for-mance, and why does the pul-satile in-let not re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+\OT1/cmr/m/n/10 sult in a sub-stan-tial im-prove-ment in over-all mix-ing per-f
+or-mance, de-spite the ob-served ben-e-fits of in-creased
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We have in-cluded the fol-low-ing ad-
+di-tional de-tails in the sum-mary sec-tion in the re-vised sub-mis-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+\OT1/cmr/m/n/10 to ex-plain how flex-i-ble plates con-tribute to bet-ter mixer 
+per-for-mance and why the pul-satile in-let does not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+[]\OT1/cmr/m/it/10 The flex-i-ble plates in-duce flow tran-si-tion early in the
+ chan-nel by in-tro-duc-ing vor-tex gen-er-a-tion. The flex-i-bil-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/cmr/m/it/10 of the plates al-lows for dy-namic in-ter-ac-tions with the fl
+ow-ing fluid, pro-mot-ing vor-tex shed-ding and en-hanc-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/cmr/m/it/10 the mix-ing pro-cess. This ef-fect con-tributes to im-proved m
+ix-ing per-for-mance com-pared to the rigid plate case.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/cmr/m/it/10 On the other hand, in the case of a pul-satile in-let, while t
+here are ben-e-fits as-so-ci-ated with the flex-i-bil-ity of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/cmr/m/it/10 the plates, the over-all mix-ing per-for-mance is not sub-stan
+-tially im-proved. This is at-tributed to the in-ter-mit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/cmr/m/it/10 tent flow in-er-tia caused by the pul-satile flow con-di-tion 
+which im-part rel-a-tively lower ag-i-ta-tion in the flow, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\OT1/cmr/m/it/10 ad-di-tion-ally, the ef-fect of pul-sa-tion tends to get washe
+d away at longer down-stream lo-ca-tions at steady-state
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 194--197
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : In our in-ves-ti-ga-tion, we ob-serve
+d that the con-fig-u-ra-tion with $\OML/cmm/m/it/10 Ca \OT1/cmr/m/n/10 = 0\OML/
+cmm/m/it/10 :\OT1/cmr/m/n/10 06$ ex-hib-ited in-creased mix-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 ing per-for-mance and re-duced head loss com-pared to other con
+-fig-u-ra-tions. The higher plate flex-i-bil-ity at
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 194--197
+\OML/cmm/m/it/10 Ca \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06$ co
+n-tributes to en-hanced tip os-cil-la-tions, pro-mot-ing vor-tex gen-er-a-tion 
+and ef-fec-tively dis-rupt-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 the flow, im-prov-ing the mix-ing ef-fi-ciency. Re-gard-ing the
+ pul-satile in-let con-di-tions, we ac-knowl-edge that, in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 gen-eral, pul-satile in-lets did not con-tribute sig-nif-i-cant
+ly to the over-all mix-ing per-for-mance. How-ever, the case
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 with $\OML/cmm/m/it/10 St[] \OT1/cmr/m/n/10 = 32$ demon-strated
+ a marginally sig-nif-i-cant mix-ing per-for-mance than the steady in-let con-d
+i-tion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 This marginal im-prove-ment is at-tributed to the higher flow i
+n-er-tia com-pared to the low $\OML/cmm/m/it/10 St[]$ \OT1/cmr/m/n/10 cases, wh
+ich fea-
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 ture in-ter-mit-tent in-let in-er-tial forces. The $\OML/cmm/m/
+it/10 St[] \OT1/cmr/m/n/10 = 32$ case ex-hibit close re-sem-blance with the ste
+ady case but
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 with ad-di-tional vor-tex shed-ding, which en-hances the over-a
+ll mix-ing per-for-mance. We have now in-cluded a
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.197 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.197 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.197 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.197 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.197 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.197 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+[][]\OT1/cmr/m/n/10 The po-ten-tial av-enues for fu-ture re-search to ad-dress 
+the lim-i-ta-tions of the cur-rent study, par-tic-u-larly in terms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+\OT1/cmr/m/n/10 of the ge-o-met-ric de-sign of the chan-nel mixer. How might mo
+re com-plex or re-al-is-tic chan-nel ge-ome-tries be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We ap-pre-ci-ate your ac-knowl-edge-m
+ent of the po-ten-tial av-enues for fu-ture re-search to ad-dress the lim-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 i-ta-tions of our cur-rent study, par-tic-u-larly in terms of t
+he ge-o-met-ric de-sign of the chan-nel mixer. In re-sponse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 to your ques-tion, we have in-cluded a para-graph in the sum-ma
+ry sec-tion that dis-cusses pos-si-ble av-enues for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 in-cor-po-rat-ing more com-plex or re-al-is-tic chan-nel ge-ome
+-tries to en-hance the ap-pli-ca-bil-ity and in-sights gained
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 from our find-ings. We sug-gest ex-plor-ing ge-o-met-ric mod-i-
+fi-ca-tions such as in-tro-duc-ing wall-mounted plates at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 an off-set, vary-ing the flex-i-bil-ity of each plate, and con-
+sid-er-ing a tan-dem se-ries of such plates. These mod-i-fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 ca-tions can pro-vide a more nu-anced un-der-stand-ing of the f
+luid-structure in-ter-ac-tion and mix-ing ef-fi-ciency in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+\OT1/cmr/m/n/10 di-verse prac-ti-cal sce-nar-ios. We hope that these pro-posed 
+fu-ture re-search di-rec-tions ad-e-quately ad-dress your
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.205 				
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.205 				
+          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.205 				
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.205 				
+          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.205 				
+          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.205 				
+          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+[][]\OT1/cmr/m/n/10 Subject of the pa-per: The au-thors study the en-hance-ment
+ of mix-ing in a rect-an-gu-lar (2d) chan-nel. To this end,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 they use flex-i-ble (elas-tic) ob-sta-cles at the side walls. T
+he au-thors con-sider two kinds of ba-sic flow: steady flow and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 os-cil-la-tory flow at the in-let. The nu-mer-i-cal pro-ce-dure
+ looks fine, the re-sults seem re-li-able. In this sense, the pa-per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 is per-fectly suit-able for PoF with new ideas in a very in-ter
+-est-ing field with ap-pli-ca-tions in tech-nol-ogy. The ti-tle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[][]\OT1/cmr/m/n/10 Organization of the text in Sec-tion 2, Math-e-mat-i-cal Fo
+r-mu-la-tion and Com-pu-ta-tional setup: The au-thors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 should be-gin first with the mathematical-physical for-mu-la-ti
+on of the prob-lem, in-clud-ing bound-ary con-di-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 and af-ter that con-tinue with the mathematical-numerical so-lu
+-tion pro-ce-dure. The au-thors jump to and fro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Thank you for your valu-able feed-bac
+k and guid-ance on strength-en-ing the manuscript struc-ture. We
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 have re-vised Sec-tion 2, `Math-e-mat-i-cal For-mu-la-tion and 
+Com-pu-ta-tional Setup, ' to en-hance the or-ga-ni-za-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 of the text and en-sure a log-i-cal flow. The up-dated manuscri
+pt now be-gins with a clear pre-sen-ta-tion of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 phys-i-cal prob-lem, pro-vid-ing a de-tailed de-scrip-tion of t
+he two-dimensional chan-nel ge-om-e-try, the place-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 of flex-i-ble plates, and the over-all setup. Fol-low-ing this,
+ the math-e-mat-i-cal for-mu-la-tion is sys-tem-at-i-cally pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 sented, cov-er-ing the gov-ern-ing equa-tions for fluid and str
+uc-ture, bound-ary con-di-tions, and the in-tro-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 of the scalar con-cen-tra-tion field. Af-ter es-tab-lish-ing th
+e phys-i-cal and math-e-mat-i-cal foun-da-tions, the nu-mer-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+\OT1/cmr/m/n/10 strat-egy is in-tro-duced in a sep-a-rate sub-sec-tion, out-lin
+-ing the nu-mer-i-cal meth-ods em-ployed for solv-ing the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+[]\OT1/cmr/m/n/10 Lastly, the para-met-ric def-i-ni-tion is pre-sented in a par
+a-graph clearly de-tail-ing the var-ied pa-ram-e-ters, such
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+\OT1/cmr/m/n/10 as Cauchy Num-ber and Strouhal Num-ber. The changes made have b
+een high-lighted in the marked-up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+\OT1/cmr/m/n/10 manuscript for easy ref-er-ence. These re-vi-sions ad-dress the
+ con-cerns re-gard-ing the or-ga-ni-za-tion of the text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+[][]\OT1/cmr/m/n/10 Numerical do-main: In-flu-ence of the back-ward ef-fect of 
+the outer (out-let) bound-ary on the ve-loc-ity field.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We ap-pre-ci-ate the con-cern re-gard
+-ing the po-ten-tial in-flu-ence of the out-let bound-ary on the ve-loc-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\OT1/cmr/m/n/10 field. In the up-dated manuscript, we have ex-plic-itly men-tio
+ned that all met-ric com-pu-ta-tions are con-ducted at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\OT1/cmr/m/n/10 to mit-i-gate the ef-fects of re-flec-tive bound-ary con-di-tio
+ns and en-sure that the prop-er-ties of in-ter-est are suf-fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\OT1/cmr/m/n/10 ciently cush-ioned out be-fore reach-ing the chan-nel exit. The
+re-fore, the nu-mer-i-cal do-main has been specif-i-cally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+[][]\OT1/cmr/m/n/10 Karman vor-tex street: The re-sults in the fig-ures re-mind
+ me of the Kar-man vor-tex street. The au-thors should
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We want to clar-ify that al-though th
+e flow field in the fig-ures may bear a re-sem-blance to a von
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+[]\OT1/cmr/m/n/10 In our study, the flow ini-ti-ates by em-a-nat-ing through th
+e slit in a jet-like man-ner. Sub-se-quently, the flow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+\OT1/cmr/m/n/10 rolls up on ei-ther side, form-ing a co-rotating vor-tex pair. 
+As the flow pro-gresses, the ef-fects of the bound-ary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+\OT1/cmr/m/n/10 walls come into play, lead-ing to a re-ar-range-ment of the flo
+w in an al-ter-nat-ing fash-ion. This phe-nomenon may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+\OT1/cmr/m/n/10 su-per-fi-cially re-sem-ble tran-sient vor-tex shed-ding akin t
+o a von K^^Sarm^^San vor-tex street, but in the present case,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+\OT1/cmr/m/n/10 vor-tex shed-ding off each plate's tip is si-mul-ta-ne-ous, whi
+ch sim-ply ar-ranges it-self in an al-ter-nate fash-ion due to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+[]\OT1/cmr/m/n/10 To pro-vide a more de-tailed dis-cus-sion, we have ex-plic-it
+ly ad-dressed the spe-cific flow dy-nam-ics, em-pha-siz-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+\OT1/cmr/m/n/10 that the ob-served al-ter-nat-ing pat-tern re-sults from bound-
+ary wall ef-fects in-ter-act-ing with the ini-tially formed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+\OT1/cmr/m/n/10 vor-tex pair. This clar-i-fi-ca-tion is in-cor-po-rated into th
+e re-vised manuscript, en-sur-ing a more ac-cu-rate rep-re-sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+[][]\OT1/cmr/m/n/10 I want to draw the at-ten-tion of the au-thors to some fur-
+ther in-ter-est-ing and most rel-e-vant lit-er-a-ture re-gard-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+[]\OT1/cmr/m/n/10 Manipulation of the flow in chan-nels: Mas-sive sta-bi-liza-t
+ion of gravity-driven film flows with cor-ru-gated
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.250 							K
+              ögel, A and Aksel, N,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.250 							K
+              ögel, A and Aksel, N,
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.250 							K
+              ögel, A and Aksel, N,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.250 							K
+              ögel, A and Aksel, N,
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \vbox (2.0pt too high) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.250 							K
+              ögel, A and Aksel, N,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.250 							K
+              ögel, A and Aksel, N,
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[6{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
+[]\OT1/cmr/m/n/10 Manipulation of the flow in pipes: Gravity-driven film flow i
+n-side an in-clined cor-ru-gated pipe: An ex-per-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
+[]\OT1/cmr/m/n/10 The ef-fect of sub-strate am-pli-tude and wave-length on grav
+ity-driven film flow in-side an in-clined cor-ru-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+[]\OT1/cmr/m/n/10 Natural or man-made mix-ing in the en-vi-ron-ment with ob-sta
+-cles (very im-por-tant nowa-days: e.g. gravity-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--270
+[]\OT1/cmr/m/n/10 Pattern for-ma-tion and mix-ing in three-dimensional film flo
+w Hein-ing, C; Pol-lak, T and Ak-sel, N Apr
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Thank you very much for bring-ing the
+se rel-e-vant lit-er-a-ture ref-er-ences to our at-ten-tion. We find these
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+\OT1/cmr/m/n/10 works are very rel-e-vant in terms of ge-o-met-ric vari-a-tions
+ and of-fer valu-able learn-ings about flow ma-nip-u-la-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+\OT1/cmr/m/n/10 tech-niques, ad-dress-ing sta-bil-ity, pat-tern for-ma-tion, an
+d mix-ing in dif-fer-ent con-fig-u-ra-tions. We ac-knowl-edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+\OT1/cmr/m/n/10 the im-por-tance of these works, and their rel-e-vance to our s
+tudy is now ex-plic-itly dis-cussed in the in-tro-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+\OT1/cmr/m/n/10 sec-tion, which draws con-nec-tions be-tween our work and the i
+n-sights gained from these stud-ies. We ap-pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+\OT1/cmr/m/n/10 ci-ate the re-viewer's guid-ance, and in-cor-po-rat-ing these d
+is-cus-sions will con-tribute to a more in-formed and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+[]\OT1/cmr/m/n/10 Regarding nov-elty com-pared to the ref-er-ence [62] in the m
+anuscript ([[]]), we have ex-plained how this work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+\OT1/cmr/m/n/10 is an ex-ten-sion to the same work with fur-ther in-ves-ti-ga-t
+ion which delves deeper into the scalar con-cen-tra-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+\OT1/cmr/m/n/10 mix-ing con-cern-ing flex-i-bil-ity and pul-satile flow in-let.
+ We have in-cluded the fol-low-ing text in the in-tro-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+[]\OT1/cmr/m/it/10 This ge-o-met-ri-cal con-fig-u-ra-tion builds upon our ear-l
+ier work [62], where we in-ves-ti-gated the scal-ing of en-ergy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+\OT1/cmr/m/it/10 dis-si-pa-tion in a chan-nel flow fea-tur-ing flex-i-ble ob-st
+a-cles across dif-fer-ent Reynolds num-bers. The pre-vi-ous study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+\OT1/cmr/m/it/10 high-lighted that flex-i-ble plates con-tributed to early flow
+ tran-si-tion and iden-ti-fied an op-ti-mized ge-o-met-ric setup.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+\OT1/cmr/m/it/10 This cur-rent work uti-lizes the es-tab-lished ge-o-met-ric co
+n-fig-u-ra-tion to ex-plore mix-ing in the con-text of scalar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+\OT1/cmr/m/it/10 con-cen-tra-tions and pul-satile flow in-let, in-tro-duc-ing a
+ novel as-pect to our re-search. We fo-cus on an ap-proach
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+\OT1/cmr/m/it/10 to in-er-tial mix-ing that cap-i-tal-izes on the flow-induced 
+bend-ing and os-cil-la-tions of the flex-i-ble plates to en-hance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+[][]\OT1/cmr/m/n/10 Enhancing the mix-ing qual-ity: Can mul-ti-ple rigid or fle
+x-i-ble ob-sta-cles in-crease or even de-crease the qual-ity of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+\OT1/cmr/m/n/10 mix-ing? A short dis-cus-sion would be very help-ful. Can the a
+u-thors give a spec-u-la-tive dis-cus-sion on 'over-all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Our sin-cere thanks to you for tak-in
+g in-ter-est into the re-search and pre-sent-ing novel ideas which may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+\OT1/cmr/m/n/10 even-tu-ally turn out as po-ten-tial fu-ture works. In re-spons
+e to your query re-gard-ing mul-ti-ple ob-sta-cles, we can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+\OT1/cmr/m/n/10 sume much in-let en-ergy in their de-for-ma-tion and also ham-p
+er pres-sure head, thereby re-duc-ing the net mix-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+\OT1/cmr/m/n/10 per-for-mance. How-ever, such a work could be a valu-able ex-te
+n-sion to the present work, and we shall in-deed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+[]\OT1/cmr/m/n/10 We also pro-pose a ge-o-met-ric vari-a-tion with two wall-mou
+nted plates as in the present case but with an off-set
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+\OT1/cmr/m/n/10 and each of dif-fer-ent struc-tural prop-er-ties. We ac-knowl-e
+dge that the in-ter-ac-tion be-tween these ob-sta-cles may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+\OT1/cmr/m/n/10 lead to ei-ther an en-hance-ment or a re-duc-tion in fluid mix-
+ing, de-pend-ing on the spe-cific ge-o-met-ric ar-range-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+\OT1/cmr/m/n/10 ment. Fur-ther re-search in this di-rec-tion is war-ranted to e
+x-plore the in-tri-cate dy-nam-ics of such con-fig-u-ra-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+[]\OT1/cmr/m/n/10 As per your sug-ges-tion, we have in-cor-po-rated a new para-
+graph at the end of the sum-mary sec-tion to ad-dress
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+[][]\OT1/cmr/m/n/10 What is the de-pen-dence of the Re num-ber of the ba-sic fl
+ow on the mix-ing qual-ity? What would hap-pen when
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+\OT1/cmr/m/n/10 vary-ing the Re num-ber e.g. from creep-ing flow to in-er-tial 
+flow? Stages? . (I do not ex-pect a pre-cise an-swer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+\OT1/cmr/m/n/10 be-cause the 'maximum-optimum' is be-yond any con-sid-er-a-tion
+ with so many pa-ram-e-ters in-volved in the prob-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : We ap-pre-ci-ate the im-por-tance of 
+in-ves-ti-gat-ing the de-pen-dence of Reynolds num-ber (Re) on mix-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 qual-ity. The Reynolds num-ber is in-deed a cru-cial pa-ram-e-t
+er that can sig-nif-i-cantly in-flu-ence the mix-ing per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 for-mance. In our pre-vi-ous work [[]], we have con-ducted a si
+m-i-lar in-ves-ti-ga-tion where we cor-re-lated vis-cous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 dif-fu-sion with in-creas-ing Re. This pro-vided valu-able in-s
+ights into the re-la-tion-ship be-tween Reynolds num-ber
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 and en-ergy dis-si-pa-tion po-ten-tial mix-ing char-ac-ter-is-t
+ics. Upon in-creas-ing the $\OML/cmm/m/it/10 Re$ \OT1/cmr/m/n/10 in the range $
+200 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 3200$, the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 in-creased in-er-tia con-tributed to-wards higher vis-cous en-e
+rgy dis-si-pa-tion in the down-stream by cas-cad-ing vor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 tices into smaller struc-tures, which in turn should in-crease 
+fluid mix-ing for a setup as in the present work. In
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 an-other work with J-shaped rigid baf-fles chan-nel mixer [[]],
+ au-thors have in-ves-ti-gated two scalar fields mix-ing
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 297--298
+\OT1/cmr/m/n/10 in steady flow with dif-fer-ent $\OML/cmm/m/it/10 Re$ \OT1/cmr/
+m/n/10 rang-ing from $5 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 350$. They con-clu
+ded to-wards an ev-i-dent in-crease in mix-ing
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.298 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.298 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.298 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.298 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.298 					
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.298 					
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+[]\OT1/cmr/m/n/10 Building on this foun-da-tion, we ac-knowl-edge that ex-tend-
+ing the cur-rent study to ex-plore the ef-fects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 Reynolds vari-a-tion on mix-ing qual-ity of could be an in-ter-
+est-ing and in-for-ma-tive in-ves-ti-ga-tion. We shall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 se-ri-ously con-sider it for fu-ture ex-ten-sions of our in-ves
+-ti-ga-tion, and it should be a valu-able ad-di-tion to our
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : In the up-dated manuscript, we have n
+ow re-frained from con-nect-ing the data points. The scat-ter-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+\OT1/cmr/m/n/10 of curves in this fig-ure is a re-sult of the vari-abil-ity in 
+the data points, and the cur-rent in-ves-ti-ga-tion is not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+\OT1/cmr/m/n/10 in-dica-tive of any phys-i-cal con-nec-tion be-tween them. Fig-
+ure 10 is pro-vided in the ap-pendix sec-tion solely to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+\OT1/cmr/m/n/10 com-plete the $\OML/cmm/m/it/10 St[]$ \OT1/cmr/m/n/10 la-bellin
+g of Fig-ure 7(a). The in-ten-tion is to of-fer a ref-er-ence for the var-i-ous
+ curves shown
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+\OT1/cmr/m/n/10 in Fig-ure 7(a), and any ex-pla-na-tion of the scat-tered data 
+points is be-yond the scope of the cur-rent work and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+\OT1/cmr/m/n/10 de-mands an ex-ten-sive in-ves-ti-ga-tion by tak-ing care of se
+v-eral other fac-tors which we have planned to ex-plore
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Our sin-cere apolo-gies for the ab-se
+nce of equa-tion num-bers in the manuscript. We have made the nec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\OT1/cmr/m/n/10 es-sary cor-rec-tions in the up-dated ver-sion. Each equa-tion 
+in the pa-per is now as-signed a num-ber in se-quence,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\OT1/cmr/m/n/10 al-low-ing for proper ci-ta-tion in the text. We ap-pre-ci-ate 
+your at-ten-tion to de-tail, and this ad-just-ment aims to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+[]\OT1/cmr/bx/n/10 Reply\OT1/cmr/m/n/10 : Thank you for bring-ing these ty-pos 
+to our at-ten-tion. We sin-cerely apol-o-gize for any over-sight in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+\OT1/cmr/m/n/10 the ini-tial sub-mis-sion. In the up-dated manuscript, we have 
+cor-rected the men-tioned ty-pos and checked the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+\OT1/cmr/m/n/10 manuscript to our best. We ap-pre-ci-ate your thor-ough re-view
+ and feed-back and sub-mit-ting an even more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[]\OT1/cmr/m/n/9 Singh, Gau-rav and Lakkaraju, Ra-jaram, ``Wall-mounted flex-i-
+ble plates in a two-dimensional chan-nel trig-ger early flow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+[]\OT1/cmr/m/n/9 Lin, Yu-Cheng, Chung, Yung-Chiang and Wu, Chung-Yi, ``Mix-ing 
+en-hance-ment of the pas-sive mi-croflu-idic mixer with
+ []
+
+! Undefined control sequence.
+\latex@makecol ...ppendblocks \ifvbox \@kludgeins 
+                                                  \@makespecialcolbox \else ...
+l.332 			\end{document}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \setbox 
+l.332 			\end{document}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...lht \ifdim \wd \@kludgeins 
+                                                  >\z@ \advance \@tempdima -...
+l.332 			\end{document}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.332 			\end{document}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\@makespecialcolbox ...@tempboxa \box \@kludgeins 
+                                                  }
+l.332 			\end{document}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.332 			\end{document}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[8] (./rebuttal_AA.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `rebuttal_AA.out' has not changed.
+(rerunfilecheck)             Checksum: C49655DD76ED446D89AB3545E484933B;851.
+ ) 
+Here is how much of TeX's memory you used:
+ 12394 strings out of 473362
+ 186858 string characters out of 5725050
+ 612106 words of memory out of 5000000
+ 35281 multiletter control sequences out of 15000+600000
+ 568247 words of font info for 71 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,12n,76p,2019b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2024/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.p
+fb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2024/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/
+cm-super/sfrm1000.pfb>
+Output written on rebuttal_AA.pdf (8 pages, 341850 bytes).
+PDF statistics:
+ 170 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+
